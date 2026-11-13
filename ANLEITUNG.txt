@@ -1,0 +1,45 @@
+ELEKTROLAB ACADEMY – Anleitung / Istruzioni
+Version 1.0.0 – 13.11.2026
+
+INHALT
+index.html   – Webseite mit Deutsch/Italiano, Kurs, Quiz und Editor
+course.json  – Kursdaten für alle 16 Module (zweisprachig)
+
+LOKAL TESTEN
+index.html im Browser öffnen. Die App verwendet bei lokaler Öffnung automatisch
+integrierte Kursdaten, auch wenn der Browser den Abruf von course.json blockiert.
+
+EINE FESTE ÖFFENTLICHE URL ERSTELLEN
+1. Ein Hosting-Konto wählen, das statische HTML-Webseiten unterstützt,
+   beispielsweise GitHub Pages oder Netlify.
+2. index.html und course.json gemeinsam im Stammverzeichnis veröffentlichen.
+3. Der Hosting-Anbieter erzeugt eine URL. Diesen Link an Kollegen schicken.
+   Ein öffentlicher Link ist nicht in dieser ZIP enthalten: erst Hosting erzeugt ihn.
+
+KURS UPDATEN
+1. Im öffentlichen Kurs auf „Kurs bearbeiten“ / „Modifica il corso“ klicken.
+2. Text auf DE und IT bearbeiten bzw. „Neues Modul“ wählen.
+3. „Modul lokal speichern“ und „course.json exportieren“ wählen.
+4. Die neue course.json auf dem Webhosting AN STELLE der bisherigen Datei
+   hochladen. index.html und die URL bleiben gleich.
+5. Kollegen klicken auf „Updates prüfen“, oder laden die Seite neu.
+
+WICHTIG ZUR SICHERHEIT
+- Der Editor arbeitet OHNE Server-Login und ist kein geschützter Adminbereich.
+  Jeder kann lokal eine eigene Fassung bearbeiten, aber nur wer Zugriff auf das
+  Hosting-Konto hat, kann den gemeinsamen Online-Kurs ändern.
+- Ein lokaler Entwurf ist nur in DIESEM Browser gespeichert, bis er exportiert ist.
+- Auf gemeinsam verwendeten Computern keine vertraulichen Daten eingeben.
+- Nach einer Änderung die Quizantworten und die fachlichen Angaben prüfen.
+- Alle Beispiele sind didaktisch und ersetzen keine elektrische Fachaufsicht.
+
+ITALIANO
+Apri index.html oppure pubblica index.html + course.json sullo stesso hosting.
+Seleziona „Italiano“ dal menu. Per aggiornare i contenuti per tutti, modifica
+il corso, esporta course.json e sostituiscilo sul sito. Il link pubblico rimane
+lo stesso. Solo il proprietario dell'hosting può pubblicare gli aggiornamenti.
+
+HINWEIS
+Die 16 Module enthalten eine kompakte Ersteinführung mit Formeln, Beispielen
+und Kontrollfragen. Für eine ausführliche IHK-Ausbildung können die Kapitel
+im Editor sukzessive mit längeren Erklärungen ergänzt werden.

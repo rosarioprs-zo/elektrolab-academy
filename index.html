@@ -1,0 +1,564 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101a30"><title>ElektroLab Academy | IHK Elektrotechnik</title><style>
+:root{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color-scheme:dark;--bg:#0b1220;--panel:#17243a;--panel2:#20324c;--line:#35445c;--text:#eef5ff;--muted:#a9bed2;--accent:#45d1cc}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 85% 0,#214366 0,transparent 33%),var(--bg);color:var(--text)}button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #9ce4f2;outline-offset:2px}.shell{max-width:1180px;margin:auto;padding:22px}.top{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}.brand{font-weight:900;font-size:1.25rem;letter-spacing:.01em}.brand span{color:var(--accent)}.controls{display:flex;gap:9px;flex-wrap:wrap}.btn,select{border:1px solid var(--line);border-radius:12px;padding:10px 14px;background:#24334b;color:var(--text)}.btn.primary{background:#19a8a0;border-color:#19a8a0;color:#071719;font-weight:800}.btn:hover{filter:brightness(1.13)}.hero{padding:45px 0 26px}.eyebrow{text-transform:uppercase;color:var(--accent);font-weight:800;font-size:.8rem;letter-spacing:.13em}h1{font-size:clamp(2rem,5vw,3.55rem);margin:12px 0}p{line-height:1.7}h2{margin:0 0 12px}small,.muted{color:var(--muted)}.layout{display:grid;grid-template-columns:290px 1fr;gap:20px}.card{background:linear-gradient(135deg,#192a43,#142238);border:1px solid var(--line);border-radius:18px;padding:23px}.sidebar{align-self:start;max-height:74vh;overflow:auto}.item{display:block;width:100%;padding:11px 12px;background:transparent;border:0;border-radius:9px;color:var(--text);text-align:left;margin:4px 0}.item.active{background:#28536b;box-shadow:inset 3px 0 var(--accent)}.item:hover{background:#293f5b}.item span{font-size:.8rem;color:var(--muted);display:block;margin-top:4px}.tag{font-size:.76rem;color:#aef6e5;border:1px solid #3c807c;border-radius:50px;padding:5px 10px;display:inline-block}.formula{background:#0a1a2b;border:1px solid #38506b;border-radius:12px;padding:17px;overflow-x:auto;font-family:ui-monospace,Consolas,monospace;font-size:1.17rem;color:#99f4e8}.diagram{display:flex;justify-content:center;overflow-x:auto;background:#0b1b2d;border-radius:14px;padding:18px;margin:16px 0}.diagram pre{font:16px/1.5 ui-monospace,Consolas,monospace;color:#e9f0fa;margin:0}.two{display:grid;grid-template-columns:1fr 1fr;gap:15px}.section{margin:24px 0}.section h3{color:#a6e9e1;margin-bottom:7px}.answer{margin-top:13px;padding:12px;border-radius:10px;background:#19394b}.answer.good{border:1px solid #2aca96}.answer.bad{border:1px solid #e5a45f}input[type=text],input[type=number],textarea{width:100%;border:1px solid var(--line);background:#0d1b2b;color:var(--text);padding:11px;border-radius:10px}textarea{min-height:90px;resize:vertical}label{font-size:.86rem;color:var(--muted);font-weight:700;display:block;margin:13px 0 6px}.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.hidden{display:none!important}.notice{background:#163b47;border:1px solid #31817b;padding:12px 15px;border-radius:10px;margin:16px 0}.footer{padding:35px 0;text-align:center;color:var(--muted);font-size:.85rem}.bar{height:7px;border-radius:10px;background:#304159;overflow:hidden;margin:12px 0}.bar>div{height:100%;background:var(--accent);transition:width .2s}ul{line-height:1.8}.quizopt{display:block;margin:10px 0;padding:10px 12px;border:1px solid var(--line);border-radius:10px;cursor:pointer}.quizopt:has(input:checked){border-color:var(--accent);background:#1d4350}.quizopt input{margin-right:8px} @media(max-width:780px){.layout,.two,.admin-grid{grid-template-columns:1fr}.sidebar{max-height:260px}.hero{padding-top:28px}.shell{padding:15px}.card{padding:18px}}
+</style></head><body><div class="shell"><header class="top"><div class="brand">⚡ Elektro<span>Lab</span> Academy</div><div class="controls"><select id="lang" aria-label="Sprache"><option value="de">🇩🇪 Deutsch</option><option value="it">🇮🇹 Italiano</option></select><button class="btn" id="refresh">↻ <span data-i="update">Updates prüfen</span></button><button class="btn" id="adminBtn">⚙ <span data-i="admin">Kurs bearbeiten</span></button></div></header><section class="hero"><div class="eyebrow">Industrieelektriker · Geräte und Systeme · IHK</div><h1 data-i="headline">Elektrotechnik verstehen. Schritt für Schritt.</h1><p class="muted" data-i="intro">Zweisprachiger Kurs mit Schaltungen, Formeln, Lösungswegen und Prüfungsfragen.</p><span class="tag" id="version"></span></section><div id="notice" class="notice hidden"></div><div class="layout"><aside class="card sidebar"><h2 data-i="modules">Kursmodule</h2><div id="menu"></div><div class="bar"><div id="barFill"></div></div><small id="progress"></small></aside><main><article id="lesson" class="card"></article><section id="admin" class="card hidden" style="margin-top:20px"><h2 data-i="editor">Kurs-Editor</h2><p data-i="editorInfo">Hier kannst du Module bearbeiten oder ergänzen. Änderungen in diesem Browser sind zunächst nur lokal. Für alle Kollegen musst du eine neue course.json veröffentlichen.</p><div class="notice" data-i="security">Hinweis: Der Editor ist kein passwortgeschützter Server-Adminbereich. Auf einer öffentlichen Seite kann ihn jeder öffnen; nur die veröffentlichten Dateien bestimmen den gemeinsamen Kursinhalt.</div><div class="admin-grid"><div><label data-i="selectModule">Modul auswählen</label><select id="editSelect" style="width:100%"></select></div><div style="align-self:end"><button class="btn" id="newModule" data-i="newModule">+ Neues Modul</button></div></div><div class="admin-grid"><div><label>ID</label><input type="number" id="eId" min="1"></div><div><label data-i="subtitle">Untertitel</label><input type="text" id="eSubtitle"></div><div><label>Titel DE</label><input id="eTitleDe" type="text"></div><div><label>Titolo IT</label><input id="eTitleIt" type="text"></div><div><label>Erklärung DE</label><textarea id="eTextDe"></textarea></div><div><label>Spiegazione IT</label><textarea id="eTextIt"></textarea></div><div><label data-i="formula">Formel</label><input type="text" id="eFormula"></div><div><label>Beispiel DE</label><textarea id="eExampleDe"></textarea></div><div><label>Esempio IT</label><textarea id="eExampleIt"></textarea></div><div><label>Prüfungsfrage DE</label><input id="eQuestionDe"></div><div><label>Domanda IT</label><input id="eQuestionIt"></div><div><label data-i="choices">Antworten (3 Zeilen)</label><textarea id="eOptionsDe"></textarea></div><div><label>Risposte (3 righe)</label><textarea id="eOptionsIt"></textarea></div><div><label data-i="correct">Richtige Antwort (1–3)</label><input id="eCorrect" type="number" min="1" max="3"></div></div><p><button class="btn primary" id="saveModule" data-i="saveModule">Modul lokal speichern</button> <button class="btn" id="export" data-i="export">course.json exportieren</button> <label style="display:inline-block"><span class="btn" data-i="import">JSON importieren</span><input type="file" id="importFile" accept="application/json,.json" style="display:none"></label></p><p class="muted" data-i="publish">Damit Kollegen Updates erhalten: Exportierte course.json auf deinem Webhosting ersetzen. Beim nächsten Öffnen/Prüfen lädt die Plattform die neue Version.</p></section></main></div><footer class="footer">ElektroLab Academy · <span id="owner">Rosario Parisi</span> · IHK Lernhilfe · <span data-i="safety">Übungsschaltungen nur als Simulation; bei realen Anlagen Sicherheitsregeln beachten.</span></footer></div>
+<script>
+const copy={de:{headline:'Elektrotechnik verstehen. Schritt für Schritt.',intro:'Zweisprachiger Kurs mit Schaltungen, Formeln, Lösungswegen und Prüfungsfragen.',update:'Updates prüfen',admin:'Kurs bearbeiten',modules:'Kursmodule',explain:'Einfach erklärt',scheme:'Schaltbild / Darstellung',formula:'Formel',example:'IHK-Aufgabe mit Lösung',quiz:'Kontrollfrage',check:'Antwort prüfen',correctMsg:'Richtig!',wrongMsg:'Noch nicht richtig. Die richtige Antwort lautet:',done:'Als gelernt markieren',undone:'Als offen markieren',editor:'Kurs-Editor',editorInfo:'Du kannst Module bearbeiten oder ergänzen. Änderungen in diesem Browser sind zunächst nur lokal. Für alle Kollegen muss eine neue course.json veröffentlicht werden.',security:'Dieser Editor ist kein geschützter Server-Adminbereich. Er erzeugt nur lokale Entwürfe und exportiert Dateien.',selectModule:'Modul auswählen',newModule:'+ Neues Modul',subtitle:'Untertitel',choices:'Antworten (3 Zeilen)',correct:'Richtige Antwort (1–3)',saveModule:'Modul lokal speichern',export:'course.json exportieren',import:'JSON importieren',publish:'Für gemeinsame Updates: Exportierte course.json auf dem Webhosting ersetzen und die Versionsnummer erhöhen. Kollegen laden die neue Version bei der nächsten Aktualisierung.',safety:'Übungsschaltungen nur als Simulation; bei realen Anlagen Sicherheitsregeln beachten.',updated:'Kurs aktualisiert.',noUpdate:'Du verwendest die aktuelle veröffentlichte Version.',offline:'Veröffentlichte Kursdatei konnte nicht geladen werden. Die lokale Version bleibt verfügbar.',saved:'Modul lokal gespeichert. Exportiere course.json, um es zu veröffentlichen.',progress:'Module abgeschlossen',data:'Gegeben · Gesucht · Formel · Rechnung · Antwort'},it:{headline:'Capire l’elettrotecnica. Passo dopo passo.',intro:'Corso bilingue con schemi, formule, soluzioni ed esercizi per l’esame IHK.',update:'Controlla aggiornamenti',admin:'Modifica il corso',modules:'Moduli del corso',explain:'Spiegazione semplice',scheme:'Schema / rappresentazione',formula:'Formula',example:'Esercizio IHK con soluzione',quiz:'Domanda di verifica',check:'Controlla la risposta',correctMsg:'Corretto!',wrongMsg:'Non ancora. La risposta corretta è:',done:'Segna come completato',undone:'Segna da ripassare',editor:'Editor del corso',editorInfo:'Puoi modificare e aggiungere moduli. Le modifiche sono inizialmente locali. Per tutti i colleghi devi pubblicare un nuovo course.json.',security:'Questo editor non è un pannello amministratore protetto. Prepara bozze locali ed esporta file.',selectModule:'Scegli il modulo',newModule:'+ Nuovo modulo',subtitle:'Sottotitolo',choices:'Risposte (3 righe)',correct:'Risposta corretta (1–3)',saveModule:'Salva modulo localmente',export:'Esporta course.json',import:'Importa JSON',publish:'Per aggiornamenti comuni: sostituisci course.json sul sito e incrementa il numero di versione. I colleghi caricano la nuova versione al prossimo aggiornamento.',safety:'Circuiti solo didattici; su impianti reali rispettare le regole di sicurezza.',updated:'Corso aggiornato.',noUpdate:'Stai usando la versione pubblicata più recente.',offline:'Impossibile caricare il corso pubblicato. Rimane disponibile la versione locale.',saved:'Modulo salvato localmente. Esporta course.json per pubblicarlo.',progress:'Moduli completati',data:'Dati · Cercato · Formula · Calcolo · Risposta'}};
+let lang=localStorage.getItem('el-lang')||'de', data=null, active=Number(localStorage.getItem('el-active')||1), localDraft=null;const $=id=>document.getElementById(id), t=k=>copy[lang][k]||k;function notice(s){$('notice').textContent=s;$('notice').classList.remove('hidden');}function valid(d){return d&&Array.isArray(d.modules)&&d.modules.every(m=>Number.isInteger(+m.id)&&m.title&&m.explanation&&Array.isArray(m.options?.de)&&Array.isArray(m.options?.it));}function translation(){document.documentElement.lang=lang;$('lang').value=lang;document.querySelectorAll('[data-i]').forEach(el=>el.textContent=t(el.dataset.i));}function completed(){try{return JSON.parse(localStorage.getItem('el-done')||'[]')}catch{return []}}function markDone(){let d=completed();d=d.includes(active)?d.filter(x=>x!==active):[...d,active];localStorage.setItem('el-done',JSON.stringify(d));render();}function diagram(n){if(n===4||n===7)return '  + Uges\n    │\n  [ R1 ] ─── U1\n    │\n  [ R2 ] ─── U2\n    │\n   0 V';if(n===5)return '  + ──┬── [R1] ──┬── −\n       │          │\n       └── [R2] ──┘';if(n===6)return '  + ──[R1]──┬──[R2]──┬── −\n             └──[R3]──┘';if(n===15)return '+24V ──[STOP NC]──┬──[START NO]──┬──(K1)──0V\n                  └──[K1 NO]────┘';if(n===9)return '       I1 = 5 mA\n          ↓\n          ● ───→ I2 = 2 mA\n          │\n          ↓ I3 = 3 mA';return '+ U ──[ R ]──┐\n  │          │\n  └──────────┘';}
+function render(){translation();if(!data)return;const done=completed(),m=data.modules.find(x=>x.id===active)||data.modules[0];active=m.id;$('version').textContent='Version '+data.version+' · '+data.updated;$('owner').textContent=data.adminName||'ElektroLab';$('menu').innerHTML='';data.modules.forEach(x=>{const b=document.createElement('button');b.className='item'+(x.id===active?' active':'');b.innerHTML=(done.includes(x.id)?'✓ ':'')+x.id+'. '+esc(x.title[lang]||x.title.de)+'<span>'+esc(x.subtitle||'')+'</span>';b.onclick=()=>{active=x.id;localStorage.setItem('el-active',active);render()};$('menu').append(b)});$('barFill').style.width=100*done.filter(id=>data.modules.some(x=>x.id===id)).length/data.modules.length+'%';$('progress').textContent=done.filter(id=>data.modules.some(x=>x.id===id)).length+' / '+data.modules.length+' '+t('progress');$('lesson').innerHTML=`<span class="tag">Modul ${m.id}</span><h2 style="font-size:1.8rem;margin-top:13px">${esc(m.title[lang]||m.title.de)}</h2><p class="muted">${esc(m.subtitle||'')}</p><div class="section"><h3>01 · ${t('explain')}</h3><p>${esc(m.explanation[lang]||m.explanation.de)}</p></div><div class="section"><h3>02 · ${t('scheme')}</h3><div class="diagram"><pre>${esc(diagram(m.id))}</pre></div></div><div class="section"><h3>03 · ${t('formula')}</h3><div class="formula">${esc(m.formula||'')}</div></div><div class="section"><h3>04 · ${t('example')}</h3><p><strong>${t('data')}</strong></p><p>${esc(m.example[lang]||m.example.de)}</p></div><div class="section"><h3>05 · ${t('quiz')}</h3><p>${esc(m.question[lang]||m.question.de)}</p><div id="options"></div><button class="btn primary" id="check">${t('check')}</button><div id="feedback"></div></div><button class="btn" id="mark">${done.includes(m.id)?t('undone'):t('done')}</button>`;const choices=m.options[lang]||m.options.de;choices.forEach((op,i)=>{const l=document.createElement('label');l.className='quizopt';const input=document.createElement('input');input.type='radio';input.name='quiz';input.value=i;l.append(input,document.createTextNode(op));$('options').append(l)});$('check').onclick=()=>{const chosen=document.querySelector('input[name=quiz]:checked');if(!chosen)return;const correct=+chosen.value===+m.correct;$('feedback').className='answer '+(correct?'good':'bad');$('feedback').textContent=correct?t('correctMsg'):t('wrongMsg')+' '+choices[m.correct]};$('mark').onclick=markDone;fillSelect();}
+function esc(x){return String(x??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]))}function getDraft(){try{let d=JSON.parse(localStorage.getItem('el-draft')||'null');return valid(d)?d:null}catch{return null}}async function load(remoteOnly=false){if(!remoteOnly){const draft=getDraft();if(draft){data=draft;render();return;}}try{const response=await fetch('course.json?v='+Date.now(),{cache:'no-store'});if(!response.ok)throw Error('HTTP '+response.status);const fresh=await response.json();if(!valid(fresh))throw Error('Invalid JSON');const oldVersion=data?.version;data=fresh;localDraft=null;localStorage.removeItem('el-draft');render();if(remoteOnly)notice(oldVersion!==data.version?t('updated'):t('noUpdate'));}catch(e){if(!data){data=getDraft()||EMBEDDED;render()}if(remoteOnly)notice(t('offline'));}}function fillSelect(){const prev=$('editSelect').value;$('editSelect').innerHTML='';data.modules.forEach(m=>{const o=document.createElement('option');o.value=m.id;o.textContent=m.id+' · '+(m.title[lang]||m.title.de);$('editSelect').append(o)});$('editSelect').value=data.modules.some(m=>String(m.id)===prev)?prev:String(active);fillEditor();}function fillEditor(){const m=data.modules.find(m=>m.id===Number($('editSelect').value));if(!m)return;const vals={eId:m.id,eSubtitle:m.subtitle,eTitleDe:m.title.de,eTitleIt:m.title.it,eTextDe:m.explanation.de,eTextIt:m.explanation.it,eFormula:m.formula,eExampleDe:m.example.de,eExampleIt:m.example.it,eQuestionDe:m.question.de,eQuestionIt:m.question.it,eOptionsDe:m.options.de.join('\n'),eOptionsIt:m.options.it.join('\n'),eCorrect:m.correct+1};Object.entries(vals).forEach(([k,v])=>$(k).value=v)}function saveEditor(){const id=Number($('eId').value),de=$('eOptionsDe').value.trim().split('\n').map(s=>s.trim()),it=$('eOptionsIt').value.trim().split('\n').map(s=>s.trim()),correct=Number($('eCorrect').value)-1;if(!Number.isInteger(id)||id<1||de.length!==3||it.length!==3||correct<0||correct>2){alert('ID / Antworten / Risposte: 3 opzioni e risposta 1–3');return;}const m={id,subtitle:$('eSubtitle').value,title:{de:$('eTitleDe').value,it:$('eTitleIt').value},explanation:{de:$('eTextDe').value,it:$('eTextIt').value},formula:$('eFormula').value,example:{de:$('eExampleDe').value,it:$('eExampleIt').value},question:{de:$('eQuestionDe').value,it:$('eQuestionIt').value},options:{de,it},correct};const old=Number($('editSelect').value),ix=data.modules.findIndex(m=>m.id===old),duplicate=data.modules.some(m=>m.id===id&&m.id!==old);if(duplicate){alert('ID already exists');return;}if(ix>=0)data.modules[ix]=m;else data.modules.push(m);data.modules.sort((a,b)=>a.id-b.id);data.version=increment(data.version);data.updated=new Date().toISOString().slice(0,10);active=id;localStorage.setItem('el-draft',JSON.stringify(data));render();notice(t('saved'));}function increment(v){const p=String(v||'1.0.0').split('.').map(Number);return `${p[0]||1}.${p[1]||0}.${(p[2]||0)+1}`}function exportJson(){const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='course.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),3000)}
+$('lang').onchange=e=>{lang=e.target.value;localStorage.setItem('el-lang',lang);render()};$('refresh').onclick=()=>load(true);$('adminBtn').onclick=()=>{$('admin').classList.toggle('hidden');if(!$('admin').classList.contains('hidden'))$('admin').scrollIntoView({behavior:'smooth'})};$('editSelect').onchange=fillEditor;$('newModule').onclick=()=>{const id=Math.max(0,...data.modules.map(x=>x.id))+1;$('editSelect').innerHTML+='<option value="'+id+'">'+id+' · New</option>';$('editSelect').value=id;['eSubtitle','eTitleDe','eTitleIt','eTextDe','eTextIt','eFormula','eExampleDe','eExampleIt','eQuestionDe','eQuestionIt','eOptionsDe','eOptionsIt'].forEach(k=>$(k).value='');$('eId').value=id;$('eCorrect').value=1};$('saveModule').onclick=saveEditor;$('export').onclick=exportJson;$('importFile').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{const d=JSON.parse(await file.text());if(!valid(d))throw Error('Ungültiges Dateiformat');data=d;localStorage.setItem('el-draft',JSON.stringify(d));render();notice('JSON imported / importato')}catch(err){alert(err.message)}};
+// Local file fallback generated from bundled course data.
+const EMBEDDED=/*EMBED*/{
+  "version": "1.0.0",
+  "updated": "2026-11-13",
+  "siteTitle": "ElektroLab Academy",
+  "adminName": "Rosario Parisi",
+  "modules": [
+    {
+      "id": 1,
+      "title": {
+        "it": "Fondamenti elettrici",
+        "de": "Elektrische Grundlagen"
+      },
+      "subtitle": "U, I und R / Tensione, corrente e resistenza",
+      "explanation": {
+        "it": "La tensione U è la differenza di potenziale (Volt); la corrente I è la carica al secondo (Ampere); la resistenza R ostacola la corrente (Ohm).",
+        "de": "Die Spannung U ist die Potenzialdifferenz (Volt); die Stromstärke I ist die Ladung pro Sekunde (Ampere); der Widerstand R hemmt den Strom (Ohm)."
+      },
+      "formula": "U = R · I",
+      "example": {
+        "it": "12 V, 100 Ω: I = 12 / 100 = 0,12 A = 120 mA",
+        "de": "12 V, 100 Ω: I = 12 / 100 = 0,12 A = 120 mA"
+      },
+      "question": {
+        "it": "12 V an 100 Ω: I = ?",
+        "de": "12 V an 100 Ω: I = ?"
+      },
+      "options": {
+        "it": [
+          "0,12 A",
+          "12 A",
+          "120 A"
+        ],
+        "de": [
+          "0,12 A",
+          "12 A",
+          "120 A"
+        ]
+      },
+      "correct": 0
+    },
+    {
+      "id": 2,
+      "title": {
+        "it": "Unità di misura",
+        "de": "Einheiten und Vorsätze"
+      },
+      "subtitle": "milli, mikro, kilo, Mega",
+      "explanation": {
+        "it": "Prima di calcolare, converti le unità: 1 kΩ = 1000 Ω; 1 mA = 0,001 A; 1 µA = 0,000001 A.",
+        "de": "Vor jeder Berechnung Einheiten umrechnen: 1 kΩ = 1000 Ω; 1 mA = 0,001 A; 1 µA = 0,000001 A."
+      },
+      "formula": "1 k = 1000 · 1; 1 m = 0,001 · 1",
+      "example": {
+        "it": "250 mA = 0,25 A; 4,7 kΩ = 4700 Ω",
+        "de": "250 mA = 0,25 A; 4,7 kΩ = 4700 Ω"
+      },
+      "question": {
+        "it": "4,7 kΩ = ? Ω",
+        "de": "4,7 kΩ = ? Ω"
+      },
+      "options": {
+        "it": [
+          "47 Ω",
+          "4700 Ω",
+          "470 Ω"
+        ],
+        "de": [
+          "47 Ω",
+          "4700 Ω",
+          "470 Ω"
+        ]
+      },
+      "correct": 1
+    },
+    {
+      "id": 3,
+      "title": {
+        "it": "Legge di Ohm",
+        "de": "Ohmsches Gesetz"
+      },
+      "subtitle": "U = R · I",
+      "explanation": {
+        "it": "Copri la grandezza sconosciuta nel triangolo di Ohm: per I dividi U per R; per R dividi U per I.",
+        "de": "Im Ohmschen Dreieck die gesuchte Größe abdecken: Für I teilst du U durch R; für R teilst du U durch I."
+      },
+      "formula": "U = R · I  |  I = U / R  |  R = U / I",
+      "example": {
+        "it": "U = 24 V; R = 600 Ω → I = 24 / 600 = 0,04 A = 40 mA",
+        "de": "U = 24 V; R = 600 Ω → I = 24 / 600 = 0,04 A = 40 mA"
+      },
+      "question": {
+        "it": "24 V, 600 Ω: I = ?",
+        "de": "24 V, 600 Ω: I = ?"
+      },
+      "options": {
+        "it": [
+          "40 mA",
+          "4 A",
+          "400 mA"
+        ],
+        "de": [
+          "40 mA",
+          "4 A",
+          "400 mA"
+        ]
+      },
+      "correct": 0
+    },
+    {
+      "id": 4,
+      "title": {
+        "it": "Circuiti in serie",
+        "de": "Reihenschaltung"
+      },
+      "subtitle": "Rges = R1 + R2",
+      "explanation": {
+        "it": "In serie esiste un solo percorso: la corrente è uguale in ogni resistenza. La tensione totale è la somma delle cadute.",
+        "de": "In der Reihenschaltung gibt es nur einen Strompfad: überall fließt derselbe Strom. Die Teilspannungen addieren sich."
+      },
+      "formula": "Rges = R1 + R2; Uges = U1 + U2",
+      "example": {
+        "it": "12 V, R1 = 1 kΩ, R2 = 2 kΩ → I = 4 mA; U2 = 8 V",
+        "de": "12 V, R1 = 1 kΩ, R2 = 2 kΩ → I = 4 mA; U2 = 8 V"
+      },
+      "question": {
+        "it": "R1 = 220 Ω, R2 = 330 Ω: Rges = ?",
+        "de": "R1 = 220 Ω, R2 = 330 Ω: Rges = ?"
+      },
+      "options": {
+        "it": [
+          "110 Ω",
+          "550 Ω",
+          "72600 Ω"
+        ],
+        "de": [
+          "110 Ω",
+          "550 Ω",
+          "72600 Ω"
+        ]
+      },
+      "correct": 1
+    },
+    {
+      "id": 5,
+      "title": {
+        "it": "Circuiti in parallelo",
+        "de": "Parallelschaltung"
+      },
+      "subtitle": "Kehrwert / Reciproci",
+      "explanation": {
+        "it": "In parallelo la tensione è uguale su ogni ramo e la corrente si divide. Per due resistenze puoi usare prodotto diviso somma.",
+        "de": "In der Parallelschaltung liegt an jedem Zweig dieselbe Spannung an, der Strom teilt sich auf. Für zwei Widerstände gilt Produkt durch Summe."
+      },
+      "formula": "1/Rges = 1/R1 + 1/R2; Rges = (R1·R2)/(R1+R2)",
+      "example": {
+        "it": "R1 = 1 kΩ, R2 = 1 kΩ → Rges = 500 Ω",
+        "de": "R1 = 1 kΩ, R2 = 1 kΩ → Rges = 500 Ω"
+      },
+      "question": {
+        "it": "1 kΩ || 1 kΩ = ?",
+        "de": "1 kΩ || 1 kΩ = ?"
+      },
+      "options": {
+        "it": [
+          "2 kΩ",
+          "500 Ω",
+          "1 kΩ"
+        ],
+        "de": [
+          "2 kΩ",
+          "500 Ω",
+          "1 kΩ"
+        ]
+      },
+      "correct": 1
+    },
+    {
+      "id": 6,
+      "title": {
+        "it": "Circuiti misti",
+        "de": "Gemischte Schaltungen"
+      },
+      "subtitle": "Serie e parallelo insieme",
+      "explanation": {
+        "it": "Semplifica prima i rami paralleli, poi somma le resistenze in serie. Lavora sempre a piccoli blocchi.",
+        "de": "Zuerst parallele Zweige zusammenfassen, dann Reihenwiderstände addieren. Immer in kleinen Schritten rechnen."
+      },
+      "formula": "Rges = R1 + (R2·R3)/(R2+R3)",
+      "example": {
+        "it": "R1 = 1 kΩ; R2 = R3 = 2 kΩ → Rp = 1 kΩ; Rges = 2 kΩ",
+        "de": "R1 = 1 kΩ; R2 = R3 = 2 kΩ → Rp = 1 kΩ; Rges = 2 kΩ"
+      },
+      "question": {
+        "it": "R1 = 1 kΩ in serie con (2 kΩ || 2 kΩ): Rges?",
+        "de": "R1 = 1 kΩ in serie con (2 kΩ || 2 kΩ): Rges?"
+      },
+      "options": {
+        "it": [
+          "2 kΩ",
+          "3 kΩ",
+          "5 kΩ"
+        ],
+        "de": [
+          "2 kΩ",
+          "3 kΩ",
+          "5 kΩ"
+        ]
+      },
+      "correct": 0
+    },
+    {
+      "id": 7,
+      "title": {
+        "it": "Partitore di tensione",
+        "de": "Spannungsteiler"
+      },
+      "subtitle": "Unbelastet / Senza carico",
+      "explanation": {
+        "it": "Due resistenze in serie dividono la tensione. La tensione su R2 dipende dal rapporto tra R2 e la somma.",
+        "de": "Zwei Reihenwiderstände teilen die Spannung. Die Spannung über R2 hängt vom Verhältnis R2 zur Summe ab."
+      },
+      "formula": "U2 = Uges · R2/(R1+R2)",
+      "example": {
+        "it": "Uges = 12 V, R1 = 2 kΩ, R2 = 4 kΩ → U2 = 8 V",
+        "de": "Uges = 12 V, R1 = 2 kΩ, R2 = 4 kΩ → U2 = 8 V"
+      },
+      "question": {
+        "it": "12 V, R1=2 kΩ, R2=4 kΩ: U2?",
+        "de": "12 V, R1=2 kΩ, R2=4 kΩ: U2?"
+      },
+      "options": {
+        "it": [
+          "4 V",
+          "8 V",
+          "12 V"
+        ],
+        "de": [
+          "4 V",
+          "8 V",
+          "12 V"
+        ]
+      },
+      "correct": 1
+    },
+    {
+      "id": 8,
+      "title": {
+        "it": "Potenza e rendimento",
+        "de": "Leistung und Wirkungsgrad"
+      },
+      "subtitle": "P, W, η",
+      "explanation": {
+        "it": "La potenza è energia per unità di tempo. Il rendimento confronta la potenza utile con quella assorbita.",
+        "de": "Leistung ist Energie pro Zeit. Der Wirkungsgrad setzt Nutzleistung und zugeführte Leistung ins Verhältnis."
+      },
+      "formula": "P = U · I; η = Pout/Pin · 100 %",
+      "example": {
+        "it": "24 V · 0,5 A = 12 W; 8 W / 10 W = 80 %",
+        "de": "24 V · 0,5 A = 12 W; 8 W / 10 W = 80 %"
+      },
+      "question": {
+        "it": "24 V, 0,5 A: P = ?",
+        "de": "24 V, 0,5 A: P = ?"
+      },
+      "options": {
+        "it": [
+          "12 W",
+          "48 W",
+          "0,02 W"
+        ],
+        "de": [
+          "12 W",
+          "48 W",
+          "0,02 W"
+        ]
+      },
+      "correct": 0
+    },
+    {
+      "id": 9,
+      "title": {
+        "it": "Leggi di Kirchhoff",
+        "de": "Kirchhoffsche Gesetze"
+      },
+      "subtitle": "Nodi e maglie / Knoten und Maschen",
+      "explanation": {
+        "it": "La somma delle correnti entranti in un nodo è uguale alla somma delle correnti uscenti. In una maglia le tensioni algebriche si sommano a zero.",
+        "de": "In einem Knoten ist die Summe zufließender Ströme gleich der Summe abfließender Ströme. In einer Masche ist die Summe gerichteter Spannungen null."
+      },
+      "formula": "ΣI = 0; ΣU = 0",
+      "example": {
+        "it": "5 mA entrano; 2 mA escono in un ramo → 3 mA nell’altro",
+        "de": "5 mA fließen hinein; 2 mA hinaus in einem Zweig → 3 mA im anderen"
+      },
+      "question": {
+        "it": "5 mA in ingresso; 2 mA in un ramo. Nell’altro?",
+        "de": "5 mA in ingresso; 2 mA in un ramo. Nell’altro?"
+      },
+      "options": {
+        "it": [
+          "7 mA",
+          "3 mA",
+          "10 mA"
+        ],
+        "de": [
+          "7 mA",
+          "3 mA",
+          "10 mA"
+        ]
+      },
+      "correct": 1
+    },
+    {
+      "id": 10,
+      "title": {
+        "it": "Misurazioni",
+        "de": "Messtechnik"
+      },
+      "subtitle": "Multimetro",
+      "explanation": {
+        "it": "Il voltmetro si collega in parallelo; l’amperometro in serie. La misura di resistenza si fa a circuito disalimentato.",
+        "de": "Voltmeter parallel, Amperemeter in Reihe. Widerstände nur spannungsfrei messen."
+      },
+      "formula": "U = R · I",
+      "example": {
+        "it": "10 V su 1 kΩ → 10 mA",
+        "de": "10 V an 1 kΩ → 10 mA"
+      },
+      "question": {
+        "it": "Dove si collega il voltmetro?",
+        "de": "Dove si collega il voltmetro?"
+      },
+      "options": {
+        "it": [
+          "In serie",
+          "In parallelo",
+          "Al posto del fusibile"
+        ],
+        "de": [
+          "In serie",
+          "In parallelo",
+          "Al posto del fusibile"
+        ]
+      },
+      "correct": 1
+    },
+    {
+      "id": 11,
+      "title": {
+        "it": "Corrente alternata",
+        "de": "Wechselstromtechnik"
+      },
+      "subtitle": "AC / DC",
+      "explanation": {
+        "it": "In corrente alternata la polarità cambia periodicamente. La frequenza indica quanti cicli avvengono in un secondo.",
+        "de": "Bei Wechselstrom wechselt die Polarität periodisch. Die Frequenz ist die Zahl der Perioden pro Sekunde."
+      },
+      "formula": "f = 1/T; T = 1/f",
+      "example": {
+        "it": "50 Hz → T = 1/50 s = 20 ms",
+        "de": "50 Hz → T = 1/50 s = 20 ms"
+      },
+      "question": {
+        "it": "50 Hz: periodo?",
+        "de": "50 Hz: periodo?"
+      },
+      "options": {
+        "it": [
+          "20 ms",
+          "50 ms",
+          "2 ms"
+        ],
+        "de": [
+          "20 ms",
+          "50 ms",
+          "2 ms"
+        ]
+      },
+      "correct": 0
+    },
+    {
+      "id": 12,
+      "title": {
+        "it": "Componenti elettronici",
+        "de": "Elektronische Bauteile"
+      },
+      "subtitle": "R, C, L, diodi, transistor",
+      "explanation": {
+        "it": "I condensatori immagazzinano carica, le induttanze energia magnetica; i diodi conducono prevalentemente in un senso.",
+        "de": "Kondensatoren speichern Ladung, Spulen magnetische Energie; Dioden leiten überwiegend in einer Richtung."
+      },
+      "formula": "Q = C · U",
+      "example": {
+        "it": "C = 100 µF e U = 10 V → Q = 0,001 C",
+        "de": "C = 100 µF und U = 10 V → Q = 0,001 C"
+      },
+      "question": {
+        "it": "Un diodo ideale conduce principalmente...",
+        "de": "Un diodo ideale conduce principalmente..."
+      },
+      "options": {
+        "it": [
+          "In un senso",
+          "In entrambi",
+          "Mai"
+        ],
+        "de": [
+          "In un senso",
+          "In entrambi",
+          "Mai"
+        ]
+      },
+      "correct": 0
+    },
+    {
+      "id": 13,
+      "title": {
+        "it": "Alimentatori",
+        "de": "Netzteile und Geräte"
+      },
+      "subtitle": "Trasformazione e rettifica",
+      "explanation": {
+        "it": "Un alimentatore può trasformare, raddrizzare, filtrare e regolare la tensione. La scelta dipende dal circuito.",
+        "de": "Ein Netzteil kann Spannung transformieren, gleichrichten, glätten und regeln. Die Ausführung hängt von der Schaltung ab."
+      },
+      "formula": "P = U · I",
+      "example": {
+        "it": "5 V e 2 A → 10 W in uscita",
+        "de": "5 V und 2 A → 10 W Ausgangsleistung"
+      },
+      "question": {
+        "it": "5 V, 2 A: potenza?",
+        "de": "5 V, 2 A: potenza?"
+      },
+      "options": {
+        "it": [
+          "2,5 W",
+          "10 W",
+          "7 W"
+        ],
+        "de": [
+          "2,5 W",
+          "10 W",
+          "7 W"
+        ]
+      },
+      "correct": 1
+    },
+    {
+      "id": 14,
+      "title": {
+        "it": "Sicurezza elettrica",
+        "de": "Elektrische Sicherheit"
+      },
+      "subtitle": "Le cinque regole di sicurezza",
+      "explanation": {
+        "it": "Prima di qualsiasi intervento elettrico, applica le regole di sicurezza e le procedure aziendali. Gli esempi del corso sono simulazioni a bassa tensione.",
+        "de": "Vor elektrischen Arbeiten Sicherheitsregeln und betriebliche Vorgaben einhalten. Die Beispiele sind Kleinspannungs-Simulationen."
+      },
+      "formula": "Sicurezza prima del calcolo / Sicherheit vor Berechnung",
+      "example": {
+        "it": "Scollegare e verificare l’assenza di tensione da persona competente.",
+        "de": "Freischalten und Spannungsfreiheit durch fachkundige Person feststellen."
+      },
+      "question": {
+        "it": "Misurare Ω su circuito alimentato?",
+        "de": "Misurare Ω su circuito alimentato?"
+      },
+      "options": {
+        "it": [
+          "Sì",
+          "No",
+          "Solo a 230 V"
+        ],
+        "de": [
+          "Sì",
+          "No",
+          "Solo a 230 V"
+        ]
+      },
+      "correct": 1
+    },
+    {
+      "id": 15,
+      "title": {
+        "it": "Tecnica di controllo",
+        "de": "Steuerungstechnik"
+      },
+      "subtitle": "EVA, relè, Start/Stop, sensori, SPS",
+      "explanation": {
+        "it": "Eingabe → Verarbeitung → Ausgabe. START è spesso un contatto NO; STOP un NC. L’autoritenuta mantiene il relè attivo dopo aver lasciato START.",
+        "de": "Eingabe → Verarbeitung → Ausgabe. START ist oft ein Schließer, STOP ein Öffner. Die Selbsthaltung hält das Relais nach Loslassen von START aktiv."
+      },
+      "formula": "K1neu = STOP_OK ∧ (START ∨ K1alt)",
+      "example": {
+        "it": "Bobina a 24 V DC, 600 Ω a regime → I=24/600=40 mA",
+        "de": "Spule mit 24 V DC, 600 Ω stationär → I=24/600=40 mA"
+      },
+      "question": {
+        "it": "Quale contatto per START?",
+        "de": "Quale contatto per START?"
+      },
+      "options": {
+        "it": [
+          "Normalmente aperto (NO)",
+          "Normalmente chiuso (NC)",
+          "Nessuno"
+        ],
+        "de": [
+          "Normalmente aperto (NO)",
+          "Normalmente chiuso (NC)",
+          "Nessuno"
+        ]
+      },
+      "correct": 0
+    },
+    {
+      "id": 16,
+      "title": {
+        "it": "Allenamento IHK",
+        "de": "IHK-Prüfungstraining"
+      },
+      "subtitle": "Ripasso e diagnosi",
+      "explanation": {
+        "it": "Risolvere ogni problema con: dati, cercato, formula, trasformazione, calcolo, risultato e verifica.",
+        "de": "Jede Aufgabe lösen mit: Gegeben, Gesucht, Formel, Umstellen, Rechnen, Antwort und Probe."
+      },
+      "formula": "Gegeben → Gesucht → Formel → Rechnung → Antwort",
+      "example": {
+        "it": "24 V / 6 kΩ = 4 mA; verifica: 6000 Ω · 0,004 A = 24 V",
+        "de": "24 V / 6 kΩ = 4 mA; Probe: 6000 Ω · 0,004 A = 24 V"
+      },
+      "question": {
+        "it": "24 V / 6 kΩ?",
+        "de": "24 V / 6 kΩ?"
+      },
+      "options": {
+        "it": [
+          "4 mA",
+          "4 A",
+          "144 mA"
+        ],
+        "de": [
+          "4 mA",
+          "4 A",
+          "144 mA"
+        ]
+      },
+      "correct": 0
+    }
+  ]
+};
+load();
+</script></body></html>

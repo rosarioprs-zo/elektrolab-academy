@@ -1,0 +1,552 @@
+{
+  "version": "1.0.0",
+  "updated": "2026-11-13",
+  "siteTitle": "ElektroLab Academy",
+  "adminName": "Rosario Parisi",
+  "modules": [
+    {
+      "id": 1,
+      "title": {
+        "it": "Fondamenti elettrici",
+        "de": "Elektrische Grundlagen"
+      },
+      "subtitle": "U, I und R / Tensione, corrente e resistenza",
+      "explanation": {
+        "it": "La tensione U è la differenza di potenziale (Volt); la corrente I è la carica al secondo (Ampere); la resistenza R ostacola la corrente (Ohm).",
+        "de": "Die Spannung U ist die Potenzialdifferenz (Volt); die Stromstärke I ist die Ladung pro Sekunde (Ampere); der Widerstand R hemmt den Strom (Ohm)."
+      },
+      "formula": "U = R · I",
+      "example": {
+        "it": "12 V, 100 Ω: I = 12 / 100 = 0,12 A = 120 mA",
+        "de": "12 V, 100 Ω: I = 12 / 100 = 0,12 A = 120 mA"
+      },
+      "question": {
+        "it": "12 V an 100 Ω: I = ?",
+        "de": "12 V an 100 Ω: I = ?"
+      },
+      "options": {
+        "it": [
+          "0,12 A",
+          "12 A",
+          "120 A"
+        ],
+        "de": [
+          "0,12 A",
+          "12 A",
+          "120 A"
+        ]
+      },
+      "correct": 0
+    },
+    {
+      "id": 2,
+      "title": {
+        "it": "Unità di misura",
+        "de": "Einheiten und Vorsätze"
+      },
+      "subtitle": "milli, mikro, kilo, Mega",
+      "explanation": {
+        "it": "Prima di calcolare, converti le unità: 1 kΩ = 1000 Ω; 1 mA = 0,001 A; 1 µA = 0,000001 A.",
+        "de": "Vor jeder Berechnung Einheiten umrechnen: 1 kΩ = 1000 Ω; 1 mA = 0,001 A; 1 µA = 0,000001 A."
+      },
+      "formula": "1 k = 1000 · 1; 1 m = 0,001 · 1",
+      "example": {
+        "it": "250 mA = 0,25 A; 4,7 kΩ = 4700 Ω",
+        "de": "250 mA = 0,25 A; 4,7 kΩ = 4700 Ω"
+      },
+      "question": {
+        "it": "4,7 kΩ = ? Ω",
+        "de": "4,7 kΩ = ? Ω"
+      },
+      "options": {
+        "it": [
+          "47 Ω",
+          "4700 Ω",
+          "470 Ω"
+        ],
+        "de": [
+          "47 Ω",
+          "4700 Ω",
+          "470 Ω"
+        ]
+      },
+      "correct": 1
+    },
+    {
+      "id": 3,
+      "title": {
+        "it": "Legge di Ohm",
+        "de": "Ohmsches Gesetz"
+      },
+      "subtitle": "U = R · I",
+      "explanation": {
+        "it": "Copri la grandezza sconosciuta nel triangolo di Ohm: per I dividi U per R; per R dividi U per I.",
+        "de": "Im Ohmschen Dreieck die gesuchte Größe abdecken: Für I teilst du U durch R; für R teilst du U durch I."
+      },
+      "formula": "U = R · I  |  I = U / R  |  R = U / I",
+      "example": {
+        "it": "U = 24 V; R = 600 Ω → I = 24 / 600 = 0,04 A = 40 mA",
+        "de": "U = 24 V; R = 600 Ω → I = 24 / 600 = 0,04 A = 40 mA"
+      },
+      "question": {
+        "it": "24 V, 600 Ω: I = ?",
+        "de": "24 V, 600 Ω: I = ?"
+      },
+      "options": {
+        "it": [
+          "40 mA",
+          "4 A",
+          "400 mA"
+        ],
+        "de": [
+          "40 mA",
+          "4 A",
+          "400 mA"
+        ]
+      },
+      "correct": 0
+    },
+    {
+      "id": 4,
+      "title": {
+        "it": "Circuiti in serie",
+        "de": "Reihenschaltung"
+      },
+      "subtitle": "Rges = R1 + R2",
+      "explanation": {
+        "it": "In serie esiste un solo percorso: la corrente è uguale in ogni resistenza. La tensione totale è la somma delle cadute.",
+        "de": "In der Reihenschaltung gibt es nur einen Strompfad: überall fließt derselbe Strom. Die Teilspannungen addieren sich."
+      },
+      "formula": "Rges = R1 + R2; Uges = U1 + U2",
+      "example": {
+        "it": "12 V, R1 = 1 kΩ, R2 = 2 kΩ → I = 4 mA; U2 = 8 V",
+        "de": "12 V, R1 = 1 kΩ, R2 = 2 kΩ → I = 4 mA; U2 = 8 V"
+      },
+      "question": {
+        "it": "R1 = 220 Ω, R2 = 330 Ω: Rges = ?",
+        "de": "R1 = 220 Ω, R2 = 330 Ω: Rges = ?"
+      },
+      "options": {
+        "it": [
+          "110 Ω",
+          "550 Ω",
+          "72600 Ω"
+        ],
+        "de": [
+          "110 Ω",
+          "550 Ω",
+          "72600 Ω"
+        ]
+      },
+      "correct": 1
+    },
+    {
+      "id": 5,
+      "title": {
+        "it": "Circuiti in parallelo",
+        "de": "Parallelschaltung"
+      },
+      "subtitle": "Kehrwert / Reciproci",
+      "explanation": {
+        "it": "In parallelo la tensione è uguale su ogni ramo e la corrente si divide. Per due resistenze puoi usare prodotto diviso somma.",
+        "de": "In der Parallelschaltung liegt an jedem Zweig dieselbe Spannung an, der Strom teilt sich auf. Für zwei Widerstände gilt Produkt durch Summe."
+      },
+      "formula": "1/Rges = 1/R1 + 1/R2; Rges = (R1·R2)/(R1+R2)",
+      "example": {
+        "it": "R1 = 1 kΩ, R2 = 1 kΩ → Rges = 500 Ω",
+        "de": "R1 = 1 kΩ, R2 = 1 kΩ → Rges = 500 Ω"
+      },
+      "question": {
+        "it": "1 kΩ || 1 kΩ = ?",
+        "de": "1 kΩ || 1 kΩ = ?"
+      },
+      "options": {
+        "it": [
+          "2 kΩ",
+          "500 Ω",
+          "1 kΩ"
+        ],
+        "de": [
+          "2 kΩ",
+          "500 Ω",
+          "1 kΩ"
+        ]
+      },
+      "correct": 1
+    },
+    {
+      "id": 6,
+      "title": {
+        "it": "Circuiti misti",
+        "de": "Gemischte Schaltungen"
+      },
+      "subtitle": "Serie e parallelo insieme",
+      "explanation": {
+        "it": "Semplifica prima i rami paralleli, poi somma le resistenze in serie. Lavora sempre a piccoli blocchi.",
+        "de": "Zuerst parallele Zweige zusammenfassen, dann Reihenwiderstände addieren. Immer in kleinen Schritten rechnen."
+      },
+      "formula": "Rges = R1 + (R2·R3)/(R2+R3)",
+      "example": {
+        "it": "R1 = 1 kΩ; R2 = R3 = 2 kΩ → Rp = 1 kΩ; Rges = 2 kΩ",
+        "de": "R1 = 1 kΩ; R2 = R3 = 2 kΩ → Rp = 1 kΩ; Rges = 2 kΩ"
+      },
+      "question": {
+        "it": "R1 = 1 kΩ in serie con (2 kΩ || 2 kΩ): Rges?",
+        "de": "R1 = 1 kΩ in serie con (2 kΩ || 2 kΩ): Rges?"
+      },
+      "options": {
+        "it": [
+          "2 kΩ",
+          "3 kΩ",
+          "5 kΩ"
+        ],
+        "de": [
+          "2 kΩ",
+          "3 kΩ",
+          "5 kΩ"
+        ]
+      },
+      "correct": 0
+    },
+    {
+      "id": 7,
+      "title": {
+        "it": "Partitore di tensione",
+        "de": "Spannungsteiler"
+      },
+      "subtitle": "Unbelastet / Senza carico",
+      "explanation": {
+        "it": "Due resistenze in serie dividono la tensione. La tensione su R2 dipende dal rapporto tra R2 e la somma.",
+        "de": "Zwei Reihenwiderstände teilen die Spannung. Die Spannung über R2 hängt vom Verhältnis R2 zur Summe ab."
+      },
+      "formula": "U2 = Uges · R2/(R1+R2)",
+      "example": {
+        "it": "Uges = 12 V, R1 = 2 kΩ, R2 = 4 kΩ → U2 = 8 V",
+        "de": "Uges = 12 V, R1 = 2 kΩ, R2 = 4 kΩ → U2 = 8 V"
+      },
+      "question": {
+        "it": "12 V, R1=2 kΩ, R2=4 kΩ: U2?",
+        "de": "12 V, R1=2 kΩ, R2=4 kΩ: U2?"
+      },
+      "options": {
+        "it": [
+          "4 V",
+          "8 V",
+          "12 V"
+        ],
+        "de": [
+          "4 V",
+          "8 V",
+          "12 V"
+        ]
+      },
+      "correct": 1
+    },
+    {
+      "id": 8,
+      "title": {
+        "it": "Potenza e rendimento",
+        "de": "Leistung und Wirkungsgrad"
+      },
+      "subtitle": "P, W, η",
+      "explanation": {
+        "it": "La potenza è energia per unità di tempo. Il rendimento confronta la potenza utile con quella assorbita.",
+        "de": "Leistung ist Energie pro Zeit. Der Wirkungsgrad setzt Nutzleistung und zugeführte Leistung ins Verhältnis."
+      },
+      "formula": "P = U · I; η = Pout/Pin · 100 %",
+      "example": {
+        "it": "24 V · 0,5 A = 12 W; 8 W / 10 W = 80 %",
+        "de": "24 V · 0,5 A = 12 W; 8 W / 10 W = 80 %"
+      },
+      "question": {
+        "it": "24 V, 0,5 A: P = ?",
+        "de": "24 V, 0,5 A: P = ?"
+      },
+      "options": {
+        "it": [
+          "12 W",
+          "48 W",
+          "0,02 W"
+        ],
+        "de": [
+          "12 W",
+          "48 W",
+          "0,02 W"
+        ]
+      },
+      "correct": 0
+    },
+    {
+      "id": 9,
+      "title": {
+        "it": "Leggi di Kirchhoff",
+        "de": "Kirchhoffsche Gesetze"
+      },
+      "subtitle": "Nodi e maglie / Knoten und Maschen",
+      "explanation": {
+        "it": "La somma delle correnti entranti in un nodo è uguale alla somma delle correnti uscenti. In una maglia le tensioni algebriche si sommano a zero.",
+        "de": "In einem Knoten ist die Summe zufließender Ströme gleich der Summe abfließender Ströme. In einer Masche ist die Summe gerichteter Spannungen null."
+      },
+      "formula": "ΣI = 0; ΣU = 0",
+      "example": {
+        "it": "5 mA entrano; 2 mA escono in un ramo → 3 mA nell’altro",
+        "de": "5 mA fließen hinein; 2 mA hinaus in einem Zweig → 3 mA im anderen"
+      },
+      "question": {
+        "it": "5 mA in ingresso; 2 mA in un ramo. Nell’altro?",
+        "de": "5 mA in ingresso; 2 mA in un ramo. Nell’altro?"
+      },
+      "options": {
+        "it": [
+          "7 mA",
+          "3 mA",
+          "10 mA"
+        ],
+        "de": [
+          "7 mA",
+          "3 mA",
+          "10 mA"
+        ]
+      },
+      "correct": 1
+    },
+    {
+      "id": 10,
+      "title": {
+        "it": "Misurazioni",
+        "de": "Messtechnik"
+      },
+      "subtitle": "Multimetro",
+      "explanation": {
+        "it": "Il voltmetro si collega in parallelo; l’amperometro in serie. La misura di resistenza si fa a circuito disalimentato.",
+        "de": "Voltmeter parallel, Amperemeter in Reihe. Widerstände nur spannungsfrei messen."
+      },
+      "formula": "U = R · I",
+      "example": {
+        "it": "10 V su 1 kΩ → 10 mA",
+        "de": "10 V an 1 kΩ → 10 mA"
+      },
+      "question": {
+        "it": "Dove si collega il voltmetro?",
+        "de": "Dove si collega il voltmetro?"
+      },
+      "options": {
+        "it": [
+          "In serie",
+          "In parallelo",
+          "Al posto del fusibile"
+        ],
+        "de": [
+          "In serie",
+          "In parallelo",
+          "Al posto del fusibile"
+        ]
+      },
+      "correct": 1
+    },
+    {
+      "id": 11,
+      "title": {
+        "it": "Corrente alternata",
+        "de": "Wechselstromtechnik"
+      },
+      "subtitle": "AC / DC",
+      "explanation": {
+        "it": "In corrente alternata la polarità cambia periodicamente. La frequenza indica quanti cicli avvengono in un secondo.",
+        "de": "Bei Wechselstrom wechselt die Polarität periodisch. Die Frequenz ist die Zahl der Perioden pro Sekunde."
+      },
+      "formula": "f = 1/T; T = 1/f",
+      "example": {
+        "it": "50 Hz → T = 1/50 s = 20 ms",
+        "de": "50 Hz → T = 1/50 s = 20 ms"
+      },
+      "question": {
+        "it": "50 Hz: periodo?",
+        "de": "50 Hz: periodo?"
+      },
+      "options": {
+        "it": [
+          "20 ms",
+          "50 ms",
+          "2 ms"
+        ],
+        "de": [
+          "20 ms",
+          "50 ms",
+          "2 ms"
+        ]
+      },
+      "correct": 0
+    },
+    {
+      "id": 12,
+      "title": {
+        "it": "Componenti elettronici",
+        "de": "Elektronische Bauteile"
+      },
+      "subtitle": "R, C, L, diodi, transistor",
+      "explanation": {
+        "it": "I condensatori immagazzinano carica, le induttanze energia magnetica; i diodi conducono prevalentemente in un senso.",
+        "de": "Kondensatoren speichern Ladung, Spulen magnetische Energie; Dioden leiten überwiegend in einer Richtung."
+      },
+      "formula": "Q = C · U",
+      "example": {
+        "it": "C = 100 µF e U = 10 V → Q = 0,001 C",
+        "de": "C = 100 µF und U = 10 V → Q = 0,001 C"
+      },
+      "question": {
+        "it": "Un diodo ideale conduce principalmente...",
+        "de": "Un diodo ideale conduce principalmente..."
+      },
+      "options": {
+        "it": [
+          "In un senso",
+          "In entrambi",
+          "Mai"
+        ],
+        "de": [
+          "In un senso",
+          "In entrambi",
+          "Mai"
+        ]
+      },
+      "correct": 0
+    },
+    {
+      "id": 13,
+      "title": {
+        "it": "Alimentatori",
+        "de": "Netzteile und Geräte"
+      },
+      "subtitle": "Trasformazione e rettifica",
+      "explanation": {
+        "it": "Un alimentatore può trasformare, raddrizzare, filtrare e regolare la tensione. La scelta dipende dal circuito.",
+        "de": "Ein Netzteil kann Spannung transformieren, gleichrichten, glätten und regeln. Die Ausführung hängt von der Schaltung ab."
+      },
+      "formula": "P = U · I",
+      "example": {
+        "it": "5 V e 2 A → 10 W in uscita",
+        "de": "5 V und 2 A → 10 W Ausgangsleistung"
+      },
+      "question": {
+        "it": "5 V, 2 A: potenza?",
+        "de": "5 V, 2 A: potenza?"
+      },
+      "options": {
+        "it": [
+          "2,5 W",
+          "10 W",
+          "7 W"
+        ],
+        "de": [
+          "2,5 W",
+          "10 W",
+          "7 W"
+        ]
+      },
+      "correct": 1
+    },
+    {
+      "id": 14,
+      "title": {
+        "it": "Sicurezza elettrica",
+        "de": "Elektrische Sicherheit"
+      },
+      "subtitle": "Le cinque regole di sicurezza",
+      "explanation": {
+        "it": "Prima di qualsiasi intervento elettrico, applica le regole di sicurezza e le procedure aziendali. Gli esempi del corso sono simulazioni a bassa tensione.",
+        "de": "Vor elektrischen Arbeiten Sicherheitsregeln und betriebliche Vorgaben einhalten. Die Beispiele sind Kleinspannungs-Simulationen."
+      },
+      "formula": "Sicurezza prima del calcolo / Sicherheit vor Berechnung",
+      "example": {
+        "it": "Scollegare e verificare l’assenza di tensione da persona competente.",
+        "de": "Freischalten und Spannungsfreiheit durch fachkundige Person feststellen."
+      },
+      "question": {
+        "it": "Misurare Ω su circuito alimentato?",
+        "de": "Misurare Ω su circuito alimentato?"
+      },
+      "options": {
+        "it": [
+          "Sì",
+          "No",
+          "Solo a 230 V"
+        ],
+        "de": [
+          "Sì",
+          "No",
+          "Solo a 230 V"
+        ]
+      },
+      "correct": 1
+    },
+    {
+      "id": 15,
+      "title": {
+        "it": "Tecnica di controllo",
+        "de": "Steuerungstechnik"
+      },
+      "subtitle": "EVA, relè, Start/Stop, sensori, SPS",
+      "explanation": {
+        "it": "Eingabe → Verarbeitung → Ausgabe. START è spesso un contatto NO; STOP un NC. L’autoritenuta mantiene il relè attivo dopo aver lasciato START.",
+        "de": "Eingabe → Verarbeitung → Ausgabe. START ist oft ein Schließer, STOP ein Öffner. Die Selbsthaltung hält das Relais nach Loslassen von START aktiv."
+      },
+      "formula": "K1neu = STOP_OK ∧ (START ∨ K1alt)",
+      "example": {
+        "it": "Bobina a 24 V DC, 600 Ω a regime → I=24/600=40 mA",
+        "de": "Spule mit 24 V DC, 600 Ω stationär → I=24/600=40 mA"
+      },
+      "question": {
+        "it": "Quale contatto per START?",
+        "de": "Quale contatto per START?"
+      },
+      "options": {
+        "it": [
+          "Normalmente aperto (NO)",
+          "Normalmente chiuso (NC)",
+          "Nessuno"
+        ],
+        "de": [
+          "Normalmente aperto (NO)",
+          "Normalmente chiuso (NC)",
+          "Nessuno"
+        ]
+      },
+      "correct": 0
+    },
+    {
+      "id": 16,
+      "title": {
+        "it": "Allenamento IHK",
+        "de": "IHK-Prüfungstraining"
+      },
+      "subtitle": "Ripasso e diagnosi",
+      "explanation": {
+        "it": "Risolvere ogni problema con: dati, cercato, formula, trasformazione, calcolo, risultato e verifica.",
+        "de": "Jede Aufgabe lösen mit: Gegeben, Gesucht, Formel, Umstellen, Rechnen, Antwort und Probe."
+      },
+      "formula": "Gegeben → Gesucht → Formel → Rechnung → Antwort",
+      "example": {
+        "it": "24 V / 6 kΩ = 4 mA; verifica: 6000 Ω · 0,004 A = 24 V",
+        "de": "24 V / 6 kΩ = 4 mA; Probe: 6000 Ω · 0,004 A = 24 V"
+      },
+      "question": {
+        "it": "24 V / 6 kΩ?",
+        "de": "24 V / 6 kΩ?"
+      },
+      "options": {
+        "it": [
+          "4 mA",
+          "4 A",
+          "144 mA"
+        ],
+        "de": [
+          "4 mA",
+          "4 A",
+          "144 mA"
+        ]
+      },
+      "correct": 0
+    }
+  ]
+}
