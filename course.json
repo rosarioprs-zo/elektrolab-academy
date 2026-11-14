@@ -1,5 +1,5 @@
 {
-  "version": "2.1.0",
+  "version": "2.2.0",
   "updated": "2026-11-14",
   "siteTitle": "ElektroLab Academy",
   "adminName": "Rosario Parisi",
@@ -153,6 +153,263 @@
           },
           "sourceSlides": "12–13",
           "sourceId": "dozent-grundlagen-2026-11-14"
+        },
+        {
+          "title": {
+            "de": "Stromkreis und Schaltzeichen",
+            "it": "Circuito e simboli elettrici"
+          },
+          "body": {
+            "de": "Ein Kreis braucht Quelle, Hin- und Rückleiter sowie Verbraucher; ein offener Schalter unterbricht den Stromweg. Für Schaltpläne werden vereinbarte Symbole verwendet.",
+            "it": "Un circuito ha un generatore, conduttori di andata e ritorno e un utilizzatore; un interruttore aperto interrompe la corrente. Gli schemi usano simboli standard."
+          },
+          "diagram": "  + | | − ── o/ o ── (X)\n  │                 │\n  └─────────────────┘",
+          "formula": "I = Q / t",
+          "steps": {
+            "de": [
+              "Quelle und Verbraucher benennen.",
+              "Prüfen, ob der Stromweg geschlossen ist."
+            ],
+            "it": [
+              "Individua generatore e carico.",
+              "Controlla se il circuito è chiuso."
+            ]
+          },
+          "sourceBookPages": "23–25"
+        },
+        {
+          "title": {
+            "de": "Ladung, Elektronen und Ionen",
+            "it": "Carica, elettroni e ioni"
+          },
+          "body": {
+            "de": "Gleichnamige Ladungen stoßen sich ab, ungleichnamige ziehen sich an. Atome haben Protonen, Neutronen und Elektronen. Ein Ion hat Elektronen aufgenommen oder abgegeben.",
+            "it": "Cariche uguali si respingono e opposte si attraggono. Gli atomi hanno protoni, neutroni ed elettroni. Uno ione ha acquistato o ceduto elettroni."
+          },
+          "diagram": " (+) ←      → (+)\n (+) →      ← (−)",
+          "formula": "Q = n·e; |e| = 1,602·10⁻¹⁹ C",
+          "steps": {
+            "de": [
+              "n=|Q|/e nach Division auf beiden Seiten.",
+              "1 C entspricht ungefähr 6,24·10¹⁸ Elementarladungen."
+            ],
+            "it": [
+              "Per n isola la formula: n=|Q|/e.",
+              "1 C equivale a circa 6,24·10¹⁸ cariche elementari."
+            ]
+          },
+          "sourceBookPages": "26–27"
+        },
+        {
+          "title": {
+            "de": "Spannung und Potenzial",
+            "it": "Tensione e potenziale"
+          },
+          "body": {
+            "de": "Spannung U ist ein Unterschied zwischen zwei Potenzialen. Ein Voltmeter wird parallel angeschlossen.",
+            "it": "La tensione U è la differenza tra due potenziali. Il voltmetro si collega in parallelo."
+          },
+          "diagram": " A ● 12 V ────────● B 5 V\n       UAB = 7 V",
+          "formula": "UAB = φA − φB; U = W / Q",
+          "steps": {
+            "de": [
+              "Bezugspunkt wählen.",
+              "UAB=12 V−5 V=7 V.",
+              "Gesucht W: U=W/Q → W=U·Q."
+            ],
+            "it": [
+              "Scegli un riferimento.",
+              "UAB=12 V−5 V=7 V.",
+              "Se cerchi W: U=W/Q → W=U·Q."
+            ]
+          },
+          "sourceBookPages": "28–30"
+        },
+        {
+          "title": {
+            "de": "Stromarten und Stromwirkungen",
+            "it": "Tipi ed effetti della corrente"
+          },
+          "body": {
+            "de": "Gleichstrom behält seine Richtung; Wechselstrom ändert Richtung periodisch. Strom kann Wärme, Magnetfelder, Licht und chemische Wirkungen erzeugen.",
+            "it": "La corrente continua mantiene il verso; la corrente alternata cambia periodicamente direzione. La corrente può produrre calore, magnetismo, luce ed effetti chimici."
+          },
+          "diagram": "DC: ━━━━━━━━━\nAC: ~~~~~~~~",
+          "formula": "I = Q / t",
+          "steps": {
+            "de": [
+              "Beispiele: Batterie = DC, Netzspannung = AC.",
+              "Nicht jeder Gleichstrom ist zeitlich konstant (pulsierender Gleichstrom)."
+            ],
+            "it": [
+              "Esempi: batteria = DC, rete = AC.",
+              "La corrente unidirezionale può anche essere pulsante."
+            ]
+          },
+          "sourceBookPages": "31–34"
+        },
+        {
+          "title": {
+            "de": "Stromdichte J",
+            "it": "Densità di corrente J"
+          },
+          "body": {
+            "de": "Stromdichte ist Strom je Leiterquerschnitt. Bei gleichem Strom steigt sie bei kleinerem Querschnitt.",
+            "it": "La densità di corrente è la corrente divisa per la sezione del conduttore. A parità di corrente aumenta quando la sezione diminuisce."
+          },
+          "diagram": " I → ━━━━━━━█ dünner / sottile",
+          "formula": "J = I / A; I = J·A; A = I/J",
+          "steps": {
+            "de": [
+              "I=12 A, A=4 mm²: J=12/4=3 A/mm².",
+              "Bei A=1,5 mm²: J=12/1,5=8 A/mm²."
+            ],
+            "it": [
+              "Con I=12 A e A=4 mm²: J=3 A/mm².",
+              "Con A=1,5 mm²: J=8 A/mm²."
+            ]
+          },
+          "sourceBookPages": "35"
+        },
+        {
+          "title": {
+            "de": "Stromkreis und Schaltzeichen",
+            "it": "Circuito e simboli elettrici"
+          },
+          "body": {
+            "de": "Ein Kreis braucht Quelle, Hin- und Rückleiter sowie Verbraucher; ein offener Schalter unterbricht den Stromweg. Für Schaltpläne werden vereinbarte Symbole verwendet.",
+            "it": "Un circuito ha un generatore, conduttori di andata e ritorno e un utilizzatore; un interruttore aperto interrompe la corrente. Gli schemi usano simboli standard."
+          },
+          "diagram": "  + | | − ── o/ o ── (X)\n  │                 │\n  └─────────────────┘",
+          "formula": "I = Q / t",
+          "steps": {
+            "de": [
+              "Quelle und Verbraucher benennen.",
+              "Prüfen, ob der Stromweg geschlossen ist."
+            ],
+            "it": [
+              "Individua generatore e carico.",
+              "Controlla se il circuito è chiuso."
+            ]
+          },
+          "sourceBookPages": "23–25"
+        },
+        {
+          "title": {
+            "de": "Ladung, Elektronen und Ionen",
+            "it": "Carica, elettroni e ioni"
+          },
+          "body": {
+            "de": "Gleichnamige Ladungen stoßen sich ab, ungleichnamige ziehen sich an. Atome haben Protonen, Neutronen und Elektronen. Ein Ion hat Elektronen aufgenommen oder abgegeben.",
+            "it": "Cariche uguali si respingono e opposte si attraggono. Gli atomi hanno protoni, neutroni ed elettroni. Uno ione ha acquistato o ceduto elettroni."
+          },
+          "diagram": " (+) ←      → (+)\n (+) →      ← (−)",
+          "formula": "Q = n·e; |e| = 1,602·10⁻¹⁹ C",
+          "steps": {
+            "de": [
+              "n=|Q|/e nach Division auf beiden Seiten.",
+              "1 C entspricht ungefähr 6,24·10¹⁸ Elementarladungen."
+            ],
+            "it": [
+              "Per n isola la formula: n=|Q|/e.",
+              "1 C equivale a circa 6,24·10¹⁸ cariche elementari."
+            ]
+          },
+          "sourceBookPages": "26–27"
+        },
+        {
+          "title": {
+            "de": "Spannung und Potenzial",
+            "it": "Tensione e potenziale"
+          },
+          "body": {
+            "de": "Spannung U ist ein Unterschied zwischen zwei Potenzialen. Ein Voltmeter wird parallel angeschlossen.",
+            "it": "La tensione U è la differenza tra due potenziali. Il voltmetro si collega in parallelo."
+          },
+          "diagram": " A ● 12 V ────────● B 5 V\n       UAB = 7 V",
+          "formula": "UAB = φA − φB; U = W / Q",
+          "steps": {
+            "de": [
+              "Bezugspunkt wählen.",
+              "UAB=12 V−5 V=7 V.",
+              "Gesucht W: U=W/Q → W=U·Q."
+            ],
+            "it": [
+              "Scegli un riferimento.",
+              "UAB=12 V−5 V=7 V.",
+              "Se cerchi W: U=W/Q → W=U·Q."
+            ]
+          },
+          "sourceBookPages": "28–30"
+        },
+        {
+          "title": {
+            "de": "Stromarten und Stromwirkungen",
+            "it": "Tipi ed effetti della corrente"
+          },
+          "body": {
+            "de": "Gleichstrom behält seine Richtung; Wechselstrom ändert Richtung periodisch. Strom kann Wärme, Magnetfelder, Licht und chemische Wirkungen erzeugen.",
+            "it": "La corrente continua mantiene il verso; la corrente alternata cambia periodicamente direzione. La corrente può produrre calore, magnetismo, luce ed effetti chimici."
+          },
+          "diagram": "DC: ━━━━━━━━━\nAC: ~~~~~~~~",
+          "formula": "I = Q / t",
+          "steps": {
+            "de": [
+              "Beispiele: Batterie = DC, Netzspannung = AC.",
+              "Nicht jeder Gleichstrom ist zeitlich konstant (pulsierender Gleichstrom)."
+            ],
+            "it": [
+              "Esempi: batteria = DC, rete = AC.",
+              "La corrente unidirezionale può anche essere pulsante."
+            ]
+          },
+          "sourceBookPages": "31–34"
+        },
+        {
+          "title": {
+            "de": "Stromdichte J",
+            "it": "Densità di corrente J"
+          },
+          "body": {
+            "de": "Stromdichte ist Strom je Leiterquerschnitt. Bei gleichem Strom steigt sie bei kleinerem Querschnitt.",
+            "it": "La densità di corrente è la corrente divisa per la sezione del conduttore. A parità di corrente aumenta quando la sezione diminuisce."
+          },
+          "diagram": " I → ━━━━━━━█ dünner / sottile",
+          "formula": "J = I / A; I = J·A; A = I/J",
+          "steps": {
+            "de": [
+              "I=12 A, A=4 mm²: J=12/4=3 A/mm².",
+              "Bei A=1,5 mm²: J=12/1,5=8 A/mm²."
+            ],
+            "it": [
+              "Con I=12 A e A=4 mm²: J=3 A/mm².",
+              "Con A=1,5 mm²: J=8 A/mm²."
+            ]
+          },
+          "sourceBookPages": "35"
+        },
+        {
+          "title": {
+            "de": "Arten der Spannungserzeugung",
+            "it": "Come nasce una tensione"
+          },
+          "body": {
+            "de": "Elektrische Spannung entsteht durch Trennung elektrischer Ladungen. Das ist zum Beispiel mit Magnetbewegung (Induktion), chemischer Reaktion, Thermoelement, Licht oder Piezoeffekt möglich.",
+            "it": "La tensione nasce dalla separazione delle cariche. Questo è possibile con induzione magnetica, reazione chimica, termocoppia, luce o effetto piezoelettrico."
+          },
+          "diagram": "Magnet + Spule → Spannung\nBatterie → chemisch/elettrochimico",
+          "formula": "U = W/Q",
+          "steps": {
+            "de": [
+              "Zwischen den Anschlüssen wird eine Potenzialdifferenz erzeugt.",
+              "Der Erzeugungsmechanismus bestimmt, wann die Quelle Spannung liefert."
+            ],
+            "it": [
+              "Tra i morsetti si crea una differenza di potenziale.",
+              "Il principio fisico determina quando la sorgente fornisce tensione."
+            ]
+          },
+          "sourceBookPages": "29"
         }
       ],
       "worked": {
@@ -354,6 +611,121 @@
           },
           "sourceSlides": "10, 15, 19",
           "sourceId": "dozent-grundlagen-2026-11-14"
+        },
+        {
+          "title": {
+            "de": "SI-Einheiten und Rechenvorsätze",
+            "it": "Unità SI e prefissi"
+          },
+          "body": {
+            "de": "Vor dem Rechnen immer die Einheiten passend machen: k=10³, M=10⁶, m=10⁻³, µ=10⁻⁶.",
+            "it": "Prima dei calcoli uniforma sempre le unità: k=10³, M=10⁶, m=10⁻³, µ=10⁻⁶."
+          },
+          "diagram": "1 kΩ = 1000 Ω\n1 mA = 0,001 A\n1 µA = 0,000001 A",
+          "formula": "2,2 kΩ = 2200 Ω; 750 mA = 0,75 A",
+          "steps": {
+            "de": [
+              "Komma beim Wechsel von k nach Grundeinheit drei Stellen nach rechts.",
+              "Von A nach mA drei Stellen nach rechts."
+            ],
+            "it": [
+              "Da k all’unità base: sposta la virgola di tre posizioni a destra.",
+              "Da A a mA: tre posizioni a destra."
+            ]
+          },
+          "sourceBookPages": "21"
+        },
+        {
+          "title": {
+            "de": "Arbeit, Energie und Leistung",
+            "it": "Lavoro, energia e potenza"
+          },
+          "body": {
+            "de": "Energie kann umgewandelt werden. Elektrische Energie in Wh oder kWh ergibt sich aus Leistung mal Zeit.",
+            "it": "L’energia si trasforma da una forma all’altra. L’energia elettrica in Wh o kWh è potenza per tempo."
+          },
+          "diagram": "[ 100 W ] ── 2 h ──> 200 Wh",
+          "formula": "W = P·t; P=W/t; t=W/P",
+          "steps": {
+            "de": [
+              "100 W·2 h=200 Wh=0,2 kWh.",
+              "1 kWh=3,6 MJ."
+            ],
+            "it": [
+              "100 W·2 h=200 Wh=0,2 kWh.",
+              "1 kWh=3,6 MJ."
+            ]
+          },
+          "sourceBookPages": "22, 42–43"
+        },
+        {
+          "title": {
+            "de": "SI-Einheiten und Rechenvorsätze",
+            "it": "Unità SI e prefissi"
+          },
+          "body": {
+            "de": "Vor dem Rechnen immer die Einheiten passend machen: k=10³, M=10⁶, m=10⁻³, µ=10⁻⁶.",
+            "it": "Prima dei calcoli uniforma sempre le unità: k=10³, M=10⁶, m=10⁻³, µ=10⁻⁶."
+          },
+          "diagram": "1 kΩ = 1000 Ω\n1 mA = 0,001 A\n1 µA = 0,000001 A",
+          "formula": "2,2 kΩ = 2200 Ω; 750 mA = 0,75 A",
+          "steps": {
+            "de": [
+              "Komma beim Wechsel von k nach Grundeinheit drei Stellen nach rechts.",
+              "Von A nach mA drei Stellen nach rechts."
+            ],
+            "it": [
+              "Da k all’unità base: sposta la virgola di tre posizioni a destra.",
+              "Da A a mA: tre posizioni a destra."
+            ]
+          },
+          "sourceBookPages": "21"
+        },
+        {
+          "title": {
+            "de": "Arbeit, Energie und Leistung",
+            "it": "Lavoro, energia e potenza"
+          },
+          "body": {
+            "de": "Energie kann umgewandelt werden. Elektrische Energie in Wh oder kWh ergibt sich aus Leistung mal Zeit.",
+            "it": "L’energia si trasforma da una forma all’altra. L’energia elettrica in Wh o kWh è potenza per tempo."
+          },
+          "diagram": "[ 100 W ] ── 2 h ──> 200 Wh",
+          "formula": "W = P·t; P=W/t; t=W/P",
+          "steps": {
+            "de": [
+              "100 W·2 h=200 Wh=0,2 kWh.",
+              "1 kWh=3,6 MJ."
+            ],
+            "it": [
+              "100 W·2 h=200 Wh=0,2 kWh.",
+              "1 kWh=3,6 MJ."
+            ]
+          },
+          "sourceBookPages": "22, 42–43"
+        },
+        {
+          "title": {
+            "de": "Mechanische Arbeit und Leistung",
+            "it": "Lavoro e potenza meccanica"
+          },
+          "body": {
+            "de": "Bei gleichgerichteter Kraft und Bewegung gilt W=F·s. Leistung ist Arbeit pro Zeit. Zur Unterscheidung: W ist hier Formelzeichen für Arbeit und zugleich Einheitzeichen für Watt in einem anderen Zusammenhang.",
+            "it": "Se forza e spostamento hanno la stessa direzione, il lavoro vale W=F·s. La potenza è lavoro nel tempo. Attenzione: W può essere simbolo del lavoro, ma anche abbreviazione dell’unità watt."
+          },
+          "diagram": "F ↑ · s ↑  →  Wmech",
+          "formula": "W=F·s; P=W/t; F=W/s",
+          "steps": {
+            "de": [
+              "F=100 N, s=2 m: W=200 J.",
+              "Dauer t=4 s: P=200/4=50 W."
+            ],
+            "it": [
+              "F=100 N, s=2 m: W=200 J.",
+              "In 4 s: P=200/4=50 W."
+            ]
+          },
+          "sourceBookPages": "22"
         }
       ],
       "worked": {
@@ -553,6 +925,190 @@
           },
           "sourceSlides": "37–38",
           "sourceId": "dozent-grundlagen-2026-11-14"
+        },
+        {
+          "title": {
+            "de": "Leitwert und Kehrwerte",
+            "it": "Conduttanza e reciproci"
+          },
+          "body": {
+            "de": "Leitwert G ist der Kehrwert des Widerstands R. Mit steigendem R sinkt G.",
+            "it": "La conduttanza G è il reciproco della resistenza R. Se R aumenta, G diminuisce."
+          },
+          "diagram": "R = 2 kΩ ──▶ G = 0,5 mS",
+          "formula": "G = 1/R; R = 1/G",
+          "steps": {
+            "de": [
+              "2 kΩ = 2000 Ω.",
+              "G=1/2000=0,0005 S=0,5 mS."
+            ],
+            "it": [
+              "2 kΩ = 2000 Ω.",
+              "G=1/2000=0,0005 S=0,5 mS."
+            ]
+          },
+          "sourceBookPages": "36"
+        },
+        {
+          "title": {
+            "de": "Spezifischer Widerstand und Leiterlänge",
+            "it": "Resistività e lunghezza del conduttore"
+          },
+          "body": {
+            "de": "Längerer Leiter bedeutet mehr Widerstand; größerer Querschnitt weniger. Materialkenngröße ist ρ.",
+            "it": "Aumentando la lunghezza aumenta R; aumentando la sezione diminuisce R. Il materiale è descritto dalla resistività ρ."
+          },
+          "diagram": " l ↑ ⇒ R ↑\n A ↑ ⇒ R ↓",
+          "formula": "R = ρ·l/A; A=ρ·l/R; l=R·A/ρ",
+          "steps": {
+            "de": [
+              "ρ=0,0178 Ω·mm²/m, l=50 m, A=1,5 mm².",
+              "R=0,0178·50/1,5≈0,593 Ω."
+            ],
+            "it": [
+              "ρ=0,0178 Ω·mm²/m, l=50 m, A=1,5 mm².",
+              "R=0,0178·50/1,5≈0,593 Ω."
+            ]
+          },
+          "sourceBookPages": "38"
+        },
+        {
+          "title": {
+            "de": "Temperaturabhängigkeit",
+            "it": "Dipendenza dalla temperatura"
+          },
+          "body": {
+            "de": "Bei Metallen steigt der Widerstand meist mit der Temperatur. Näherung um 20 °C: Rθ=R20(1+αΔθ).",
+            "it": "Nei metalli la resistenza di solito aumenta con la temperatura. Approssimazione vicino a 20 °C: Rθ=R20(1+αΔθ)."
+          },
+          "diagram": "20 °C ──ΔT──▶ 80 °C",
+          "formula": "Rθ = R20 · (1 + α·Δθ)",
+          "steps": {
+            "de": [
+              "R20=30 Ω, α=0,0039/K, Δθ=60 K.",
+              "R80=30·(1+0,0039·60)=37,02 Ω."
+            ],
+            "it": [
+              "R20=30 Ω, α=0,0039/K, Δθ=60 K.",
+              "R80=30·(1+0,0039·60)=37,02 Ω."
+            ]
+          },
+          "sourceBookPages": "39"
+        },
+        {
+          "title": {
+            "de": "Widerstandsbauarten und Farbringe",
+            "it": "Tipi di resistenze e codice colori"
+          },
+          "body": {
+            "de": "Festwiderstände, Potenziometer und temperaturabhängige Widerstände unterscheiden. Beim Vierband-Code geben zwei Ringe Ziffern, der dritte den Multiplikator, der vierte die Toleranz an.",
+            "it": "Distingui resistenze fisse, potenziometri e resistenze dipendenti dalla temperatura. Con quattro fasce: prime due cifre, terza moltiplicatore, quarta tolleranza."
+          },
+          "diagram": "gelb · violett · braun · gold\n  4       7       ×10    ±5%",
+          "formula": "R = (10·Z1+Z2) · 10^Multiplikator",
+          "steps": {
+            "de": [
+              "Gelb=4, Violett=7, Braun=×10.",
+              "R=47·10=470 Ω ±5 %."
+            ],
+            "it": [
+              "Giallo=4, viola=7, marrone=×10.",
+              "R=47·10=470 Ω ±5 %."
+            ]
+          },
+          "sourceBookPages": "40–41"
+        },
+        {
+          "title": {
+            "de": "Leitwert und Kehrwerte",
+            "it": "Conduttanza e reciproci"
+          },
+          "body": {
+            "de": "Leitwert G ist der Kehrwert des Widerstands R. Mit steigendem R sinkt G.",
+            "it": "La conduttanza G è il reciproco della resistenza R. Se R aumenta, G diminuisce."
+          },
+          "diagram": "R = 2 kΩ ──▶ G = 0,5 mS",
+          "formula": "G = 1/R; R = 1/G",
+          "steps": {
+            "de": [
+              "2 kΩ = 2000 Ω.",
+              "G=1/2000=0,0005 S=0,5 mS."
+            ],
+            "it": [
+              "2 kΩ = 2000 Ω.",
+              "G=1/2000=0,0005 S=0,5 mS."
+            ]
+          },
+          "sourceBookPages": "36"
+        },
+        {
+          "title": {
+            "de": "Spezifischer Widerstand und Leiterlänge",
+            "it": "Resistività e lunghezza del conduttore"
+          },
+          "body": {
+            "de": "Längerer Leiter bedeutet mehr Widerstand; größerer Querschnitt weniger. Materialkenngröße ist ρ.",
+            "it": "Aumentando la lunghezza aumenta R; aumentando la sezione diminuisce R. Il materiale è descritto dalla resistività ρ."
+          },
+          "diagram": " l ↑ ⇒ R ↑\n A ↑ ⇒ R ↓",
+          "formula": "R = ρ·l/A; A=ρ·l/R; l=R·A/ρ",
+          "steps": {
+            "de": [
+              "ρ=0,0178 Ω·mm²/m, l=50 m, A=1,5 mm².",
+              "R=0,0178·50/1,5≈0,593 Ω."
+            ],
+            "it": [
+              "ρ=0,0178 Ω·mm²/m, l=50 m, A=1,5 mm².",
+              "R=0,0178·50/1,5≈0,593 Ω."
+            ]
+          },
+          "sourceBookPages": "38"
+        },
+        {
+          "title": {
+            "de": "Temperaturabhängigkeit",
+            "it": "Dipendenza dalla temperatura"
+          },
+          "body": {
+            "de": "Bei Metallen steigt der Widerstand meist mit der Temperatur. Näherung um 20 °C: Rθ=R20(1+αΔθ).",
+            "it": "Nei metalli la resistenza di solito aumenta con la temperatura. Approssimazione vicino a 20 °C: Rθ=R20(1+αΔθ)."
+          },
+          "diagram": "20 °C ──ΔT──▶ 80 °C",
+          "formula": "Rθ = R20 · (1 + α·Δθ)",
+          "steps": {
+            "de": [
+              "R20=30 Ω, α=0,0039/K, Δθ=60 K.",
+              "R80=30·(1+0,0039·60)=37,02 Ω."
+            ],
+            "it": [
+              "R20=30 Ω, α=0,0039/K, Δθ=60 K.",
+              "R80=30·(1+0,0039·60)=37,02 Ω."
+            ]
+          },
+          "sourceBookPages": "39"
+        },
+        {
+          "title": {
+            "de": "Widerstandsbauarten und Farbringe",
+            "it": "Tipi di resistenze e codice colori"
+          },
+          "body": {
+            "de": "Festwiderstände, Potenziometer und temperaturabhängige Widerstände unterscheiden. Beim Vierband-Code geben zwei Ringe Ziffern, der dritte den Multiplikator, der vierte die Toleranz an.",
+            "it": "Distingui resistenze fisse, potenziometri e resistenze dipendenti dalla temperatura. Con quattro fasce: prime due cifre, terza moltiplicatore, quarta tolleranza."
+          },
+          "diagram": "gelb · violett · braun · gold\n  4       7       ×10    ±5%",
+          "formula": "R = (10·Z1+Z2) · 10^Multiplikator",
+          "steps": {
+            "de": [
+              "Gelb=4, Violett=7, Braun=×10.",
+              "R=47·10=470 Ω ±5 %."
+            ],
+            "it": [
+              "Giallo=4, viola=7, marrone=×10.",
+              "R=47·10=470 Ω ±5 %."
+            ]
+          },
+          "sourceBookPages": "40–41"
         }
       ],
       "worked": {
@@ -626,6 +1182,52 @@
           "explanation": {
             "de": "I=6/1000=0,006 A=6 mA.",
             "it": "I=6/1000=0,006 A=6 mA."
+          }
+        },
+        {
+          "question": {
+            "de": "Ein Widerstand von 1 kΩ liegt an 10 V. Wie groß ist I?",
+            "it": "Con R=1 kΩ e U=10 V, quanto vale I?"
+          },
+          "options": {
+            "de": [
+              "10 mA",
+              "10 A",
+              "1 mA"
+            ],
+            "it": [
+              "10 mA",
+              "10 A",
+              "1 mA"
+            ]
+          },
+          "correct": 0,
+          "explanation": {
+            "de": "Rechne mit den Grundeinheiten und prüfe das Ergebnis.",
+            "it": "Calcola con le unità corrette e verifica il risultato."
+          }
+        },
+        {
+          "question": {
+            "de": "Ein Widerstand von 1 kΩ liegt an 10 V. Wie groß ist I?",
+            "it": "Con R=1 kΩ e U=10 V, quanto vale I?"
+          },
+          "options": {
+            "de": [
+              "10 mA",
+              "10 A",
+              "1 mA"
+            ],
+            "it": [
+              "10 mA",
+              "10 A",
+              "1 mA"
+            ]
+          },
+          "correct": 0,
+          "explanation": {
+            "de": "Rechne mit den Grundeinheiten und prüfe das Ergebnis.",
+            "it": "Calcola con le unità corrette e verifica il risultato."
           }
         }
       ]
@@ -1468,6 +2070,190 @@
           },
           "sourceSlides": "47",
           "sourceId": "dozent-grundlagen-2026-11-14"
+        },
+        {
+          "title": {
+            "de": "Elektrische Arbeit und Energiekosten",
+            "it": "Energia elettrica e costi"
+          },
+          "body": {
+            "de": "Bei konstanter Leistung W=P·t. Kosten ergeben sich aus Energie in kWh mal Arbeitspreis in €/kWh.",
+            "it": "Con potenza costante W=P·t. Il costo è energia in kWh moltiplicata per il prezzo €/kWh."
+          },
+          "diagram": "[ 0,5 kW ] × [ 3 h ] → 1,5 kWh",
+          "formula": "W=U·I·t=P·t; Kosten=E[kWh]·Tarif",
+          "steps": {
+            "de": [
+              "500 W=0,5 kW; 3 h → E=1,5 kWh.",
+              "Bei 0,30 €/kWh kostet das 0,45 €."
+            ],
+            "it": [
+              "500 W=0,5 kW; 3 h → E=1,5 kWh.",
+              "Con 0,30 €/kWh il costo è 0,45 €."
+            ]
+          },
+          "sourceBookPages": "43"
+        },
+        {
+          "title": {
+            "de": "Leistung: PURI-Formelsammlung",
+            "it": "Potenza: formulario PURI"
+          },
+          "body": {
+            "de": "Für einen rein ohmschen Verbraucher lassen sich P, U, R und I umstellen. Bei Wechselstrom mit Blindanteilen gilt P=U·I nicht allgemein als Wirkleistung.",
+            "it": "Per un carico puramente resistivo puoi ricavare P, U, R e I. In AC con sfasamento P=U·I non rappresenta in generale la potenza attiva."
+          },
+          "diagram": " P ──▶ U · I\n ↑      ↓\n I²R   U²/R",
+          "formula": "P=U·I=I²·R=U²/R; U=√(P·R); I=√(P/R)",
+          "steps": {
+            "de": [
+              "R=2200 Ω, P=2 W: I=√(2/2200)=0,0302 A.",
+              "U=I·R≈66,3 V."
+            ],
+            "it": [
+              "R=2200 Ω, P=2 W: I=√(2/2200)=0,0302 A.",
+              "U=I·R≈66,3 V."
+            ]
+          },
+          "sourceBookPages": "44–45"
+        },
+        {
+          "title": {
+            "de": "Wirkungsgrad und Verlustleistung",
+            "it": "Rendimento e perdite"
+          },
+          "body": {
+            "de": "Der Wirkungsgrad ist das Verhältnis abgegebener Nutzleistung zur aufgenommenen Leistung. Verluste können als Wärme auftreten.",
+            "it": "Il rendimento è il rapporto tra potenza utile in uscita e potenza assorbita. Le perdite spesso si trasformano in calore."
+          },
+          "diagram": "Pzu ──[ Gerät ]──▶ Pab\n    ↘ Verlust Pv",
+          "formula": "η=Pab/Pzu; Pv=Pzu−Pab; Pab=η·Pzu",
+          "steps": {
+            "de": [
+              "Pzu=4,65 kW, Pab=4,0 kW: η=4/4,65≈0,860=86 %.",
+              "Pv=4,65−4,0=0,65 kW."
+            ],
+            "it": [
+              "Pass=4,65 kW, Putile=4,0 kW: η=4/4,65≈86 %.",
+              "Pperduta=0,65 kW."
+            ]
+          },
+          "sourceBookPages": "46"
+        },
+        {
+          "title": {
+            "de": "Elektrowärme",
+            "it": "Calore elettrico"
+          },
+          "body": {
+            "de": "Die Wärmemenge für eine Temperaturänderung ist Q=m·c·ΔT. Bei Heizgeräten unterscheiden wir Nutzwärme und Verlustwärme.",
+            "it": "La quantità di calore per cambiare temperatura è Q=m·c·ΔT. Nei riscaldatori distinguiamo calore utile e calore perso."
+          },
+          "diagram": "Heizung → Wasser ΔT",
+          "formula": "Q=m·c·ΔT; ηtherm=Qnutz/(P·t)",
+          "steps": {
+            "de": [
+              "80 kg Wasser von 14 auf 55 °C: ΔT=41 K.",
+              "Q≈80·4,19·41=13743 kJ."
+            ],
+            "it": [
+              "80 kg d’acqua da 14 a 55 °C: ΔT=41 K.",
+              "Q≈80·4,19·41=13743 kJ."
+            ]
+          },
+          "sourceBookPages": "47"
+        },
+        {
+          "title": {
+            "de": "Elektrische Arbeit und Energiekosten",
+            "it": "Energia elettrica e costi"
+          },
+          "body": {
+            "de": "Bei konstanter Leistung W=P·t. Kosten ergeben sich aus Energie in kWh mal Arbeitspreis in €/kWh.",
+            "it": "Con potenza costante W=P·t. Il costo è energia in kWh moltiplicata per il prezzo €/kWh."
+          },
+          "diagram": "[ 0,5 kW ] × [ 3 h ] → 1,5 kWh",
+          "formula": "W=U·I·t=P·t; Kosten=E[kWh]·Tarif",
+          "steps": {
+            "de": [
+              "500 W=0,5 kW; 3 h → E=1,5 kWh.",
+              "Bei 0,30 €/kWh kostet das 0,45 €."
+            ],
+            "it": [
+              "500 W=0,5 kW; 3 h → E=1,5 kWh.",
+              "Con 0,30 €/kWh il costo è 0,45 €."
+            ]
+          },
+          "sourceBookPages": "43"
+        },
+        {
+          "title": {
+            "de": "Leistung: PURI-Formelsammlung",
+            "it": "Potenza: formulario PURI"
+          },
+          "body": {
+            "de": "Für einen rein ohmschen Verbraucher lassen sich P, U, R und I umstellen. Bei Wechselstrom mit Blindanteilen gilt P=U·I nicht allgemein als Wirkleistung.",
+            "it": "Per un carico puramente resistivo puoi ricavare P, U, R e I. In AC con sfasamento P=U·I non rappresenta in generale la potenza attiva."
+          },
+          "diagram": " P ──▶ U · I\n ↑      ↓\n I²R   U²/R",
+          "formula": "P=U·I=I²·R=U²/R; U=√(P·R); I=√(P/R)",
+          "steps": {
+            "de": [
+              "R=2200 Ω, P=2 W: I=√(2/2200)=0,0302 A.",
+              "U=I·R≈66,3 V."
+            ],
+            "it": [
+              "R=2200 Ω, P=2 W: I=√(2/2200)=0,0302 A.",
+              "U=I·R≈66,3 V."
+            ]
+          },
+          "sourceBookPages": "44–45"
+        },
+        {
+          "title": {
+            "de": "Wirkungsgrad und Verlustleistung",
+            "it": "Rendimento e perdite"
+          },
+          "body": {
+            "de": "Der Wirkungsgrad ist das Verhältnis abgegebener Nutzleistung zur aufgenommenen Leistung. Verluste können als Wärme auftreten.",
+            "it": "Il rendimento è il rapporto tra potenza utile in uscita e potenza assorbita. Le perdite spesso si trasformano in calore."
+          },
+          "diagram": "Pzu ──[ Gerät ]──▶ Pab\n    ↘ Verlust Pv",
+          "formula": "η=Pab/Pzu; Pv=Pzu−Pab; Pab=η·Pzu",
+          "steps": {
+            "de": [
+              "Pzu=4,65 kW, Pab=4,0 kW: η=4/4,65≈0,860=86 %.",
+              "Pv=4,65−4,0=0,65 kW."
+            ],
+            "it": [
+              "Pass=4,65 kW, Putile=4,0 kW: η=4/4,65≈86 %.",
+              "Pperduta=0,65 kW."
+            ]
+          },
+          "sourceBookPages": "46"
+        },
+        {
+          "title": {
+            "de": "Elektrowärme",
+            "it": "Calore elettrico"
+          },
+          "body": {
+            "de": "Die Wärmemenge für eine Temperaturänderung ist Q=m·c·ΔT. Bei Heizgeräten unterscheiden wir Nutzwärme und Verlustwärme.",
+            "it": "La quantità di calore per cambiare temperatura è Q=m·c·ΔT. Nei riscaldatori distinguiamo calore utile e calore perso."
+          },
+          "diagram": "Heizung → Wasser ΔT",
+          "formula": "Q=m·c·ΔT; ηtherm=Qnutz/(P·t)",
+          "steps": {
+            "de": [
+              "80 kg Wasser von 14 auf 55 °C: ΔT=41 K.",
+              "Q≈80·4,19·41=13743 kJ."
+            ],
+            "it": [
+              "80 kg d’acqua da 14 a 55 °C: ΔT=41 K.",
+              "Q≈80·4,19·41=13743 kJ."
+            ]
+          },
+          "sourceBookPages": "47"
         }
       ],
       "worked": {
@@ -1560,6 +2346,52 @@
           "explanation": {
             "de": "P=U²/R=100/100=1 W.",
             "it": "P=U²/R=100/100=1 W."
+          }
+        },
+        {
+          "question": {
+            "de": "2 kW für 3 h: elektrische Energie?",
+            "it": "2 kW per 3 ore: energia elettrica?"
+          },
+          "options": {
+            "de": [
+              "6 kWh",
+              "6 W",
+              "0,67 kWh"
+            ],
+            "it": [
+              "6 kWh",
+              "6 W",
+              "0,67 kWh"
+            ]
+          },
+          "correct": 0,
+          "explanation": {
+            "de": "Rechne mit den Grundeinheiten und prüfe das Ergebnis.",
+            "it": "Calcola con le unità corrette e verifica il risultato."
+          }
+        },
+        {
+          "question": {
+            "de": "2 kW für 3 h: elektrische Energie?",
+            "it": "2 kW per 3 ore: energia elettrica?"
+          },
+          "options": {
+            "de": [
+              "6 kWh",
+              "6 W",
+              "0,67 kWh"
+            ],
+            "it": [
+              "6 kWh",
+              "6 W",
+              "0,67 kWh"
+            ]
+          },
+          "correct": 0,
+          "explanation": {
+            "de": "Rechne mit den Grundeinheiten und prüfe das Ergebnis.",
+            "it": "Calcola con le unità corrette e verifica il risultato."
           }
         }
       ]
@@ -1794,6 +2626,102 @@
           },
           "sourceSlides": "37",
           "sourceId": "dozent-grundlagen-2026-11-14"
+        },
+        {
+          "title": {
+            "de": "Spannung und Strom richtig messen",
+            "it": "Misurare correttamente U e I"
+          },
+          "body": {
+            "de": "Spannungsmesser parallel anschließen; Strommesser in Reihe. Beim Digitalmultimeter die richtigen Buchsen und Messbereiche wählen.",
+            "it": "Collega il voltmetro in parallelo e l’amperometro in serie. Sul multimetro scegli prese e portate corrette."
+          },
+          "diagram": "    ┌──( V )──┐\n +───┤  [ R ]  ├───−\n    └─────────┘",
+          "formula": "R=U/I",
+          "steps": {
+            "de": [
+              "Spannungsart (AC/DC) vor Messung wählen.",
+              "Beim Strommessen Leitung auftrennen und A in Reihe einsetzen.",
+              "Kein A-Messbereich direkt an Spannung."
+            ],
+            "it": [
+              "Scegli prima AC o DC.",
+              "Per misurare corrente apri il circuito e inserisci A in serie.",
+              "Mai mettere la funzione A direttamente ai capi di una sorgente."
+            ]
+          },
+          "sourceBookPages": "30, 32"
+        },
+        {
+          "title": {
+            "de": "Widerstandsmessung mit Messfehler",
+            "it": "Resistenza e errori degli strumenti"
+          },
+          "body": {
+            "de": "Endliche Innenwiderstände des Voltmeters und Amperemeters verfälschen indirekte R-Messungen. Die Fehler sind schaltungsabhängig.",
+            "it": "Le resistenze interne degli strumenti alterano la misura indiretta di R. L’errore dipende dalla disposizione."
+          },
+          "diagram": "A ─── R ; V misst parallel",
+          "formula": "R=U/I − RA  oder  R=U/(I−U/RV)",
+          "steps": {
+            "de": [
+              "Für kleine R bei geeignetem Messaufbau den Spannungsfehler beachten.",
+              "Für große R ggf. den vom Voltmeter aufgenommenen Strom abziehen."
+            ],
+            "it": [
+              "Con R piccole considera la caduta sull’amperometro quando presente.",
+              "Con R grandi sottrai se necessario la corrente del voltmetro."
+            ]
+          },
+          "sourceBookPages": "59"
+        },
+        {
+          "title": {
+            "de": "Spannung und Strom richtig messen",
+            "it": "Misurare correttamente U e I"
+          },
+          "body": {
+            "de": "Spannungsmesser parallel anschließen; Strommesser in Reihe. Beim Digitalmultimeter die richtigen Buchsen und Messbereiche wählen.",
+            "it": "Collega il voltmetro in parallelo e l’amperometro in serie. Sul multimetro scegli prese e portate corrette."
+          },
+          "diagram": "    ┌──( V )──┐\n +───┤  [ R ]  ├───−\n    └─────────┘",
+          "formula": "R=U/I",
+          "steps": {
+            "de": [
+              "Spannungsart (AC/DC) vor Messung wählen.",
+              "Beim Strommessen Leitung auftrennen und A in Reihe einsetzen.",
+              "Kein A-Messbereich direkt an Spannung."
+            ],
+            "it": [
+              "Scegli prima AC o DC.",
+              "Per misurare corrente apri il circuito e inserisci A in serie.",
+              "Mai mettere la funzione A direttamente ai capi di una sorgente."
+            ]
+          },
+          "sourceBookPages": "30, 32"
+        },
+        {
+          "title": {
+            "de": "Widerstandsmessung mit Messfehler",
+            "it": "Resistenza e errori degli strumenti"
+          },
+          "body": {
+            "de": "Endliche Innenwiderstände des Voltmeters und Amperemeters verfälschen indirekte R-Messungen. Die Fehler sind schaltungsabhängig.",
+            "it": "Le resistenze interne degli strumenti alterano la misura indiretta di R. L’errore dipende dalla disposizione."
+          },
+          "diagram": "A ─── R ; V misst parallel",
+          "formula": "R=U/I − RA  oder  R=U/(I−U/RV)",
+          "steps": {
+            "de": [
+              "Für kleine R bei geeignetem Messaufbau den Spannungsfehler beachten.",
+              "Für große R ggf. den vom Voltmeter aufgenommenen Strom abziehen."
+            ],
+            "it": [
+              "Con R piccole considera la caduta sull’amperometro quando presente.",
+              "Con R grandi sottrai se necessario la corrente del voltmetro."
+            ]
+          },
+          "sourceBookPages": "59"
         }
       ],
       "worked": {
@@ -1971,6 +2899,48 @@
           },
           "sourceSlides": "49–51",
           "sourceId": "dozent-grundlagen-2026-11-14"
+        },
+        {
+          "title": {
+            "de": "Gleichstrom, Wechselstrom und Mischstrom",
+            "it": "Corrente continua, alternata e mista"
+          },
+          "body": {
+            "de": "Gleichstrom ist gleichgerichtet; Wechselstrom wechselt das Vorzeichen; Mischstrom besteht aus Gleich- und Wechselanteilen.",
+            "it": "La corrente continua è unidirezionale; quella alternata cambia segno; la corrente mista contiene una parte continua e una alternata."
+          },
+          "diagram": "DC: ━━━━━\nAC: ∿∿∿∿∿",
+          "formula": "i(t)=IDC + iAC(t)",
+          "steps": {
+            "de": [
+              "Gleichstrom kann zeitlich pulsieren und trotzdem dieselbe Richtung haben."
+            ],
+            "it": [
+              "La corrente continua può pulsare ma mantenere sempre lo stesso verso."
+            ]
+          },
+          "sourceBookPages": "23, 34"
+        },
+        {
+          "title": {
+            "de": "Gleichstrom, Wechselstrom und Mischstrom",
+            "it": "Corrente continua, alternata e mista"
+          },
+          "body": {
+            "de": "Gleichstrom ist gleichgerichtet; Wechselstrom wechselt das Vorzeichen; Mischstrom besteht aus Gleich- und Wechselanteilen.",
+            "it": "La corrente continua è unidirezionale; quella alternata cambia segno; la corrente mista contiene una parte continua e una alternata."
+          },
+          "diagram": "DC: ━━━━━\nAC: ∿∿∿∿∿",
+          "formula": "i(t)=IDC + iAC(t)",
+          "steps": {
+            "de": [
+              "Gleichstrom kann zeitlich pulsieren und trotzdem dieselbe Richtung haben."
+            ],
+            "it": [
+              "La corrente continua può pulsare ma mantenere sempre lo stesso verso."
+            ]
+          },
+          "sourceBookPages": "23, 34"
         }
       ],
       "worked": {
@@ -2479,6 +3449,146 @@
           },
           "sourceSlides": "30–31",
           "sourceId": "dozent-grundlagen-2026-11-14"
+        },
+        {
+          "title": {
+            "de": "Arbeitssicherheit und Warnzeichen",
+            "it": "Sicurezza sul lavoro e segnali"
+          },
+          "body": {
+            "de": "Gefährdungen frühzeitig beurteilen, geeignete Schutzmaßnahmen festlegen und Warn-, Verbots-, Gebots- und Rettungszeichen beachten.",
+            "it": "Valuta i rischi prima di lavorare, applica le protezioni adeguate e riconosci segnali di divieto, obbligo, pericolo e salvataggio."
+          },
+          "diagram": "⚠ Gefahr  |  ⛑ Schutz  |  ➕ Hilfe",
+          "formula": "Gefährdung → Maßnahme → Prüfen",
+          "steps": {
+            "de": [
+              "Keine Arbeiten an Netzspannung ohne Fachaufsicht und Freigabe.",
+              "Regelwerke und Vorgaben vor praktischer Anwendung aktuell prüfen."
+            ],
+            "it": [
+              "Non lavorare su rete elettrica senza supervisione e autorizzazione competente.",
+              "Verifica le norme correnti prima dell’applicazione pratica."
+            ]
+          },
+          "sourceBookPages": "15–19"
+        },
+        {
+          "title": {
+            "de": "Erste Hilfe: elektrischer Unfall",
+            "it": "Primo soccorso: incidente elettrico"
+          },
+          "body": {
+            "de": "Bei Stromunfall zuerst Eigenschutz. Die Spannungsquelle nur gefahrlos abschalten lassen, Notruf 112 veranlassen und Anweisungen der Leitstelle befolgen.",
+            "it": "In un incidente elettrico viene prima la tua sicurezza. Interrompi l’alimentazione soltanto se è sicuro farlo; chiama il 112 e segui le istruzioni dei soccorsi."
+          },
+          "diagram": "Eigenschutz → 112 → Ersthilfe",
+          "formula": "Notruf 112",
+          "steps": {
+            "de": [
+              "Verletzte nicht berühren, solange elektrische Gefährdung besteht.",
+              "Erste-Hilfe-Abläufe im offiziellen Kurs trainieren."
+            ],
+            "it": [
+              "Non toccare l’infortunato finché permane il pericolo elettrico.",
+              "Esercitati nel primo soccorso con formazione ufficiale."
+            ]
+          },
+          "sourceBookPages": "18"
+        },
+        {
+          "title": {
+            "de": "Arbeitssicherheit und Warnzeichen",
+            "it": "Sicurezza sul lavoro e segnali"
+          },
+          "body": {
+            "de": "Gefährdungen frühzeitig beurteilen, geeignete Schutzmaßnahmen festlegen und Warn-, Verbots-, Gebots- und Rettungszeichen beachten.",
+            "it": "Valuta i rischi prima di lavorare, applica le protezioni adeguate e riconosci segnali di divieto, obbligo, pericolo e salvataggio."
+          },
+          "diagram": "⚠ Gefahr  |  ⛑ Schutz  |  ➕ Hilfe",
+          "formula": "Gefährdung → Maßnahme → Prüfen",
+          "steps": {
+            "de": [
+              "Keine Arbeiten an Netzspannung ohne Fachaufsicht und Freigabe.",
+              "Regelwerke und Vorgaben vor praktischer Anwendung aktuell prüfen."
+            ],
+            "it": [
+              "Non lavorare su rete elettrica senza supervisione e autorizzazione competente.",
+              "Verifica le norme correnti prima dell’applicazione pratica."
+            ]
+          },
+          "sourceBookPages": "15–19"
+        },
+        {
+          "title": {
+            "de": "Erste Hilfe: elektrischer Unfall",
+            "it": "Primo soccorso: incidente elettrico"
+          },
+          "body": {
+            "de": "Bei Stromunfall zuerst Eigenschutz. Die Spannungsquelle nur gefahrlos abschalten lassen, Notruf 112 veranlassen und Anweisungen der Leitstelle befolgen.",
+            "it": "In un incidente elettrico viene prima la tua sicurezza. Interrompi l’alimentazione soltanto se è sicuro farlo; chiama il 112 e segui le istruzioni dei soccorsi."
+          },
+          "diagram": "Eigenschutz → 112 → Ersthilfe",
+          "formula": "Notruf 112",
+          "steps": {
+            "de": [
+              "Verletzte nicht berühren, solange elektrische Gefährdung besteht.",
+              "Erste-Hilfe-Abläufe im offiziellen Kurs trainieren."
+            ],
+            "it": [
+              "Non toccare l’infortunato finché permane il pericolo elettrico.",
+              "Esercitati nel primo soccorso con formazione ufficiale."
+            ]
+          },
+          "sourceBookPages": "18"
+        },
+        {
+          "title": {
+            "de": "CE, GS und Gefahrstoffe",
+            "it": "CE, GS e sostanze pericolose"
+          },
+          "body": {
+            "de": "CE kennzeichnet die Erklärung des Herstellers über die Erfüllung einschlägiger EU-Anforderungen. Das freiwillige GS-Zeichen steht für eine geprüfte Sicherheit im jeweiligen Anwendungsbereich. GHS/CLP-Gefahrenpiktogramme zeigen Gefährdungen durch Stoffe und Gemische.",
+            "it": "CE indica la dichiarazione del produttore relativa ai requisiti UE applicabili. Il marchio volontario GS riguarda sicurezza verificata nel proprio ambito. I pittogrammi GHS/CLP segnalano pericoli di sostanze e miscele."
+          },
+          "diagram": "CE  ·  GS  ·  ! [GHS]",
+          "formula": "Sicherheitskennzeichnung: Kontext + Bedeutung",
+          "steps": {
+            "de": [
+              "CE nicht automatisch mit unabhängiger Prüfung verwechseln.",
+              "Sicherheitsdatenblatt und Kennzeichnung vor der Arbeit mit Chemikalien prüfen."
+            ],
+            "it": [
+              "Non confondere CE con una certificazione indipendente.",
+              "Leggi etichette e schede di sicurezza prima di usare sostanze chimiche."
+            ]
+          },
+          "sourceBookPages": "16–17"
+        },
+        {
+          "title": {
+            "de": "Gefährdungsbeurteilung",
+            "it": "Valutazione dei rischi"
+          },
+          "body": {
+            "de": "Arbeitsabläufe und Gefährdungen erfassen, Risiken beurteilen, Maßnahmen festlegen, Wirksamkeit kontrollieren und Ergebnisse dokumentieren. Technische und organisatorische Maßnahmen haben Vorrang vor rein persönlicher Schutzwirkung.",
+            "it": "Descrivi attività e pericoli, valuta i rischi, stabilisci misure, controllane l’efficacia e documenta. Le misure tecniche e organizzative hanno priorità rispetto alla sola protezione personale."
+          },
+          "diagram": "Erfassen → Bewerten → Schützen\n         → Prüfen → Dokumentieren",
+          "formula": "TOP = Technisch / Organisatorisch / Persönlich",
+          "steps": {
+            "de": [
+              "Risiko erkennen.",
+              "Schutzmaßnahmen auswählen.",
+              "Wirksamkeit überprüfen und protokollieren."
+            ],
+            "it": [
+              "Individua il rischio.",
+              "Scegli le protezioni.",
+              "Verifica l’efficacia e documenta."
+            ]
+          },
+          "sourceBookPages": "19"
         }
       ],
       "worked": {
@@ -2554,6 +3664,52 @@
           "explanation": {
             "de": "Schützt Leitungen und Anlage bei Überströmen.",
             "it": "Protegge cavi e impianto dalle sovracorrenti."
+          }
+        },
+        {
+          "question": {
+            "de": "Wofür steht die Warnfarbe Gelb?",
+            "it": "Che cosa indica normalmente il giallo nei segnali di sicurezza?"
+          },
+          "options": {
+            "de": [
+              "Warnung vor Gefahr",
+              "Freie Fluchtwege",
+              "Gebotszeichen"
+            ],
+            "it": [
+              "Pericolo / avvertimento",
+              "Vie di fuga",
+              "Obbligo"
+            ]
+          },
+          "correct": 0,
+          "explanation": {
+            "de": "Rechne mit den Grundeinheiten und prüfe das Ergebnis.",
+            "it": "Calcola con le unità corrette e verifica il risultato."
+          }
+        },
+        {
+          "question": {
+            "de": "Wofür steht die Warnfarbe Gelb?",
+            "it": "Che cosa indica normalmente il giallo nei segnali di sicurezza?"
+          },
+          "options": {
+            "de": [
+              "Warnung vor Gefahr",
+              "Freie Fluchtwege",
+              "Gebotszeichen"
+            ],
+            "it": [
+              "Pericolo / avvertimento",
+              "Vie di fuga",
+              "Obbligo"
+            ]
+          },
+          "correct": 0,
+          "explanation": {
+            "de": "Rechne mit den Grundeinheiten und prüfe das Ergebnis.",
+            "it": "Calcola con le unità corrette e verifica il risultato."
           }
         }
       ]
@@ -2840,6 +3996,52 @@
               "Non dedurre un guasto da un unico valore senza verifica."
             ]
           }
+        },
+        {
+          "title": {
+            "de": "Projektarbeit und Dokumentation",
+            "it": "Lavoro a progetto e documentazione"
+          },
+          "body": {
+            "de": "Bei technischen Aufträgen geht man strukturiert vor: Auftrag analysieren, planen, ausführen, prüfen, dokumentieren, bewerten.",
+            "it": "Per un lavoro tecnico segui un ordine: analizzare l’incarico, progettare, eseguire, controllare, documentare e valutare."
+          },
+          "diagram": "Analyse → Planung → Durchführung\n      ↓\nPrüfung → Doku → Bewertung",
+          "formula": "Plan → Do → Check → Document",
+          "steps": {
+            "de": [
+              "Arbeitsauftrag und Schutzmaßnahmen vor Beginn klären.",
+              "Messwerte und Abweichungen nachvollziehbar dokumentieren."
+            ],
+            "it": [
+              "Chiarisci incarico e misure di sicurezza prima del lavoro.",
+              "Documenta le misure e le differenze riscontrate."
+            ]
+          },
+          "sourceBookPages": "13–14"
+        },
+        {
+          "title": {
+            "de": "Projektarbeit und Dokumentation",
+            "it": "Lavoro a progetto e documentazione"
+          },
+          "body": {
+            "de": "Bei technischen Aufträgen geht man strukturiert vor: Auftrag analysieren, planen, ausführen, prüfen, dokumentieren, bewerten.",
+            "it": "Per un lavoro tecnico segui un ordine: analizzare l’incarico, progettare, eseguire, controllare, documentare e valutare."
+          },
+          "diagram": "Analyse → Planung → Durchführung\n      ↓\nPrüfung → Doku → Bewertung",
+          "formula": "Plan → Do → Check → Document",
+          "steps": {
+            "de": [
+              "Arbeitsauftrag und Schutzmaßnahmen vor Beginn klären.",
+              "Messwerte und Abweichungen nachvollziehbar dokumentieren."
+            ],
+            "it": [
+              "Chiarisci incarico e misure di sicurezza prima del lavoro.",
+              "Documenta le misure e le differenze riscontrate."
+            ]
+          },
+          "sourceBookPages": "13–14"
         }
       ],
       "worked": {
@@ -3048,5 +4250,1453 @@
         }
       ]
     }
-  ]
+  ],
+  "circuitLab": {
+    "title": {
+      "de": "Schaltungen – Lernwerkstatt",
+      "it": "Circuiti – laboratorio di studio"
+    },
+    "description": {
+      "de": "13 Themen mit originalen Schaltbildern, Formeln, Umstellen, Rechenweg und je 3 IHK-Übungsaufgaben.",
+      "it": "13 argomenti con schemi originali, formule inverse, calcoli guidati e 3 esercizi per ogni argomento."
+    },
+    "topics": [
+      {
+        "id": "series",
+        "title": {
+          "de": "Reihenschaltung",
+          "it": "Circuito in serie"
+        },
+        "sourcePages": "49–50",
+        "kind": "series",
+        "intro": {
+          "de": "Es gibt nur einen Stromweg. Durch jeden Widerstand fließt derselbe Strom. Die Teilspannungen addieren sich.",
+          "it": "Esiste un solo percorso per la corrente. Attraverso ogni resistenza passa la stessa corrente. Le tensioni parziali si sommano."
+        },
+        "formulas": [
+          "Rges = R1 + R2 + …",
+          "Iges = I1 = I2 = …",
+          "Uges = U1 + U2 + …",
+          "U2 = Uges · R2 / (R1 + R2)",
+          "R2 = Rges − R1"
+        ],
+        "steps": {
+          "de": [
+            "1. Alle Widerstände auf demselben Stromweg erkennen.",
+            "2. Addieren: Rges = R1 + R2.",
+            "3. Strom finden: I = Uges / Rges.",
+            "4. Teilspannungen: U1 = I · R1, U2 = I · R2.",
+            "5. Kontrolle: U1 + U2 muss Uges ergeben."
+          ],
+          "it": [
+            "1. Riconosci tutte le resistenze sullo stesso percorso.",
+            "2. Sommale: Rtot = R1 + R2.",
+            "3. Trova la corrente: I = Utot / Rtot.",
+            "4. Calcola le tensioni: U1 = I · R1, U2 = I · R2.",
+            "5. Controllo: U1 + U2 deve dare Utot."
+          ]
+        },
+        "worked": {
+          "given": "U=24 V; R1=24 Ω; R2=72 Ω",
+          "sought": "Rges, I, U1, U2",
+          "formula": "Rges=R1+R2; I=U/Rges; Ux=I·Rx",
+          "steps": {
+            "de": [
+              "Rges = 24 + 72 = 96 Ω",
+              "I = 24 / 96 = 0,25 A",
+              "U1 = 0,25 · 24 = 6 V",
+              "U2 = 0,25 · 72 = 18 V",
+              "Prüfen: 6 + 18 = 24 V"
+            ],
+            "it": [
+              "Rtot = 24 + 72 = 96 Ω",
+              "I = 24 / 96 = 0,25 A",
+              "U1 = 0,25 · 24 = 6 V",
+              "U2 = 0,25 · 72 = 18 V",
+              "Verifica: 6 + 18 = 24 V"
+            ]
+          },
+          "answer": "96 Ω; 0,25 A; 6 V; 18 V"
+        },
+        "exercises": [
+          {
+            "question": {
+              "de": "R1=15 Ω, R2=35 Ω: Rges?",
+              "it": "R1=15 Ω, R2=35 Ω: Rtot?"
+            },
+            "solution": {
+              "de": [
+                "Rges = 15 + 35 = 50 Ω"
+              ],
+              "it": [
+                "Rtot = 15 + 35 = 50 Ω"
+              ]
+            },
+            "answer": "50 Ω",
+            "level": "easy"
+          },
+          {
+            "question": {
+              "de": "U=12 V, R1=100 Ω, R2=200 Ω: U2?",
+              "it": "U=12 V, R1=100 Ω, R2=200 Ω: U2?"
+            },
+            "solution": {
+              "de": [
+                "Rges = 300 Ω",
+                "U2 = 12 · 200 / 300 = 8 V"
+              ],
+              "it": [
+                "Rtot = 300 Ω",
+                "U2 = 12 · 200 / 300 = 8 V"
+              ]
+            },
+            "answer": "8 V",
+            "level": "medium"
+          },
+          {
+            "question": {
+              "de": "Rges=1,5 kΩ, R1=680 Ω: R2?",
+              "it": "Rtot=1,5 kΩ, R1=680 Ω: R2?"
+            },
+            "solution": {
+              "de": [
+                "1,5 kΩ = 1500 Ω",
+                "R2 = 1500 − 680 = 820 Ω"
+              ],
+              "it": [
+                "1,5 kΩ = 1500 Ω",
+                "R2 = 1500 − 680 = 820 Ω"
+              ]
+            },
+            "answer": "820 Ω",
+            "level": "hard"
+          }
+        ],
+        "tips": {
+          "de": "Merke: In Reihe ist der Gesamtwiderstand größer als jeder Einzelwiderstand.",
+          "it": "Ricorda: in serie la resistenza totale è superiore a ogni resistenza singola."
+        }
+      },
+      {
+        "id": "pre",
+        "title": {
+          "de": "Vorwiderstände und LED",
+          "it": "Resistenze di protezione e LED"
+        },
+        "sourcePages": "51",
+        "kind": "pre",
+        "intro": {
+          "de": "Ein Vorwiderstand liegt in Reihe zum Verbraucher. Er nimmt die überschüssige Spannung auf und begrenzt den Strom.",
+          "it": "La resistenza di protezione si collega in serie al componente. Fa cadere la tensione in eccesso e limita la corrente."
+        },
+        "formulas": [
+          "RV = (Uges − ULast) / I",
+          "URV = Uges − ULast",
+          "PRV = I² · RV",
+          "I = (Uges − ULast) / RV"
+        ],
+        "steps": {
+          "de": [
+            "1. Betriebsspannung und benötigte Verbraucherspannung unterscheiden.",
+            "2. Differenz berechnen: URV = Uges − ULast.",
+            "3. Strom in A umrechnen: 10 mA = 0,010 A.",
+            "4. RV = URV / I.",
+            "5. Widerstandsbelastbarkeit mit P = I² · RV prüfen."
+          ],
+          "it": [
+            "1. Distingui la tensione di alimentazione da quella del componente.",
+            "2. Calcola la differenza: URV = Utot − Ucomponente.",
+            "3. Converti in A: 10 mA = 0,010 A.",
+            "4. Calcola RV = URV / I.",
+            "5. Verifica la dissipazione con P = I² · RV."
+          ]
+        },
+        "worked": {
+          "given": "U=12 V; LED: UF=1,8 V; IF=10 mA",
+          "sought": "RV und PRV",
+          "formula": "RV=(U−UF)/IF; P=I²·R",
+          "steps": {
+            "de": [
+              "10 mA = 0,010 A",
+              "URV=12−1,8=10,2 V",
+              "RV=10,2 / 0,010=1020 Ω",
+              "P=0,010² · 1020=0,102 W",
+              "Für die reale Auswahl Bauteiltoleranzen, LED-Daten und Sicherheitsreserve prüfen."
+            ],
+            "it": [
+              "10 mA = 0,010 A",
+              "URV=12−1,8=10,2 V",
+              "RV=10,2 / 0,010=1020 Ω",
+              "P=0,010² · 1020=0,102 W",
+              "Nella scelta reale considera tolleranze, dati LED e margine termico."
+            ]
+          },
+          "answer": "RV = 1,02 kΩ; PRV = 0,102 W"
+        },
+        "exercises": [
+          {
+            "question": {
+              "de": "9 V, LED 2 V, 10 mA: Vorwiderstand?",
+              "it": "9 V, LED 2 V, 10 mA: resistenza?"
+            },
+            "solution": {
+              "de": [
+                "R=(9−2)/0,01=700 Ω"
+              ],
+              "it": [
+                "R=(9−2)/0,01=700 Ω"
+              ]
+            },
+            "answer": "700 Ω",
+            "level": "easy"
+          },
+          {
+            "question": {
+              "de": "12 V, Verbraucher 5 V, 20 mA: R?",
+              "it": "12 V, carico 5 V, 20 mA: R?"
+            },
+            "solution": {
+              "de": [
+                "20 mA=0,02 A",
+                "R=7/0,02=350 Ω"
+              ],
+              "it": [
+                "20 mA=0,02 A",
+                "R=7/0,02=350 Ω"
+              ]
+            },
+            "answer": "350 Ω",
+            "level": "medium"
+          },
+          {
+            "question": {
+              "de": "24 V, 3 V LED, 15 mA: Verlustleistung?",
+              "it": "24 V, LED 3 V, 15 mA: potenza dissipata?"
+            },
+            "solution": {
+              "de": [
+                "UR=21 V",
+                "P=21·0,015=0,315 W"
+              ],
+              "it": [
+                "UR=21 V",
+                "P=21·0,015=0,315 W"
+              ]
+            },
+            "answer": "0,315 W",
+            "level": "hard"
+          }
+        ],
+        "tips": {
+          "de": "Nicht nur Ohmzahl prüfen: auch die maximale Verlustleistung des Bauteils!",
+          "it": "Non basta il valore in ohm: controlla anche la potenza nominale!"
+        }
+      },
+      {
+        "id": "line",
+        "title": {
+          "de": "Spannungsfall an Leitungen",
+          "it": "Caduta di tensione nei cavi"
+        },
+        "sourcePages": "52",
+        "kind": "line",
+        "intro": {
+          "de": "Auch Kupferleitungen haben Widerstand. Bei größerem Strom sinkt die Spannung am Verbraucher; im Draht entsteht Wärme.",
+          "it": "Anche i fili di rame hanno una resistenza. Più corrente significa maggiore caduta di tensione e più calore nel cavo."
+        },
+        "formulas": [
+          "RLeitung = ρ · 2l / A  (Hin- und Rückleiter)",
+          "ΔU = I · RLeitung",
+          "Δu% = ΔU / U · 100",
+          "PVerlust = I² · RLeitung"
+        ],
+        "steps": {
+          "de": [
+            "1. l ist die einfache Leitungslänge; bei zwei Adern 2l einsetzen.",
+            "2. Querschnitt A in mm² und ρ in Ω·mm²/m einsetzen.",
+            "3. RLeitung bestimmen.",
+            "4. ΔU = I · RLeitung berechnen.",
+            "5. Prozent: ΔU / U · 100."
+          ],
+          "it": [
+            "1. l è la lunghezza di un singolo tratto: andata e ritorno valgono 2l.",
+            "2. Usa A in mm² e ρ in Ω·mm²/m.",
+            "3. Calcola Rcavo.",
+            "4. ΔU = I · Rcavo.",
+            "5. Percentuale: ΔU / U · 100."
+          ]
+        },
+        "worked": {
+          "given": "Kupfer: ρ=0,0178 Ω·mm²/m; l=10 m; A=1,5 mm²; I=13 A; U=230 V",
+          "sought": "RLeitung, ΔU, Δu%",
+          "formula": "R=ρ·2l/A; ΔU=I·R; Δu%=100·ΔU/U",
+          "steps": {
+            "de": [
+              "R=0,0178·20/1,5=0,2373 Ω",
+              "ΔU=13·0,2373≈3,09 V",
+              "Δu%=3,09/230·100≈1,34 %"
+            ],
+            "it": [
+              "R=0,0178·20/1,5=0,2373 Ω",
+              "ΔU=13·0,2373≈3,09 V",
+              "Δu%=3,09/230·100≈1,34 %"
+            ]
+          },
+          "answer": "R≈0,237 Ω; ΔU≈3,09 V; 1,34 %"
+        },
+        "exercises": [
+          {
+            "question": {
+              "de": "RLeitung=0,2 Ω, I=5 A: ΔU?",
+              "it": "Rcavo=0,2 Ω, I=5 A: ΔU?"
+            },
+            "solution": {
+              "de": [
+                "ΔU=I·R=5·0,2=1 V"
+              ],
+              "it": [
+                "ΔU=I·R=5·0,2=1 V"
+              ]
+            },
+            "answer": "1 V",
+            "level": "easy"
+          },
+          {
+            "question": {
+              "de": "230 V, ΔU=4,6 V: Δu%?",
+              "it": "230 V, ΔU=4,6 V: percentuale?"
+            },
+            "solution": {
+              "de": [
+                "4,6/230·100=2 %"
+              ],
+              "it": [
+                "4,6/230·100=2 %"
+              ]
+            },
+            "answer": "2 %",
+            "level": "medium"
+          },
+          {
+            "question": {
+              "de": "ρ=0,018 Ω·mm²/m, l=15 m, A=2,5 mm², I=10 A: ΔU?",
+              "it": "ρ=0,018 Ω·mm²/m, l=15 m, A=2,5 mm², I=10 A: ΔU?"
+            },
+            "solution": {
+              "de": [
+                "R=0,018·30/2,5=0,216 Ω",
+                "ΔU=10·0,216=2,16 V"
+              ],
+              "it": [
+                "R=0,018·30/2,5=0,216 Ω",
+                "ΔU=10·0,216=2,16 V"
+              ]
+            },
+            "answer": "2,16 V",
+            "level": "hard"
+          }
+        ],
+        "tips": {
+          "de": "Der zulässige Spannungsfall ist anwendungs- und normabhängig. Hier lernst du das Rechnen.",
+          "it": "La caduta ammessa dipende dall’impianto e dalle norme applicabili. Qui impariamo il calcolo."
+        }
+      },
+      {
+        "id": "parallel",
+        "title": {
+          "de": "Parallelschaltung",
+          "it": "Circuito in parallelo"
+        },
+        "sourcePages": "53–54",
+        "kind": "parallel",
+        "intro": {
+          "de": "Alle Zweige liegen an denselben beiden Knoten: die Spannung ist gleich. Die Teilströme addieren sich.",
+          "it": "Tutti i rami sono collegati agli stessi due nodi: la tensione è uguale. Le correnti dei rami si sommano."
+        },
+        "formulas": [
+          "Uges = U1 = U2 = …",
+          "Iges = I1 + I2 + …",
+          "1/Rges = 1/R1 + 1/R2 + …",
+          "Rges = (R1 · R2) / (R1 + R2)  (2 Zweige)",
+          "Gges = G1 + G2 + …"
+        ],
+        "steps": {
+          "de": [
+            "1. Gemeinsame Knoten erkennen.",
+            "2. Bei zwei Widerständen Rges=(R1·R2)/(R1+R2) nutzen.",
+            "3. Bei mehreren Zweigen Kehrwerte addieren und das Ergebnis nochmals umkehren.",
+            "4. I1=U/R1 und I2=U/R2 berechnen.",
+            "5. Kontrolle: Rges muss kleiner als der kleinste Zweigwiderstand sein."
+          ],
+          "it": [
+            "1. Individua i due nodi comuni.",
+            "2. Per due resistenze usa Rtot=(R1·R2)/(R1+R2).",
+            "3. Per più rami somma i reciproci e alla fine fai il reciproco del risultato.",
+            "4. Calcola I1=U/R1 e I2=U/R2.",
+            "5. Verifica: Rtot deve essere minore della resistenza più piccola."
+          ]
+        },
+        "worked": {
+          "given": "R1=50 Ω; R2=100 Ω; U=10 V",
+          "sought": "Rges, I1, I2, Iges",
+          "formula": "R=(R1·R2)/(R1+R2); Ix=U/Rx",
+          "steps": {
+            "de": [
+              "Rges=50·100/(50+100)=33,33 Ω",
+              "I1=10/50=0,2 A",
+              "I2=10/100=0,1 A",
+              "Iges=0,2+0,1=0,3 A"
+            ],
+            "it": [
+              "Rtot=50·100/(50+100)=33,33 Ω",
+              "I1=10/50=0,2 A",
+              "I2=10/100=0,1 A",
+              "Itot=0,2+0,1=0,3 A"
+            ]
+          },
+          "answer": "33,33 Ω; 0,2 A; 0,1 A; 0,3 A"
+        },
+        "exercises": [
+          {
+            "question": {
+              "de": "Zwei 100-Ω-Widerstände parallel: Rges?",
+              "it": "Due resistenze da 100 Ω in parallelo: Rtot?"
+            },
+            "solution": {
+              "de": [
+                "R=100/2=50 Ω"
+              ],
+              "it": [
+                "R=100/2=50 Ω"
+              ]
+            },
+            "answer": "50 Ω",
+            "level": "easy"
+          },
+          {
+            "question": {
+              "de": "R1=60 Ω, R2=30 Ω: Rges?",
+              "it": "R1=60 Ω, R2=30 Ω: Rtot?"
+            },
+            "solution": {
+              "de": [
+                "R=60·30/(60+30)=20 Ω"
+              ],
+              "it": [
+                "R=60·30/(60+30)=20 Ω"
+              ]
+            },
+            "answer": "20 Ω",
+            "level": "medium"
+          },
+          {
+            "question": {
+              "de": "Drei parallele Widerstände: 100 Ω, 200 Ω, 400 Ω: Rges?",
+              "it": "Tre resistenze parallele 100 Ω, 200 Ω, 400 Ω: Rtot?"
+            },
+            "solution": {
+              "de": [
+                "1/R=0,01+0,005+0,0025=0,0175 1/Ω",
+                "R=1/0,0175≈57,14 Ω"
+              ],
+              "it": [
+                "1/R=0,01+0,005+0,0025=0,0175 1/Ω",
+                "R=1/0,0175≈57,14 Ω"
+              ]
+            },
+            "answer": "57,14 Ω",
+            "level": "hard"
+          }
+        ],
+        "tips": {
+          "de": "Kehrwert-Trick: Erst (1/R1 + 1/R2) ausrechnen, dann 1 ÷ ANS.",
+          "it": "Trucco reciproci: calcola prima (1/R1 + 1/R2), poi 1 ÷ ANS."
+        }
+      },
+      {
+        "id": "mixed",
+        "title": {
+          "de": "Gemischte Schaltungen",
+          "it": "Circuiti misti"
+        },
+        "sourcePages": "55",
+        "kind": "mixed",
+        "intro": {
+          "de": "Eine gemischte Schaltung enthält Reihen- und Parallelschaltungen. Löse sie von innen nach außen auf.",
+          "it": "Un circuito misto combina serie e parallelo. Si semplifica un gruppo alla volta, dall’interno verso l’esterno."
+        },
+        "formulas": [
+          "R12 = (R1·R2)/(R1+R2)",
+          "R123 = R3 + R12",
+          "Rges = (R4·R123)/(R4+R123)",
+          "Iges = U / Rges"
+        ],
+        "steps": {
+          "de": [
+            "1. Zwei parallele Widerstände R1 und R2 zusammenfassen.",
+            "2. R3 zu R12 in Reihe addieren.",
+            "3. Der komplette Zweig liegt parallel zu R4.",
+            "4. Gesamtwiderstand ermitteln und Iges berechnen.",
+            "5. Die Ersatzschritte rückwärts auflösen, wenn Teilströme gefragt sind."
+          ],
+          "it": [
+            "1. Riduci R1 e R2 che sono in parallelo.",
+            "2. Somma R3 in serie a R12.",
+            "3. Questo ramo è in parallelo a R4.",
+            "4. Calcola Rtot e la corrente totale.",
+            "5. Per le correnti nei singoli rami ripercorri i passaggi al contrario."
+          ]
+        },
+        "worked": {
+          "given": "R1=100 Ω; R2=220 Ω; R3=47 Ω; R4=560 Ω",
+          "sought": "Rges",
+          "formula": "R12=R1R2/(R1+R2); R123=R12+R3; Rges=R123R4/(R123+R4)",
+          "steps": {
+            "de": [
+              "R12=(100·220)/(100+220)=68,75 Ω",
+              "R123=68,75+47=115,75 Ω",
+              "Rges=(115,75·560)/(115,75+560)≈95,92 Ω"
+            ],
+            "it": [
+              "R12=(100·220)/(100+220)=68,75 Ω",
+              "R123=68,75+47=115,75 Ω",
+              "Rtot=(115,75·560)/(115,75+560)≈95,92 Ω"
+            ]
+          },
+          "answer": "≈95,92 Ω"
+        },
+        "exercises": [
+          {
+            "question": {
+              "de": "R1=100 Ω, R2=100 Ω parallel, dann R3=50 Ω in Reihe: Rges?",
+              "it": "R1=100 Ω, R2=100 Ω parallelo, poi R3=50 Ω in serie: Rtot?"
+            },
+            "solution": {
+              "de": [
+                "R12=50 Ω",
+                "Rges=50+50=100 Ω"
+              ],
+              "it": [
+                "R12=50 Ω",
+                "Rtot=50+50=100 Ω"
+              ]
+            },
+            "answer": "100 Ω",
+            "level": "easy"
+          },
+          {
+            "question": {
+              "de": "R1=80 Ω und R2=120 Ω parallel, plus R3=20 Ω in Reihe: Rges?",
+              "it": "R1=80 Ω e R2=120 Ω parallelo, più R3=20 Ω in serie: Rtot?"
+            },
+            "solution": {
+              "de": [
+                "R12=80·120/200=48 Ω",
+                "Rges=48+20=68 Ω"
+              ],
+              "it": [
+                "R12=80·120/200=48 Ω",
+                "Rtot=48+20=68 Ω"
+              ]
+            },
+            "answer": "68 Ω",
+            "level": "medium"
+          },
+          {
+            "question": {
+              "de": "Zweig A: 60+40 Ω in Reihe; parallel zu R3=100 Ω: Rges?",
+              "it": "Ramo A: 60+40 Ω in serie, in parallelo a R3=100 Ω: Rtot?"
+            },
+            "solution": {
+              "de": [
+                "RA=60+40=100 Ω",
+                "Rges=(100·100)/(100+100)=50 Ω"
+              ],
+              "it": [
+                "RA=60+40=100 Ω",
+                "Rtot=(100·100)/(100+100)=50 Ω"
+              ]
+            },
+            "answer": "50 Ω",
+            "level": "hard"
+          }
+        ],
+        "tips": {
+          "de": "Wichtig: Erst schauen, welche Widerstände wirklich dieselben zwei Knoten verbinden.",
+          "it": "Attenzione: prima verifica quali resistenze condividono davvero gli stessi due nodi."
+        }
+      },
+      {
+        "id": "divider",
+        "title": {
+          "de": "Unbelasteter Spannungsteiler",
+          "it": "Partitore di tensione a vuoto"
+        },
+        "sourcePages": "55–56",
+        "kind": "divider",
+        "intro": {
+          "de": "Zwei Widerstände in Reihe teilen eine Versorgungsspannung. Ohne Verbraucher fließt am Abgriff kein zusätzlicher Strom.",
+          "it": "Due resistenze in serie dividono la tensione di alimentazione. Senza carico non esce corrente aggiuntiva dal punto centrale."
+        },
+        "formulas": [
+          "U2 = Uges · R2/(R1+R2)",
+          "U1 = Uges · R1/(R1+R2)",
+          "R2 = (U2·R1)/(Uges−U2)",
+          "R1 = R2 · (Uges−U2)/U2"
+        ],
+        "steps": {
+          "de": [
+            "1. Prüfen: Am Ausgang ist kein Lastwiderstand angeschlossen.",
+            "2. Gesamtwiderstand R1+R2 bilden.",
+            "3. Der Widerstand unten bestimmt U2.",
+            "4. Für fehlendes R2: U2(R1+R2)=UgesR2 → U2R1=(Uges−U2)R2 → R2=U2R1/(Uges−U2)."
+          ],
+          "it": [
+            "1. Controlla: non è collegato alcun carico all’uscita.",
+            "2. Somma R1+R2.",
+            "3. Per U2 usa la resistenza inferiore R2.",
+            "4. Per R2 sconosciuta: U2(R1+R2)=UtotR2 → U2R1=(Utot−U2)R2 → R2=U2R1/(Utot−U2)."
+          ]
+        },
+        "worked": {
+          "given": "Uges=40 V; R1=82 Ω; R2=220 Ω",
+          "sought": "U2",
+          "formula": "U2=Uges·R2/(R1+R2)",
+          "steps": {
+            "de": [
+              "Rges=82+220=302 Ω",
+              "U2=40·220/302=29,14 V",
+              "U1=40−29,14=10,86 V"
+            ],
+            "it": [
+              "Rtot=82+220=302 Ω",
+              "U2=40·220/302=29,14 V",
+              "U1=40−29,14=10,86 V"
+            ]
+          },
+          "answer": "U2≈29,14 V"
+        },
+        "exercises": [
+          {
+            "question": {
+              "de": "U=12 V, R1=1 kΩ, R2=1 kΩ: U2?",
+              "it": "U=12 V, R1=1 kΩ, R2=1 kΩ: U2?"
+            },
+            "solution": {
+              "de": [
+                "U2=12·1/(1+1)=6 V"
+              ],
+              "it": [
+                "U2=12·1/(1+1)=6 V"
+              ]
+            },
+            "answer": "6 V",
+            "level": "easy"
+          },
+          {
+            "question": {
+              "de": "U=24 V, R1=3 kΩ, R2=1 kΩ: U2?",
+              "it": "U=24 V, R1=3 kΩ, R2=1 kΩ: U2?"
+            },
+            "solution": {
+              "de": [
+                "U2=24·1/4=6 V"
+              ],
+              "it": [
+                "U2=24·1/4=6 V"
+              ]
+            },
+            "answer": "6 V",
+            "level": "medium"
+          },
+          {
+            "question": {
+              "de": "U=12 V, U2=4 V, R1=2 kΩ: R2?",
+              "it": "U=12 V, U2=4 V, R1=2 kΩ: R2?"
+            },
+            "solution": {
+              "de": [
+                "R2=U2·R1/(U−U2)",
+                "R2=4·2000/(12−4)=1000 Ω"
+              ],
+              "it": [
+                "R2=U2·R1/(U−U2)",
+                "R2=4·2000/(12−4)=1000 Ω"
+              ]
+            },
+            "answer": "1 kΩ",
+            "level": "hard"
+          }
+        ],
+        "tips": {
+          "de": "Passive Teiler können im Leerlauf keine höhere Spannung als ihre Versorgung liefern.",
+          "it": "Un partitore passivo a vuoto non può produrre una tensione superiore all’alimentazione."
+        }
+      },
+      {
+        "id": "loaded",
+        "title": {
+          "de": "Belasteter Spannungsteiler",
+          "it": "Partitore di tensione sotto carico"
+        },
+        "sourcePages": "56",
+        "kind": "loaded",
+        "intro": {
+          "de": "Eine Last RL liegt parallel zu R2. Deshalb wird der untere Ersatzwiderstand kleiner und Uaus sinkt.",
+          "it": "Il carico RL si collega in parallelo a R2: la resistenza equivalente inferiore diminuisce e la tensione di uscita scende."
+        },
+        "formulas": [
+          "R2L = (R2·RL)/(R2+RL)",
+          "Uaus = Uges·R2L/(R1+R2L)",
+          "Iges = Uges/(R1+R2L)",
+          "IL = Uaus/RL"
+        ],
+        "steps": {
+          "de": [
+            "1. Nur die untere Parallelschaltung zuerst ersetzen: R2 || RL.",
+            "2. Den neuen Widerstand R2L in Reihe mit R1 betrachten.",
+            "3. Uaus mit der Teilerformel berechnen.",
+            "4. Laststrom IL=Uaus/RL berechnen.",
+            "5. Mit dem unbelasteten Uaus vergleichen."
+          ],
+          "it": [
+            "1. Calcola prima il parallelo in basso: R2 || RL.",
+            "2. Considera R2L in serie con R1.",
+            "3. Calcola Uuscita con la formula del partitore.",
+            "4. Trova la corrente di carico IL=Uuscita/RL.",
+            "5. Confronta con la tensione senza carico."
+          ]
+        },
+        "worked": {
+          "given": "U=12 V; R1=1 kΩ; R2=1 kΩ; RL=1 kΩ",
+          "sought": "Uaus, IL",
+          "formula": "R2L=R2RL/(R2+RL); Uaus=U·R2L/(R1+R2L)",
+          "steps": {
+            "de": [
+              "R2L=(1000·1000)/2000=500 Ω",
+              "Uaus=12·500/(1000+500)=4 V",
+              "IL=4/1000=0,004 A=4 mA",
+              "Ohne Last wären es 6 V."
+            ],
+            "it": [
+              "R2L=(1000·1000)/2000=500 Ω",
+              "Uuscita=12·500/(1000+500)=4 V",
+              "IL=4/1000=0,004 A=4 mA",
+              "Senza carico la tensione sarebbe 6 V."
+            ]
+          },
+          "answer": "Uaus=4 V; IL=4 mA"
+        },
+        "exercises": [
+          {
+            "question": {
+              "de": "R2=2 kΩ, RL=2 kΩ: R2L?",
+              "it": "R2=2 kΩ, RL=2 kΩ: R2L?"
+            },
+            "solution": {
+              "de": [
+                "R2L=2/2=1 kΩ"
+              ],
+              "it": [
+                "R2L=2/2=1 kΩ"
+              ]
+            },
+            "answer": "1 kΩ",
+            "level": "easy"
+          },
+          {
+            "question": {
+              "de": "U=10 V, R1=1 kΩ, R2L=1 kΩ: Uaus?",
+              "it": "U=10 V, R1=1 kΩ, R2L=1 kΩ: Uuscita?"
+            },
+            "solution": {
+              "de": [
+                "Uaus=10·1/(1+1)=5 V"
+              ],
+              "it": [
+                "Uuscita=10·1/(1+1)=5 V"
+              ]
+            },
+            "answer": "5 V",
+            "level": "medium"
+          },
+          {
+            "question": {
+              "de": "U=24 V, R1=2 kΩ, R2=2 kΩ, RL=2 kΩ: Uaus?",
+              "it": "U=24 V, R1=2 kΩ, R2=2 kΩ, RL=2 kΩ: Uuscita?"
+            },
+            "solution": {
+              "de": [
+                "R2L=1 kΩ",
+                "Uaus=24·1/(2+1)=8 V"
+              ],
+              "it": [
+                "R2L=1 kΩ",
+                "Uuscita=24·1/(2+1)=8 V"
+              ]
+            },
+            "answer": "8 V",
+            "level": "hard"
+          }
+        ],
+        "tips": {
+          "de": "Die Ausgangsspannung im belasteten Zustand ist im Idealfall kleiner als im Leerlauf.",
+          "it": "Con un carico resistivo l’uscita è più bassa rispetto alla condizione a vuoto."
+        }
+      },
+      {
+        "id": "bridge",
+        "title": {
+          "de": "Brückenschaltung (Wheatstone)",
+          "it": "Ponte di Wheatstone"
+        },
+        "sourcePages": "57–58",
+        "kind": "bridge",
+        "intro": {
+          "de": "Eine Brücke besteht aus zwei Spannungsteilern. Zwischen den Mittelpunkten A und B wird die Differenzspannung gemessen.",
+          "it": "Il ponte contiene due partitori. Tra i punti centrali A e B si misura la differenza di tensione."
+        },
+        "formulas": [
+          "UAB = U·R2/(R1+R2) − U·R4/(R3+R4)",
+          "Abgleich: R1/R2 = R3/R4",
+          "R4 = R3·R2/R1   (Abgleich)",
+          "R1 = R2·R3/R4   (Abgleich)"
+        ],
+        "steps": {
+          "de": [
+            "1. Beide vertikalen Teiler getrennt rechnen.",
+            "2. Potenzial A = U·R2/(R1+R2); Potenzial B = U·R4/(R3+R4).",
+            "3. UAB=UA−UB.",
+            "4. Bei Abgleich UA=UB und UAB=0 V.",
+            "5. Unbekannte Widerstände durch Kreuzmultiplikation berechnen."
+          ],
+          "it": [
+            "1. Risolvi separatamente i due partitori verticali.",
+            "2. Potenziale A = U·R2/(R1+R2); potenziale B = U·R4/(R3+R4).",
+            "3. UAB=UA−UB.",
+            "4. In equilibrio UA=UB e UAB=0 V.",
+            "5. Per le resistenze mancanti applica il prodotto incrociato."
+          ]
+        },
+        "worked": {
+          "given": "U=10 V; R1=1 kΩ; R2=1 kΩ; R3=1,2 kΩ; R4=500 Ω",
+          "sought": "UAB",
+          "formula": "UAB=U·R2/(R1+R2)−U·R4/(R3+R4)",
+          "steps": {
+            "de": [
+              "UA=10·1000/2000=5 V",
+              "UB=10·500/1700≈2,94 V",
+              "UAB=5−2,94≈2,06 V"
+            ],
+            "it": [
+              "UA=10·1000/2000=5 V",
+              "UB=10·500/1700≈2,94 V",
+              "UAB=5−2,94≈2,06 V"
+            ]
+          },
+          "answer": "UAB≈+2,06 V"
+        },
+        "exercises": [
+          {
+            "question": {
+              "de": "R1=100 Ω,R2=200 Ω,R3=50 Ω,R4=100 Ω: ist die Brücke abgeglichen?",
+              "it": "R1=100 Ω,R2=200 Ω,R3=50 Ω,R4=100 Ω: il ponte è bilanciato?"
+            },
+            "solution": {
+              "de": [
+                "100/200=50/100=0,5",
+                "Ja, UAB=0 V."
+              ],
+              "it": [
+                "100/200=50/100=0,5",
+                "Sì, UAB=0 V."
+              ]
+            },
+            "answer": "UAB=0 V",
+            "level": "easy"
+          },
+          {
+            "question": {
+              "de": "Abgleich: R1=40 Ω,R2=80 Ω,R3=20 Ω,R4=?",
+              "it": "Equilibrio: R1=40 Ω,R2=80 Ω,R3=20 Ω,R4=?"
+            },
+            "solution": {
+              "de": [
+                "R4=R3·R2/R1=20·80/40=40 Ω"
+              ],
+              "it": [
+                "R4=R3·R2/R1=20·80/40=40 Ω"
+              ]
+            },
+            "answer": "40 Ω",
+            "level": "medium"
+          },
+          {
+            "question": {
+              "de": "U=12 V,R1=2 kΩ,R2=1 kΩ,R3=1 kΩ,R4=1 kΩ: UAB?",
+              "it": "U=12 V,R1=2 kΩ,R2=1 kΩ,R3=1 kΩ,R4=1 kΩ: UAB?"
+            },
+            "solution": {
+              "de": [
+                "UA=12·1/3=4 V",
+                "UB=12·1/2=6 V",
+                "UAB=4−6=−2 V"
+              ],
+              "it": [
+                "UA=12·1/3=4 V",
+                "UB=12·1/2=6 V",
+                "UAB=4−6=−2 V"
+              ]
+            },
+            "answer": "−2 V",
+            "level": "hard"
+          }
+        ],
+        "tips": {
+          "de": "Spannungsvorzeichen beachten: UAB = UA − UB. Für die Teilerschritte muss der Messzweig praktisch stromlos sein.",
+          "it": "Attenzione al segno: UAB = UA − UB. Le formule del partitore valgono quando il ramo di misura assorbe corrente trascurabile."
+        }
+      },
+      {
+        "id": "measure",
+        "title": {
+          "de": "Widerstand mit A und V messen",
+          "it": "Misurare R con amperometro e voltmetro"
+        },
+        "sourcePages": "59",
+        "kind": "measurement",
+        "intro": {
+          "de": "Messgeräte sind nicht ideal. Je nach Anschluss kann der Innenwiderstand des Ampere- oder Voltmeters den Messwert verfälschen.",
+          "it": "Gli strumenti non sono ideali. Il loro valore interno può alterare la misura, secondo come colleghiamo amperometro e voltmetro."
+        },
+        "formulas": [
+          "Rschein = U/I",
+          "Spannungsfehler: R = U/I − RA",
+          "Stromfehler: R = U / (I − U/RV)",
+          "Voltmeter parallel; Amperemeter in Reihe"
+        ],
+        "steps": {
+          "de": [
+            "1. Schaltungstyp bestimmen: Spannung über R und A oder nur über R?",
+            "2. Im Spannungsfehlerfall wird der Spannungsabfall am A mitgemessen: R = U/I − RA.",
+            "3. Im Stromfehlerfall misst A auch den Voltmeterstrom: IR = I−U/RV.",
+            "4. Erst dann R = U/IR."
+          ],
+          "it": [
+            "1. Capisci se il voltmetro misura anche la caduta sull’amperometro oppure soltanto R.",
+            "2. Nel primo caso R = U/I − RA.",
+            "3. Nel secondo caso l’amperometro misura anche IV = U/RV: IR=I−IV.",
+            "4. Poi R = U/IR."
+          ]
+        },
+        "worked": {
+          "given": "U=10 V; IAnzeige=10,1 mA; RV=100 kΩ (Stromfehlerschaltung)",
+          "sought": "R",
+          "formula": "R=U/(I−U/RV)",
+          "steps": {
+            "de": [
+              "10,1 mA=0,0101 A; 100 kΩ=100000 Ω",
+              "IV=10/100000=0,0001 A",
+              "IR=0,0101−0,0001=0,0100 A",
+              "R=10/0,01=1000 Ω"
+            ],
+            "it": [
+              "10,1 mA=0,0101 A; 100 kΩ=100000 Ω",
+              "IV=10/100000=0,0001 A",
+              "IR=0,0101−0,0001=0,0100 A",
+              "R=10/0,01=1000 Ω"
+            ]
+          },
+          "answer": "1 kΩ"
+        },
+        "exercises": [
+          {
+            "question": {
+              "de": "U=6 V, I=20 mA, ideale Messgeräte: R?",
+              "it": "U=6 V, I=20 mA, strumenti ideali: R?"
+            },
+            "solution": {
+              "de": [
+                "R=6/0,02=300 Ω"
+              ],
+              "it": [
+                "R=6/0,02=300 Ω"
+              ]
+            },
+            "answer": "300 Ω",
+            "level": "easy"
+          },
+          {
+            "question": {
+              "de": "Spannungsfehler: U=10 V, I=0,1 A, RA=1 Ω: R?",
+              "it": "Errore di tensione: U=10 V, I=0,1 A, RA=1 Ω: R?"
+            },
+            "solution": {
+              "de": [
+                "R=10/0,1−1=99 Ω"
+              ],
+              "it": [
+                "R=10/0,1−1=99 Ω"
+              ]
+            },
+            "answer": "99 Ω",
+            "level": "medium"
+          },
+          {
+            "question": {
+              "de": "Stromfehler: U=20 V,I=21 mA,RV=20 kΩ: R?",
+              "it": "Errore di corrente: U=20 V,I=21 mA,RV=20 kΩ: R?"
+            },
+            "solution": {
+              "de": [
+                "IV=20/20000=1 mA",
+                "IR=20 mA",
+                "R=20/0,02=1000 Ω"
+              ],
+              "it": [
+                "IV=20/20000=1 mA",
+                "IR=20 mA",
+                "R=20/0,02=1000 Ω"
+              ]
+            },
+            "answer": "1 kΩ",
+            "level": "hard"
+          }
+        ],
+        "tips": {
+          "de": "Nie den Strommesser parallel direkt an eine Spannungsquelle anschließen (Kurzschlussrisiko).",
+          "it": "Non collegare mai l’amperometro direttamente in parallelo alla sorgente: rischio cortocircuito."
+        }
+      },
+      {
+        "id": "source",
+        "title": {
+          "de": "Reale Spannungsquelle und Innenwiderstand",
+          "it": "Generatore reale e resistenza interna"
+        },
+        "sourcePages": "60–61",
+        "kind": "source",
+        "intro": {
+          "de": "Eine reale Quelle hat einen Innenwiderstand Ri. Bei Belastung sinkt ihre Klemmenspannung um I·Ri.",
+          "it": "Un generatore reale ha una resistenza interna Ri. Sotto carico la tensione ai morsetti diminuisce di I·Ri."
+        },
+        "formulas": [
+          "U = U0 − I·Ri",
+          "Ri = (U0−U)/I",
+          "I = (U0−U)/Ri",
+          "Ri = U0/IK  (idealer Grenzfall Kurzschluss)"
+        ],
+        "steps": {
+          "de": [
+            "1. Leerlaufspannung U0 notieren.",
+            "2. Innenwiderstand Ri identifizieren.",
+            "3. Mit U=U0−I·Ri die Klemmenspannung ermitteln.",
+            "4. Gesucht Ri: U0−U=I·Ri → Ri=(U0−U)/I.",
+            "5. Kurzschlusswerte ausschließlich rechnerisch behandeln, nicht an Batterien erproben."
+          ],
+          "it": [
+            "1. Individua la tensione a vuoto U0.",
+            "2. Trova la resistenza interna Ri.",
+            "3. Calcola U=U0−I·Ri.",
+            "4. Se cerchi Ri: U0−U=I·Ri → Ri=(U0−U)/I.",
+            "5. La corrente di corto circuito va solo calcolata: non provarla sulle batterie reali."
+          ]
+        },
+        "worked": {
+          "given": "U0=9,3 V; modellierter IK=2,9 A",
+          "sought": "Ri",
+          "formula": "Ri=U0/IK",
+          "steps": {
+            "de": [
+              "Ri=9,3/2,9≈3,21 Ω",
+              "Bei 0,25 A Belastung: U=9,3−0,25·3,21≈8,50 V"
+            ],
+            "it": [
+              "Ri=9,3/2,9≈3,21 Ω",
+              "Con carico 0,25 A: U=9,3−0,25·3,21≈8,50 V"
+            ]
+          },
+          "answer": "Ri≈3,21 Ω; U≈8,50 V"
+        },
+        "exercises": [
+          {
+            "question": {
+              "de": "U0=12 V, I=1 A, Ri=1 Ω: U?",
+              "it": "U0=12 V, I=1 A, Ri=1 Ω: U?"
+            },
+            "solution": {
+              "de": [
+                "U=12−1·1=11 V"
+              ],
+              "it": [
+                "U=12−1·1=11 V"
+              ]
+            },
+            "answer": "11 V",
+            "level": "easy"
+          },
+          {
+            "question": {
+              "de": "U0=9 V, U=8 V, I=0,2 A: Ri?",
+              "it": "U0=9 V, U=8 V, I=0,2 A: Ri?"
+            },
+            "solution": {
+              "de": [
+                "Ri=(9−8)/0,2=5 Ω"
+              ],
+              "it": [
+                "Ri=(9−8)/0,2=5 Ω"
+              ]
+            },
+            "answer": "5 Ω",
+            "level": "medium"
+          },
+          {
+            "question": {
+              "de": "U0=15 V, Ri=2 Ω, RL=3 Ω: I und ULast?",
+              "it": "U0=15 V, Ri=2 Ω, RL=3 Ω: I e Ucarico?"
+            },
+            "solution": {
+              "de": [
+                "I=15/(2+3)=3 A",
+                "ULast=3·3=9 V"
+              ],
+              "it": [
+                "I=15/(2+3)=3 A",
+                "Ucarico=3·3=9 V"
+              ]
+            },
+            "answer": "I=3 A; U=9 V",
+            "level": "hard"
+          }
+        ],
+        "tips": {
+          "de": "Eine Spannungsquelle im Leerlauf liefert keinen Laststrom. Kurzschluss ist gefährlich.",
+          "it": "Una sorgente a vuoto non fornisce corrente al carico. Un cortocircuito è pericoloso."
+        }
+      },
+      {
+        "id": "match",
+        "title": {
+          "de": "Spannungs-, Strom- und Leistungsanpassung",
+          "it": "Adattamento di tensione, corrente e potenza"
+        },
+        "sourcePages": "61–62",
+        "kind": "match",
+        "intro": {
+          "de": "Der Lastwiderstand RL im Verhältnis zum Quellinnenwiderstand Ri bestimmt das Verhalten. Maximale Lastleistung bei RL=Ri (lineares ohmsches Modell).",
+          "it": "Il rapporto tra resistenza del carico RL e resistenza interna Ri determina il funzionamento. La massima potenza sul carico si ha con RL=Ri (modello lineare resistivo)."
+        },
+        "formulas": [
+          "Spannungsanpassung: RL >> Ri",
+          "Stromanpassung: RL << Ri",
+          "Leistungsanpassung: RL = Ri",
+          "Pmax = U0²/(4·Ri)",
+          "η = RL/(Ri+RL)  (ohmsches Modell)"
+        ],
+        "steps": {
+          "de": [
+            "1. Vergleiche RL und Ri.",
+            "2. RL >> Ri: Spannung am Verbraucher fast U0.",
+            "3. RL = Ri: Lastleistung maximal, Wirkungsgrad 50 %.",
+            "4. Pmax = U0²/(4·Ri) berechnen.",
+            "5. Nicht verwechseln: maximale Leistung ist nicht maximaler Wirkungsgrad."
+          ],
+          "it": [
+            "1. Confronta RL e Ri.",
+            "2. RL >> Ri: tensione sul carico quasi uguale a U0.",
+            "3. RL = Ri: massima potenza sul carico, rendimento 50 %.",
+            "4. Calcola Pmax = U0²/(4·Ri).",
+            "5. Non confondere massima potenza con massimo rendimento."
+          ]
+        },
+        "worked": {
+          "given": "U0=10 V; Ri=20 Ω",
+          "sought": "RL für Pmax; Pmax",
+          "formula": "RL=Ri; Pmax=U0²/(4Ri)",
+          "steps": {
+            "de": [
+              "RL=20 Ω",
+              "Pmax=10²/(4·20)=100/80=1,25 W",
+              "ULast=10·20/(20+20)=5 V",
+              "I=5/20=0,25 A; P=5·0,25=1,25 W"
+            ],
+            "it": [
+              "RL=20 Ω",
+              "Pmax=10²/(4·20)=100/80=1,25 W",
+              "Ucarico=10·20/(20+20)=5 V",
+              "I=5/20=0,25 A; P=5·0,25=1,25 W"
+            ]
+          },
+          "answer": "RL=20 Ω; Pmax=1,25 W"
+        },
+        "exercises": [
+          {
+            "question": {
+              "de": "Ri=5 Ω: RL bei maximaler Leistung?",
+              "it": "Ri=5 Ω: RL per massima potenza?"
+            },
+            "solution": {
+              "de": [
+                "RL=Ri=5 Ω"
+              ],
+              "it": [
+                "RL=Ri=5 Ω"
+              ]
+            },
+            "answer": "5 Ω",
+            "level": "easy"
+          },
+          {
+            "question": {
+              "de": "U0=12 V, Ri=3 Ω: Pmax?",
+              "it": "U0=12 V, Ri=3 Ω: Pmax?"
+            },
+            "solution": {
+              "de": [
+                "Pmax=144/(4·3)=12 W"
+              ],
+              "it": [
+                "Pmax=144/(4·3)=12 W"
+              ]
+            },
+            "answer": "12 W",
+            "level": "medium"
+          },
+          {
+            "question": {
+              "de": "Ri=10 Ω, RL=90 Ω: η (ohmsch)?",
+              "it": "Ri=10 Ω, RL=90 Ω: η (ohmico)?"
+            },
+            "solution": {
+              "de": [
+                "η=90/(10+90)=0,9=90 %"
+              ],
+              "it": [
+                "η=90/(10+90)=0,9=90 %"
+              ]
+            },
+            "answer": "90 %",
+            "level": "hard"
+          }
+        ],
+        "tips": {
+          "de": "Anpassung gilt im angegebenen Modell; Sicherheits- und Leistungsgrenzen von Quellen beachten.",
+          "it": "Queste formule valgono nel modello indicato; rispetta sempre i limiti di potenza delle sorgenti."
+        }
+      },
+      {
+        "id": "batteries",
+        "title": {
+          "de": "Spannungsquellen kombinieren",
+          "it": "Generatori in serie e in parallelo"
+        },
+        "sourcePages": "63",
+        "kind": "batteries",
+        "intro": {
+          "de": "In Reihe addieren sich die Spannungen korrekt gepolter Quellen. Parallele Quellen sollten gleiche Leerlaufspannungen und geeignete Eigenschaften besitzen.",
+          "it": "In serie si sommano le tensioni di sorgenti orientate correttamente. In parallelo si collegano solo sorgenti compatibili per evitare correnti di compensazione."
+        },
+        "formulas": [
+          "U0,Reihe = U01+U02+…",
+          "Ri,Reihe = Ri1+Ri2+…",
+          "U0,parallel (identische Quellen) = U0,einzeln",
+          "Ri,parallel (n identische Quellen) = Ri/n"
+        ],
+        "steps": {
+          "de": [
+            "1. Polung in der Zeichnung kontrollieren.",
+            "2. Bei Reihenschaltung die Quellspannungen mit Vorzeichen addieren.",
+            "3. Bei parallelen identischen Quellen bleibt die Spannung gleich.",
+            "4. Den Innenwiderstand paralleler identischer Quellen durch n teilen.",
+            "5. Unterschiedliche Batterien niemals ohne geeignete Schutz- und Ladeelektronik parallelschalten."
+          ],
+          "it": [
+            "1. Controlla i poli sul disegno.",
+            "2. In serie somma le tensioni con il loro segno.",
+            "3. In parallelo tra sorgenti identiche la tensione resta invariata.",
+            "4. La resistenza interna delle sorgenti identiche in parallelo diventa Ri/n.",
+            "5. Non collegare batterie diverse in parallelo senza elettronica di protezione adatta."
+          ]
+        },
+        "worked": {
+          "given": "Drei identische 1,5-V-Zellen korrekt in Reihe",
+          "sought": "Uges",
+          "formula": "Uges=U01+U02+U03",
+          "steps": {
+            "de": [
+              "Uges=1,5+1,5+1,5=4,5 V",
+              "Mit Ri=0,2 Ω pro Zelle: Ri,ges=0,6 Ω"
+            ],
+            "it": [
+              "Utot=1,5+1,5+1,5=4,5 V",
+              "Con Ri=0,2 Ω per cella: Ri,tot=0,6 Ω"
+            ]
+          },
+          "answer": "Uges=4,5 V"
+        },
+        "exercises": [
+          {
+            "question": {
+              "de": "Zwei 1,5-V-Zellen in Reihe: U?",
+              "it": "Due pile da 1,5 V in serie: U?"
+            },
+            "solution": {
+              "de": [
+                "U=1,5+1,5=3 V"
+              ],
+              "it": [
+                "U=1,5+1,5=3 V"
+              ]
+            },
+            "answer": "3 V",
+            "level": "easy"
+          },
+          {
+            "question": {
+              "de": "Drei identische 1,5-V-Zellen parallel: U0?",
+              "it": "Tre pile identiche da 1,5 V in parallelo: U0?"
+            },
+            "solution": {
+              "de": [
+                "U0=1,5 V (nicht 4,5 V)"
+              ],
+              "it": [
+                "U0=1,5 V (non 4,5 V)"
+              ]
+            },
+            "answer": "1,5 V",
+            "level": "medium"
+          },
+          {
+            "question": {
+              "de": "4 Quellen mit Ri=0,4 Ω jeweils parallel: Ri,ges?",
+              "it": "4 sorgenti con Ri=0,4 Ω ciascuna in parallelo: Ri,tot?"
+            },
+            "solution": {
+              "de": [
+                "Ri,ges=0,4/4=0,1 Ω"
+              ],
+              "it": [
+                "Ri,tot=0,4/4=0,1 Ω"
+              ]
+            },
+            "answer": "0,1 Ω",
+            "level": "hard"
+          }
+        ],
+        "tips": {
+          "de": "Batterien nicht absichtlich kurzschließen; reale Parallelschaltungen brauchen passende Schutzmaßnahmen.",
+          "it": "Non cortocircuitare le batterie; i collegamenti paralleli reali richiedono protezioni adeguate."
+        }
+      },
+      {
+        "id": "kirchhoff",
+        "title": {
+          "de": "Kirchhoff: Knoten und Maschen",
+          "it": "Kirchhoff: nodi e maglie"
+        },
+        "sourcePages": "49, 53",
+        "kind": "kirchhoff",
+        "intro": {
+          "de": "An jedem Knoten gilt: zufließende Ströme = abfließende Ströme. In einer Masche addieren sich die Spannungen mit Vorzeichen zu null.",
+          "it": "A ogni nodo la corrente entrante equivale a quella uscente. In una maglia la somma algebrica delle tensioni è zero."
+        },
+        "formulas": [
+          "ΣI = 0",
+          "Izu = Iab",
+          "ΣU = 0",
+          "UQuelle = U1+U2+…"
+        ],
+        "steps": {
+          "de": [
+            "1. Pfeilrichtungen selbst festlegen.",
+            "2. Zufließende Ströme mit positivem, abfließende mit negativem Zeichen erfassen.",
+            "3. ΣI=0 aufstellen und unbekannte Größe isolieren.",
+            "4. Für die Maschenregel einmal um den geschlossenen Weg gehen und Spannungen mit Vorzeichen addieren."
+          ],
+          "it": [
+            "1. Scegli i versi delle frecce.",
+            "2. Segna positive le correnti entranti e negative le uscenti.",
+            "3. Scrivi ΣI=0 e isola l’incognita.",
+            "4. Per la maglia percorri il circuito chiuso sommando le tensioni con segno."
+          ]
+        },
+        "worked": {
+          "given": "Izu=12 mA; I1=5 mA; I2 unbekannt",
+          "sought": "I2",
+          "formula": "Izu=I1+I2",
+          "steps": {
+            "de": [
+              "I2 = 12−5 = 7 mA",
+              "Kontrolle: 5+7=12 mA"
+            ],
+            "it": [
+              "I2 = 12−5 = 7 mA",
+              "Verifica: 5+7=12 mA"
+            ]
+          },
+          "answer": "I2=7 mA"
+        },
+        "exercises": [
+          {
+            "question": {
+              "de": "8 mA hinein; 3 mA heraus: zweiter Ausgang?",
+              "it": "8 mA in entrata; 3 mA in uscita: seconda uscita?"
+            },
+            "solution": {
+              "de": [
+                "I=8−3=5 mA"
+              ],
+              "it": [
+                "I=8−3=5 mA"
+              ]
+            },
+            "answer": "5 mA",
+            "level": "easy"
+          },
+          {
+            "question": {
+              "de": "Quelle 12 V; U1=7 V: U2?",
+              "it": "Sorgente 12 V; U1=7 V: U2?"
+            },
+            "solution": {
+              "de": [
+                "U2=12−7=5 V"
+              ],
+              "it": [
+                "U2=12−7=5 V"
+              ]
+            },
+            "answer": "5 V",
+            "level": "medium"
+          },
+          {
+            "question": {
+              "de": "Knoten: 4 mA und 3 mA hinein, 2 mA und Ix hinaus: Ix?",
+              "it": "Nodo: 4 mA e 3 mA entrano, 2 mA e Ix escono: Ix?"
+            },
+            "solution": {
+              "de": [
+                "Ix=4+3−2=5 mA"
+              ],
+              "it": [
+                "Ix=4+3−2=5 mA"
+              ]
+            },
+            "answer": "5 mA",
+            "level": "hard"
+          }
+        ],
+        "tips": {
+          "de": "Ein negatives Ergebnis bedeutet: Der tatsächliche Strom fließt entgegen deinem gewählten Pfeil.",
+          "it": "Un risultato negativo indica che la corrente reale ha verso opposto alla freccia scelta."
+        }
+      }
+    ],
+    "sources": {
+      "de": "Eigenständig neu erstellte Inhalte nach Lehrthemen des EUROPA-Lehrmittels, bereitgestellte Bilder der Seiten 49–63.",
+      "it": "Contenuti originali ispirati agli argomenti delle pagine 49–63 del manuale EUROPA fornite dall’utente."
+    }
+  }
 }
