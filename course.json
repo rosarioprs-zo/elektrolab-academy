@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "2.1.0",
   "updated": "2026-11-14",
   "siteTitle": "ElektroLab Academy",
   "adminName": "Rosario Parisi",
@@ -51,8 +51,8 @@
           "formula": "U = R · I",
           "steps": {
             "de": [
-              "Se cerchi I: dividi U = R · I per R → I = U / R.",
-              "Se cerchi R: dividi entrambi i membri per I → R = U / I."
+              "Gesucht ist I: U = R · I durch R teilen → I = U / R.",
+              "Gesucht ist R: U = R · I durch I teilen → R = U / I."
             ],
             "it": [
               "Se cerchi I: dividi U = R · I per R → I = U / R.",
@@ -81,6 +81,78 @@
               "Con 0,5 A per 10 s passano 5 C."
             ]
           }
+        },
+        {
+          "title": {
+            "de": "Atom, Elektronen und Valenzelektronen",
+            "it": "Atomo, elettroni ed elettroni di valenza"
+          },
+          "body": {
+            "de": "Ein Atom hat einen positiv geladenen Kern (Protonen; Neutronen sind neutral) und eine Elektronenhülle. Das Bohr-Modell ist ein vereinfachtes Lernmodell, kein exaktes Abbild. Metallische Leiter besitzen bewegliche Elektronen, die den Ladungstransport ermöglichen.",
+            "it": "Un atomo ha un nucleo con protoni positivi e neutroni neutri, circondato da elettroni negativi. Il modello di Bohr è una semplificazione didattica, non una fotografia dell’atomo. Nei metalli gli elettroni mobili permettono il trasporto di carica."
+          },
+          "diagram": "     e−        e−\n       ╲      ╱\n       [ p+ n0 ]     ← nucleo / Kern\n       ╱      ╲\n     e−        e−",
+          "formula": "Proton (+) · Elektron (−) · Neutron (0)",
+          "steps": {
+            "de": [
+              "Ein neutrales Atom hat gleich viele Protonen wie Elektronen.",
+              "Beim Ladungstransport in einem Metall bewegen sich Elektronen; die technische Stromrichtung ist entgegengesetzt."
+            ],
+            "it": [
+              "Un atomo neutro ha tanti protoni quanti elettroni.",
+              "In un metallo gli elettroni mobili trasportano carica; la direzione convenzionale della corrente è opposta."
+            ]
+          },
+          "sourceSlides": "2–5",
+          "sourceId": "dozent-grundlagen-2026-11-14"
+        },
+        {
+          "title": {
+            "de": "Ionen und elektrische Ladung Q",
+            "it": "Ioni e carica elettrica Q"
+          },
+          "body": {
+            "de": "Ein Ion ist ein Atom oder Molekül mit elektrischer Nettoladung. Elektronenmangel führt zu positiver, Elektronenüberschuss zu negativer Ladung. Gleiche Vorzeichen stoßen sich ab, verschiedene ziehen sich an. Die Einheit der Ladung ist Coulomb (C).",
+            "it": "Uno ione è un atomo o una molecola con carica netta. Se perde elettroni diventa positivo, se li acquista negativo. Cariche uguali si respingono, opposte si attraggono. L’unità è il coulomb (C)."
+          },
+          "diagram": "  +    +     ⇒ repulsione / Abstoßung\n  +    −     ⇒ attrazione / Anziehung",
+          "formula": "Q = I · t    |    I = Q / t    |    t = Q / I",
+          "steps": {
+            "de": [
+              "Bei 0,2 A und 30 s: Q = 0,2 × 30 = 6 C.",
+              "Fehlt I? Teile beide Seiten von Q = I·t durch t."
+            ],
+            "it": [
+              "Con 0,2 A per 30 s: Q = 0,2 × 30 = 6 C.",
+              "Se manca I: dividi entrambi i membri di Q = I·t per t."
+            ]
+          },
+          "sourceSlides": "6–8",
+          "sourceId": "dozent-grundlagen-2026-11-14"
+        },
+        {
+          "title": {
+            "de": "Potenzial und Spannungsmessung",
+            "it": "Potenziale e misurazione della tensione"
+          },
+          "body": {
+            "de": "Eine Spannung ist die Potenzialdifferenz zweier Punkte. Der Bezugspunkt 0 V heißt häufig Masse (GND). Spannung misst man mit dem Voltmeter parallel zwischen zwei Punkten. Bei umgekehrter Messrichtung ändert sich das Vorzeichen.",
+            "it": "La tensione è la differenza di potenziale tra due punti. Il riferimento 0 V è spesso chiamato massa (GND). Si misura con il voltmetro in parallelo tra due punti. Invertendo i puntali cambia il segno."
+          },
+          "diagram": " +12 V  o────[ R1 ]────o  +5 V\n         │             │\n       puntale +     puntale −\n           U = 12 − 5 = 7 V",
+          "formula": "U_AB = φ_A − φ_B   |   U_BA = −U_AB",
+          "steps": {
+            "de": [
+              "Die Zahlen 12 V und 5 V beziehen sich auf denselben 0-V-Punkt.",
+              "U_AB = 12 V − 5 V = +7 V; U_BA = −7 V."
+            ],
+            "it": [
+              "I valori 12 V e 5 V hanno lo stesso riferimento 0 V.",
+              "U_AB = 12 V − 5 V = +7 V; U_BA = −7 V."
+            ]
+          },
+          "sourceSlides": "12–13",
+          "sourceId": "dozent-grundlagen-2026-11-14"
         }
       ],
       "worked": {
@@ -129,6 +201,52 @@
           "explanation": {
             "de": "I = U/R: doppeltes U ergibt doppeltes I.",
             "it": "I = U/R: raddoppiando U raddoppia I."
+          }
+        },
+        {
+          "question": {
+            "de": "Welche Ladung hat ein Elektron?",
+            "it": "Che carica ha un elettrone?"
+          },
+          "options": {
+            "de": [
+              "Negativ",
+              "Positiv",
+              "Neutral"
+            ],
+            "it": [
+              "Negativa",
+              "Positiva",
+              "Neutra"
+            ]
+          },
+          "correct": 0,
+          "explanation": {
+            "de": "Elektronen sind negativ geladen.",
+            "it": "Gli elettroni sono negativi."
+          }
+        },
+        {
+          "question": {
+            "de": "Bei 0,5 A über 20 s: Welche Ladungsmenge Q?",
+            "it": "Con 0,5 A per 20 s: quanta carica Q?"
+          },
+          "options": {
+            "de": [
+              "10 C",
+              "40 C",
+              "0,025 C"
+            ],
+            "it": [
+              "10 C",
+              "40 C",
+              "0,025 C"
+            ]
+          },
+          "correct": 0,
+          "explanation": {
+            "de": "Q = I·t = 0,5×20 = 10 C.",
+            "it": "Q = I·t = 0,5×20 = 10 C."
           }
         }
       ]
@@ -210,6 +328,32 @@
               "0,003 A × 4000 Ω = 12 V."
             ]
           }
+        },
+        {
+          "title": {
+            "de": "Vorsätze sicher umrechnen",
+            "it": "Conversione dei prefissi senza errori"
+          },
+          "body": {
+            "de": "Beachte: großes M steht für Mega, kleines m für milli. Rechne Spannung in V, Strom in A, Widerstand in Ω um, wenn du unsicher bist. 1 kΩ = 1000 Ω; 1 mA = 0,001 A; 1 µA = 0,000001 A.",
+            "it": "Attenzione: M maiuscola significa Mega, m minuscola milli. Quando hai dubbi, converti in volt, ampere e ohm. 1 kΩ = 1000 Ω; 1 mA = 0,001 A; 1 µA = 0,000001 A."
+          },
+          "diagram": "Mega M   ×1 000 000\nkilo k   ×1 000\nBase     ×1\nmilli m  ÷1 000\nmicro µ  ÷1 000 000",
+          "formula": "0,025 A = 25 mA   |   4,7 kΩ = 4700 Ω",
+          "steps": {
+            "de": [
+              "Beim Wechsel von kΩ zu Ω: mal 1000.",
+              "Beim Wechsel von mA zu A: durch 1000.",
+              "Plausibilität: 1 µA ist viel kleiner als 1 A."
+            ],
+            "it": [
+              "Da kΩ a Ω: moltiplica per 1000.",
+              "Da mA ad A: dividi per 1000.",
+              "Controllo: 1 µA è molto più piccolo di 1 A."
+            ]
+          },
+          "sourceSlides": "10, 15, 19",
+          "sourceId": "dozent-grundlagen-2026-11-14"
         }
       ],
       "worked": {
@@ -359,6 +503,56 @@
               "Controllo: R = 2 / 0,020 = 100 Ω."
             ]
           }
+        },
+        {
+          "title": {
+            "de": "Ohmsches Gesetz und Kennlinie",
+            "it": "Legge di Ohm e caratteristica corrente-tensione"
+          },
+          "body": {
+            "de": "Für einen ohmschen Widerstand bei annähernd konstanter Temperatur ist I proportional zu U. Trägt man I auf die y-Achse und U auf die x-Achse, erhält man eine Gerade durch den Ursprung; ihre Steigung ist 1/R. Nicht jedes Bauteil besitzt eine lineare Kennlinie (z. B. Diode).",
+            "it": "Per un resistore ohmico a temperatura quasi costante, I è proporzionale a U. Se metti I sull’asse verticale e U su quello orizzontale, ottieni una retta passante per l’origine; la pendenza è 1/R. Non tutti i componenti sono lineari (per esempio un diodo)."
+          },
+          "diagram": "I (mA)\n  6 │             ●\n  4 │         ●\n  2 │     ●\n  0 └─────┬───┬───┬── U (V)\n        2   4   6\n     Esempio: R = 1 kΩ",
+          "formula": "U = R · I  |  I = U / R  |  R = U / I",
+          "steps": {
+            "de": [
+              "Bei U = 5 V und R = 1 kΩ folgt I = 5 mA.",
+              "Doppelte Spannung bei gleichem R → doppelter Strom.",
+              "Fehler in Dozentenfolie 20: I = U × R ist falsch; korrekt ist I = U / R."
+            ],
+            "it": [
+              "Con U = 5 V e R = 1 kΩ ottieni I = 5 mA.",
+              "Raddoppiando U con R costante, raddoppia I.",
+              "Correzione della diapositiva 20: I = U × R è errato; corretto è I = U / R."
+            ]
+          },
+          "sourceSlides": "20, 36–38",
+          "sourceId": "dozent-grundlagen-2026-11-14"
+        },
+        {
+          "title": {
+            "de": "Messen und Messfehler",
+            "it": "Misure e influenza degli strumenti"
+          },
+          "body": {
+            "de": "Ein Voltmeter besitzt einen hohen, ein Amperemeter einen niedrigen Innenwiderstand. Deshalb kann ein angeschlossenes Messgerät die Schaltung beeinflussen. Spannung wird parallel, Strom in Reihe gemessen; die Strommessung verändert den Strompfad.",
+            "it": "Un voltmetro ha elevata resistenza interna, un amperometro bassa resistenza interna. Ogni strumento può modificare la misura. La tensione si misura in parallelo e la corrente in serie; per misurare la corrente bisogna inserire lo strumento nel percorso."
+          },
+          "diagram": "  + ──( A )──[ R ]── −  corrente / Strom\n             │   │\n             └( V )┘   tensione / Spannung",
+          "formula": "Δ = Messwert − Referenzwert",
+          "steps": {
+            "de": [
+              "Eine Strommessung niemals durch direktes Überbrücken der Quelle im Amperebereich durchführen.",
+              "Erst Messbereich und Buchsen kontrollieren; bei realen Anlagen Sicherheitsregeln einhalten."
+            ],
+            "it": [
+              "Mai mettere il multimetro in modalità amperometro direttamente ai capi della sorgente.",
+              "Prima controlla prese e portata; negli impianti reali rispetta le regole di sicurezza."
+            ]
+          },
+          "sourceSlides": "37–38",
+          "sourceId": "dozent-grundlagen-2026-11-14"
         }
       ],
       "worked": {
@@ -409,6 +603,29 @@
           "explanation": {
             "de": "9/470 = 0,01915 A = 19,15 mA.",
             "it": "9/470 = 0,01915 A = 19,15 mA."
+          }
+        },
+        {
+          "question": {
+            "de": "Ein Widerstand von 1 kΩ an 6 V: Wie groß ist I?",
+            "it": "1 kΩ con 6 V: quanto vale I?"
+          },
+          "options": {
+            "de": [
+              "6 mA",
+              "6 A",
+              "0,6 mA"
+            ],
+            "it": [
+              "6 mA",
+              "6 A",
+              "0,6 mA"
+            ]
+          },
+          "correct": 0,
+          "explanation": {
+            "de": "I=6/1000=0,006 A=6 mA.",
+            "it": "I=6/1000=0,006 A=6 mA."
           }
         }
       ]
@@ -810,6 +1027,30 @@
               "Controllo: I2 + I3 = Itot."
             ]
           }
+        },
+        {
+          "title": {
+            "de": "Leitungswiderstand mit ρ berechnen",
+            "it": "Resistenza dei cavi con ρ"
+          },
+          "body": {
+            "de": "Der Widerstand eines homogenen Leiters ist bei konstanter Temperatur näherungsweise R = ρ·l/A. l ist die Leiterlänge, A der Querschnitt. Für eine Stromschleife aus Hin- und Rückleiter beide Leiterlängen berücksichtigen.",
+            "it": "La resistenza di un conduttore uniforme a temperatura costante è circa R = ρ·l/A. l è la lunghezza e A la sezione. Per il circuito completo devi considerare il percorso di andata e ritorno."
+          },
+          "diagram": " + ─────────── l ───────[LAST]──┐\n − ─────────── l ───────────────┘\n        Hin- und Rückleiter",
+          "formula": "R = ρ·l/A   |   ρ(Cu,20°C) ≈ 0,0178 Ω·mm²/m",
+          "steps": {
+            "de": [
+              "Beispiel: 2×10 m Kupferleitung, A=1,5 mm².",
+              "R ≈ 0,0178×20/1,5 = 0,237 Ω."
+            ],
+            "it": [
+              "Esempio: rame con 2×10 m, A=1,5 mm².",
+              "R ≈ 0,0178×20/1,5 = 0,237 Ω."
+            ]
+          },
+          "sourceSlides": "29",
+          "sourceId": "dozent-grundlagen-2026-11-14"
         }
       ],
       "worked": {
@@ -862,6 +1103,29 @@
           "explanation": {
             "de": "Bei dieser Topologie: Rges = R1 + Rp.",
             "it": "In questa topologia: Rtot = R1 + Rp."
+          }
+        },
+        {
+          "question": {
+            "de": "Kupferleitung doppelt so lang, gleicher Querschnitt: R?",
+            "it": "Cavo di rame lungo il doppio, stessa sezione: R?"
+          },
+          "options": {
+            "de": [
+              "Doppelt so hoch",
+              "Halb so hoch",
+              "Unverändert"
+            ],
+            "it": [
+              "Raddoppia",
+              "Si dimezza",
+              "Rimane uguale"
+            ]
+          },
+          "correct": 0,
+          "explanation": {
+            "de": "R ist proportional zur Länge.",
+            "it": "R è proporzionale alla lunghezza."
           }
         }
       ]
@@ -1102,6 +1366,108 @@
               "80 % significa η = 0,80."
             ]
           }
+        },
+        {
+          "title": {
+            "de": "Elektrische Leistung P: PURI",
+            "it": "Potenza elettrica P: PURI"
+          },
+          "body": {
+            "de": "Leistung ist die pro Zeit umgesetzte Energie. Bei Gleichstrom und einem ohmschen Verbraucher gilt P = U·I. Mit dem Ohmschen Gesetz folgen P = I²·R und P = U²/R. Prüfe bei Bauteilen die zulässige Verlustleistung mit ausreichender Reserve.",
+            "it": "La potenza è l’energia trasformata ogni secondo. In corrente continua con un carico ohmico vale P = U·I. Con la legge di Ohm ottieni P = I²·R e P = U²/R. Controlla la potenza nominale dei componenti con un margine adeguato."
+          },
+          "diagram": " +12V ───[ R = 100 Ω ]── 0V\n             I = 120 mA\n        P dissipata = 1,44 W",
+          "formula": "P = U·I = I²·R = U²/R",
+          "steps": {
+            "de": [
+              "I = U/R = 12/100 = 0,12 A.",
+              "P = 12 × 0,12 = 1,44 W.",
+              "Inverse: U = P/I; I = P/U; R = U²/P."
+            ],
+            "it": [
+              "I = U/R = 12/100 = 0,12 A.",
+              "P = 12 × 0,12 = 1,44 W.",
+              "Inverse: U = P/I; I = P/U; R = U²/P."
+            ]
+          },
+          "sourceSlides": "39–41",
+          "sourceId": "dozent-grundlagen-2026-11-14"
+        },
+        {
+          "title": {
+            "de": "Wirk-, Blind- und Scheinleistung",
+            "it": "Potenza attiva, reattiva e apparente"
+          },
+          "body": {
+            "de": "Bei sinusförmiger Wechselspannung mit Effektivwerten gilt S = Ueff·Ieff (VA); P = Ueff·Ieff·cosφ (W); Q = Ueff·Ieff·sinφ (var). Bei rein ohmscher Last ist φ = 0, somit P = S und Q = 0. Diese Beziehungen gelten für den einfachen einphasigen Sinusfall.",
+            "it": "Con corrente alternata sinusoidale, usando i valori efficaci: S = Ueff·Ieff (VA); P = Ueff·Ieff·cosφ (W); Q = Ueff·Ieff·sinφ (var). Se il carico è puramente resistivo φ = 0, quindi P = S e Q = 0. Queste formule valgono per il caso sinusoidale monofase."
+          },
+          "diagram": "         S [VA]\n        /|\n       / | Q [var]\n      /φ |\n     └───┘\n       P [W]",
+          "formula": "S² = P² + Q²   |   cosφ = P/S",
+          "steps": {
+            "de": [
+              "230 V × 2 A = S = 460 VA.",
+              "Bei cosφ = 0,8 folgt P = 460 × 0,8 = 368 W.",
+              "Wichtig: VA ist nicht automatisch W."
+            ],
+            "it": [
+              "230 V × 2 A = S = 460 VA.",
+              "Con cosφ = 0,8, P = 460 × 0,8 = 368 W.",
+              "Importante: VA e W non sono automaticamente uguali."
+            ]
+          },
+          "sourceSlides": "42–43",
+          "sourceId": "dozent-grundlagen-2026-11-14"
+        },
+        {
+          "title": {
+            "de": "Elektrische Arbeit und kWh",
+            "it": "Energia elettrica e kWh"
+          },
+          "body": {
+            "de": "Elektrische Arbeit/Energie wird bei konstanter Leistung berechnet als E = P·t. Für den Stromzähler: kWh = kW·h. Der Arbeitspreis ergibt sich aus kWh × Preis pro kWh; Grundgebühren kommen gesondert hinzu.",
+            "it": "L’energia elettrica per potenza costante è E = P·t. Per il contatore: kWh = kW × ore. Il costo variabile si calcola moltiplicando i kWh per la tariffa al kWh; il costo fisso è separato."
+          },
+          "diagram": " [ 800 W Gerät ] ── 2,5 h\n        ↓\n    0,8 kW × 2,5 h\n        ↓\n       2,0 kWh",
+          "formula": "E = P·t   |   P = E/t   |   t = E/P",
+          "steps": {
+            "de": [
+              "800 W = 0,8 kW.",
+              "0,8 × 2,5 = 2 kWh.",
+              "Bei 0,30 €/kWh betragen die variablen Kosten 0,60 €."
+            ],
+            "it": [
+              "800 W = 0,8 kW.",
+              "0,8 × 2,5 = 2 kWh.",
+              "A 0,30 €/kWh il costo variabile è 0,60 €."
+            ]
+          },
+          "sourceSlides": "44–45",
+          "sourceId": "dozent-grundlagen-2026-11-14"
+        },
+        {
+          "title": {
+            "de": "Leitwert G als Kehrwert",
+            "it": "Conduttanza G e valore reciproco"
+          },
+          "body": {
+            "de": "Der Leitwert ist der Kehrwert des Widerstands. Große R → kleine G. Die Einheit heißt Siemens (S). Praktisch: bei R = 2000 Ω ist G = 1/2000 S = 0,0005 S = 0,5 mS. Diese Kehrwertidee hilft später auch bei Parallelschaltungen.",
+            "it": "La conduttanza è il reciproco della resistenza. R grande → G piccola. L’unità è il siemens (S). Con R = 2000 Ω: G = 1/2000 S = 0,0005 S = 0,5 mS. Questa idea del reciproco serve anche per i paralleli."
+          },
+          "diagram": "   R ↑   ⇒   G ↓\n  2000 Ω ⇒ 0,0005 S\n          ⇒ 0,5 mS",
+          "formula": "G = 1/R    |    R = 1/G",
+          "steps": {
+            "de": [
+              "Bruch umstellen: G·R = 1 → R = 1/G.",
+              "Taschenrechner: 1 ÷ 2000 = 0,0005; dann ×1000 für mS."
+            ],
+            "it": [
+              "Trasforma: G·R = 1 → R = 1/G.",
+              "Calcolatrice: 1 ÷ 2000 = 0,0005, poi ×1000 per passare a mS."
+            ]
+          },
+          "sourceSlides": "47",
+          "sourceId": "dozent-grundlagen-2026-11-14"
         }
       ],
       "worked": {
@@ -1148,6 +1514,52 @@
           "explanation": {
             "de": "P = 24 × 0,5 = 12 W.",
             "it": "P = 24 × 0,5 = 12 W."
+          }
+        },
+        {
+          "question": {
+            "de": "Was ist 1/2000 S in mS?",
+            "it": "Quanto vale 1/2000 S in mS?"
+          },
+          "options": {
+            "de": [
+              "0,5 mS",
+              "500 mS",
+              "2 mS"
+            ],
+            "it": [
+              "0,5 mS",
+              "500 mS",
+              "2 mS"
+            ]
+          },
+          "correct": 0,
+          "explanation": {
+            "de": "1/2000 S=0,0005 S=0,5 mS.",
+            "it": "1/2000 S=0,0005 S=0,5 mS."
+          }
+        },
+        {
+          "question": {
+            "de": "Ein 100-Ω-Widerstand liegt an 10 V: Welche Leistung?",
+            "it": "Una resistenza da 100 Ω con 10 V: quale potenza?"
+          },
+          "options": {
+            "de": [
+              "1 W",
+              "10 W",
+              "100 W"
+            ],
+            "it": [
+              "1 W",
+              "10 W",
+              "100 W"
+            ]
+          },
+          "correct": 0,
+          "explanation": {
+            "de": "P=U²/R=100/100=1 W.",
+            "it": "P=U²/R=100/100=1 W."
           }
         }
       ]
@@ -1358,6 +1770,30 @@
               "Sulla tensione di rete lavorano soltanto persone qualificate con strumenti idonei."
             ]
           }
+        },
+        {
+          "title": {
+            "de": "Kennlinien und Messpunkte",
+            "it": "Caratteristiche e punti di misura"
+          },
+          "body": {
+            "de": "Wird an einem Widerstand die Spannung schrittweise verändert und der Strom notiert, entsteht eine Messreihe. Ein U-I-Diagramm macht lineare Widerstände erkennbar. Jeder Messwert hat Unsicherheit; Nullpunkt, Einheiten und Achsenbeschriftung müssen stimmen.",
+            "it": "Variando gradualmente la tensione su un resistore e misurando la corrente ottieni una serie di dati. Il grafico U-I permette di riconoscere un componente ohmico. Ogni misura ha incertezza: controlla zero, unità e nomi degli assi."
+          },
+          "diagram": "U (V) 0  2  4  6\nI (mA)0  2  4  6\nR=U/I = 1 kΩ a ogni punto",
+          "formula": "R = ΔU/ΔI  (I asse x, U asse y)",
+          "steps": {
+            "de": [
+              "Bei U als y-Achse und I als x-Achse ist die Steigung R.",
+              "Bei I als y-Achse und U als x-Achse ist die Steigung G = 1/R."
+            ],
+            "it": [
+              "Se U è sull’asse y e I sull’asse x, la pendenza è R.",
+              "Se I è sull’asse y e U sull’asse x, la pendenza è G = 1/R."
+            ]
+          },
+          "sourceSlides": "37",
+          "sourceId": "dozent-grundlagen-2026-11-14"
         }
       ],
       "worked": {
@@ -1487,6 +1923,54 @@
               "Vale per una sinusoide."
             ]
           }
+        },
+        {
+          "title": {
+            "de": "Gleich-, Wechsel- und Mischspannung",
+            "it": "Tensione continua, alternata e mista"
+          },
+          "body": {
+            "de": "Gleichspannung hat eine konstante Polarität; sie kann in ihrer Höhe variieren. Wechselspannung wechselt periodisch das Vorzeichen; sinusförmige Netzspannung ist in Europa typischerweise 230 V (Effektivwert) bei 50 Hz. Mischspannung besteht aus Gleichanteil und überlagertem Wechselanteil.",
+            "it": "La tensione continua mantiene la polarità, anche se il valore può cambiare. La tensione alternata cambia periodicamente segno; la rete europea è tipicamente 230 V efficaci a 50 Hz. Una tensione mista contiene una componente continua e una alternata sovrapposta."
+          },
+          "diagram": "DC:  ──────────\nAC:  ∿∿∿∿∿∿∿∿∿\nMIX: ─∿─∿─∿─∿─",
+          "formula": "T = 1/f   |   f = 1/T",
+          "steps": {
+            "de": [
+              "Bei f = 50 Hz gilt T = 1/50 s = 0,02 s = 20 ms.",
+              "230 V Netzspannung ist ein Effektivwert, nicht die maximale Scheitelspannung."
+            ],
+            "it": [
+              "Per f = 50 Hz: T = 1/50 s = 0,02 s = 20 ms.",
+              "230 V di rete è il valore efficace, non il picco massimo."
+            ]
+          },
+          "sourceSlides": "32–35, 48–50",
+          "sourceId": "dozent-grundlagen-2026-11-14"
+        },
+        {
+          "title": {
+            "de": "Sinuskurve, Effektivwert und Wirkwiderstand",
+            "it": "Sinusoide, valore efficace e resistenza ohmica"
+          },
+          "body": {
+            "de": "Für eine reine Sinusspannung gilt Ueff = Û/√2 und umgekehrt Û = Ueff·√2. Eine rein ohmsche Last hat Strom und Spannung in Phase. Ein Widerstand dissipiert Wirkleistung, unabhängig davon ob er mit Gleich- oder Wechselspannung betrieben wird (bei vergleichbaren Effektivwerten).",
+            "it": "Per una sinusoide pura vale Ueff = Û/√2 e Û = Ueff·√2. Con un carico puramente resistivo tensione e corrente sono in fase. La resistenza dissipa potenza attiva anche con AC, usando i valori efficaci."
+          },
+          "diagram": "U(t)\n  +    /\\     /\n  0 ──/──\\───/──\\── t\n  −     \\/     \\/",
+          "formula": "Ueff = Û/√2    |    Û = Ueff·√2",
+          "steps": {
+            "de": [
+              "Bei Ueff = 230 V folgt Û ≈ 325 V.",
+              "Bei rein ohmscher Last: P = Ueff²/R."
+            ],
+            "it": [
+              "Con Ueff = 230 V il picco è circa 325 V.",
+              "Con resistenza pura: P = Ueff²/R."
+            ]
+          },
+          "sourceSlides": "49–51",
+          "sourceId": "dozent-grundlagen-2026-11-14"
         }
       ],
       "worked": {
@@ -1533,6 +2017,29 @@
           "explanation": {
             "de": "T = 1/100 s = 0,01 s = 10 ms.",
             "it": "T = 1/100 s = 0,01 s = 10 ms."
+          }
+        },
+        {
+          "question": {
+            "de": "50 Hz: Wie lang ist eine Periodendauer?",
+            "it": "50 Hz: quanto dura un periodo?"
+          },
+          "options": {
+            "de": [
+              "20 ms",
+              "50 ms",
+              "2 ms"
+            ],
+            "it": [
+              "20 ms",
+              "50 ms",
+              "2 ms"
+            ]
+          },
+          "correct": 0,
+          "explanation": {
+            "de": "T=1/50 s=0,02 s=20 ms.",
+            "it": "T=1/50 s=0,02 s=20 ms."
           }
         }
       ]
@@ -1616,6 +2123,78 @@
               "Converti C in farad."
             ]
           }
+        },
+        {
+          "title": {
+            "de": "Elektrisches Feld und Durchschlag",
+            "it": "Campo elettrico e rigidità dielettrica"
+          },
+          "body": {
+            "de": "Zwischen verschieden geladenen Körpern besteht ein elektrisches Feld. Im idealisierten homogenen Feld zwischen Platten gilt E = U/d. Die Durchschlagsfestigkeit eines Isolierstoffes hängt u. a. von Material, Geometrie, Feuchte und Prüfbedingungen ab: Tabellenwerte sind nur Näherungen, keine Freigabe für Experimente.",
+            "it": "Tra corpi carichi esiste un campo elettrico. Nel caso idealizzato di due piastre con campo uniforme: E = U/d. La rigidità dielettrica dipende da materiale, forma degli elettrodi, umidità e condizioni di prova: i valori tabellari sono orientativi, non autorizzano esperimenti con alta tensione."
+          },
+          "diagram": "  + Platte             − Platte\n  │ → → → → → → → → → →  │\n  │    E-Feld / campo   │\n  │<------ d --------->│",
+          "formula": "E = U/d   |   U = E·d   |   d = U/E",
+          "steps": {
+            "de": [
+              "10 V zwischen Platten mit d = 2 mm = 0,002 m.",
+              "E = 10 / 0,002 = 5000 V/m = 5 kV/m."
+            ],
+            "it": [
+              "10 V tra piastre distanti d = 2 mm = 0,002 m.",
+              "E = 10 / 0,002 = 5000 V/m = 5 kV/m."
+            ]
+          },
+          "sourceSlides": "21–23",
+          "sourceId": "dozent-grundlagen-2026-11-14"
+        },
+        {
+          "title": {
+            "de": "Magnetismus und Elektromagnet",
+            "it": "Magnetismo ed elettromagnete"
+          },
+          "body": {
+            "de": "Magnete besitzen Nord- und Südpol. Um einen stromdurchflossenen Leiter entsteht ein Magnetfeld. Bei einer Spule addieren sich die Magnetfelder der Windungen. Ein Eisenkern kann die magnetische Wirkung verstärken; dieses Prinzip ist wichtig für Relais, Motoren und Transformatoren.",
+            "it": "I magneti hanno polo nord e sud. Intorno a un conduttore percorso da corrente si crea un campo magnetico. In una bobina i campi delle spire si sommano. Un nucleo ferromagnetico può rafforzare il campo: è il principio di relè, motori e trasformatori."
+          },
+          "diagram": "  I →    ) ) ) ) )  [KERN]\n          ↻ campo magnetico\n      bobina / Spule",
+          "formula": "B: Flussdichte [T]   |   Φ: magnetischer Fluss [Wb]",
+          "steps": {
+            "de": [
+              "Strom aus → Elektromagnet verliert den stromerzeugten Feldanteil.",
+              "Bei größerem Strom verstärkt sich das Feld zunächst, bis Materialeffekte relevant werden."
+            ],
+            "it": [
+              "Corrente assente → scompare la componente di campo creata dalla bobina.",
+              "Aumentando la corrente il campo cresce inizialmente, finché intervengono effetti del materiale."
+            ]
+          },
+          "sourceSlides": "24–25",
+          "sourceId": "dozent-grundlagen-2026-11-14"
+        },
+        {
+          "title": {
+            "de": "Induktion: Generator und Transformator",
+            "it": "Induzione: generatore e trasformatore"
+          },
+          "body": {
+            "de": "Eine zeitliche Änderung des magnetischen Flusses durch eine Leiterschleife kann eine Spannung induzieren. Beim Generator entsteht sie durch Bewegung, beim Transformator durch zeitlich veränderlichen Fluss bei ruhenden Wicklungen. Eine konstante Gleichspannung erzeugt im idealen Transformator nach dem Einschaltvorgang keine dauerhafte Sekundärspannung.",
+            "it": "Una variazione nel tempo del flusso magnetico attraverso una spira può indurre tensione. Nel generatore la variazione è dovuta al movimento, nel trasformatore a un campo variabile con avvolgimenti fermi. Una tensione continua costante, dopo il transitorio, non produce una tensione secondaria continua in un trasformatore ideale."
+          },
+          "diagram": "  movimento ↻  B-Feld  ⇒ Uind\n  primaria ~ ))) || ((( secondaria ~\n              nucleo",
+          "formula": "|U_ind| = N · |ΔΦ/Δt|  (vereinfachte Form)",
+          "steps": {
+            "de": [
+              "N = 100; Flussänderung ΔΦ = 0,002 Wb in Δt = 0,1 s.",
+              "Betrag: Uind = 100 × 0,002/0,1 = 2 V."
+            ],
+            "it": [
+              "N = 100; variazione ΔΦ = 0,002 Wb in Δt = 0,1 s.",
+              "Modulo: Uind = 100 × 0,002/0,1 = 2 V."
+            ]
+          },
+          "sourceSlides": "26–28",
+          "sourceId": "dozent-grundlagen-2026-11-14"
         }
       ],
       "worked": {
@@ -1876,6 +2455,30 @@
               "Le prove pratiche si svolgono solo con attrezzatura didattica idonea e supervisione."
             ]
           }
+        },
+        {
+          "title": {
+            "de": "Stromkreis, Sicherung und Schutz",
+            "it": "Circuito, fusibile e protezione"
+          },
+          "body": {
+            "de": "Ein geschlossener Stromkreis enthält Quelle, Hinleiter, Last und Rückleiter. Ein geeigneter Überstromschutz (z. B. Sicherung) begrenzt Folgen von Überströmen. Sicherungen schützen primär Leitungen und Anlagen vor Überstrom; sie garantieren allein keinen Personenschutz.",
+            "it": "Un circuito chiuso contiene sorgente, conduttore di andata, carico e ritorno. Una protezione contro sovracorrenti (per esempio fusibile) limita i danni da sovracorrente. Un fusibile protegge soprattutto cavi e apparecchiature: da solo non garantisce la protezione delle persone."
+          },
+          "diagram": " +24V ──[F]──[ Interruttore ]──[Carico]─┐\n  0V  ◀──────────────────────────────────┘",
+          "formula": "I = U/R   |   Schutz abhängig von Leitung und Gerät",
+          "steps": {
+            "de": [
+              "Vor Arbeiten an realen Anlagen Sicherheitsregeln anwenden.",
+              "Nie eine Sicherung durch eine zu große ersetzen, ohne die Auslegung zu prüfen."
+            ],
+            "it": [
+              "Prima di lavorare su impianti reali applicare le regole di sicurezza.",
+              "Non sostituire un fusibile con uno più grande senza verificare il progetto."
+            ]
+          },
+          "sourceSlides": "30–31",
+          "sourceId": "dozent-grundlagen-2026-11-14"
         }
       ],
       "worked": {
@@ -1928,6 +2531,29 @@
           "explanation": {
             "de": "RCD und Überstromschutzeinrichtung erfüllen unterschiedliche Funktionen.",
             "it": "RCD e protezione contro sovracorrente hanno funzioni differenti."
+          }
+        },
+        {
+          "question": {
+            "de": "Wofür ist die Sicherung primär gedacht?",
+            "it": "A cosa serve principalmente un fusibile?"
+          },
+          "options": {
+            "de": [
+              "Schutz vor Überstrom",
+              "Exakte Spannungsregelung",
+              "Stromverstärkung"
+            ],
+            "it": [
+              "Protezione da sovracorrente",
+              "Regolazione esatta",
+              "Amplificazione della corrente"
+            ]
+          },
+          "correct": 0,
+          "explanation": {
+            "de": "Schützt Leitungen und Anlage bei Überströmen.",
+            "it": "Protegge cavi e impianto dalle sovracorrenti."
           }
         }
       ]
@@ -2272,7 +2898,155 @@
     }
   ],
   "releaseNotes": {
-    "de": "Ausführliche zweisprachige Lektionen, Schaltbilder, Formelumstellungen und zusätzliche IHK-Aufgaben für alle 16 Module.",
-    "it": "Lezioni approfondite in due lingue, schemi, formule inverse ed esercizi IHK per tutti i 16 moduli."
-  }
+    "de": "V2.1: Dozentenmaterial Elektrotechnik-Grundlagen thematisch eingearbeitet (Atom, Ladung, Potenzial, Felder, Kennlinien, Widerstandsmaterial, Magnetismus, Induktion, Leistung/Energie, Leitwert, AC). PURI-Rechner (P U R I), Einheitenumrechnung, Quellenregister und fachliche Korrekturen. 16 bestehende Module bleiben erhalten.",
+    "it": "V2.1: contenuti della presentazione del docente integrati per argomento (atomi, carica, potenziale, campi, grafici, resistenza dei materiali, magnetismo, induzione, potenza/energia, conduttanza, AC). Calcolatore PURI (P U R I), conversione unità, registro delle fonti e correzioni. Conservati tutti i 16 moduli."
+  },
+  "sources": [
+    {
+      "id": "dozent-grundlagen-2026-11-14",
+      "title": "01.1 Grundlagen der Elektrotechnik Eigene Präsenation.pptx",
+      "type": "presentazione docente",
+      "slidesTotal": 63,
+      "uploaded": "2026-11-14",
+      "rights": "Materiale di riferimento. Contenuti e schemi della Academy sono riscritti e disegnati ex novo; non ripubblicare foto o diapositive originali senza autorizzazione.",
+      "status": "integrato selettivamente dopo controllo formule",
+      "topics": [
+        {
+          "module": 1,
+          "slides": "2–5",
+          "title_de": "Atom, Elektronen und Valenzelektronen",
+          "title_it": "Atomo, elettroni ed elettroni di valenza"
+        },
+        {
+          "module": 1,
+          "slides": "6–8",
+          "title_de": "Ionen und elektrische Ladung Q",
+          "title_it": "Ioni e carica elettrica Q"
+        },
+        {
+          "module": 1,
+          "slides": "12–13",
+          "title_de": "Potenzial und Spannungsmessung",
+          "title_it": "Potenziale e misurazione della tensione"
+        },
+        {
+          "module": 2,
+          "slides": "10, 15, 19",
+          "title_de": "Vorsätze sicher umrechnen",
+          "title_it": "Conversione dei prefissi senza errori"
+        },
+        {
+          "module": 3,
+          "slides": "20, 36–38",
+          "title_de": "Ohmsches Gesetz und Kennlinie",
+          "title_it": "Legge di Ohm e caratteristica corrente-tensione"
+        },
+        {
+          "module": 3,
+          "slides": "37–38",
+          "title_de": "Messen und Messfehler",
+          "title_it": "Misure e influenza degli strumenti"
+        },
+        {
+          "module": 8,
+          "slides": "39–41",
+          "title_de": "Elektrische Leistung P: PURI",
+          "title_it": "Potenza elettrica P: PURI"
+        },
+        {
+          "module": 8,
+          "slides": "42–43",
+          "title_de": "Wirk-, Blind- und Scheinleistung",
+          "title_it": "Potenza attiva, reattiva e apparente"
+        },
+        {
+          "module": 8,
+          "slides": "44–45",
+          "title_de": "Elektrische Arbeit und kWh",
+          "title_it": "Energia elettrica e kWh"
+        },
+        {
+          "module": 8,
+          "slides": "47",
+          "title_de": "Leitwert G als Kehrwert",
+          "title_it": "Conduttanza G e valore reciproco"
+        },
+        {
+          "module": 11,
+          "slides": "32–35, 48–50",
+          "title_de": "Gleich-, Wechsel- und Mischspannung",
+          "title_it": "Tensione continua, alternata e mista"
+        },
+        {
+          "module": 11,
+          "slides": "49–51",
+          "title_de": "Sinuskurve, Effektivwert und Wirkwiderstand",
+          "title_it": "Sinusoide, valore efficace e resistenza ohmica"
+        },
+        {
+          "module": 12,
+          "slides": "21–23",
+          "title_de": "Elektrisches Feld und Durchschlag",
+          "title_it": "Campo elettrico e rigidità dielettrica"
+        },
+        {
+          "module": 12,
+          "slides": "24–25",
+          "title_de": "Magnetismus und Elektromagnet",
+          "title_it": "Magnetismo ed elettromagnete"
+        },
+        {
+          "module": 12,
+          "slides": "26–28",
+          "title_de": "Induktion: Generator und Transformator",
+          "title_it": "Induzione: generatore e trasformatore"
+        },
+        {
+          "module": 14,
+          "slides": "30–31",
+          "title_de": "Stromkreis, Sicherung und Schutz",
+          "title_it": "Circuito, fusibile e protezione"
+        },
+        {
+          "module": 10,
+          "slides": "37",
+          "title_de": "Kennlinien und Messpunkte",
+          "title_it": "Caratteristiche e punti di misura"
+        },
+        {
+          "module": 6,
+          "slides": "29",
+          "title_de": "Leitungswiderstand mit ρ berechnen",
+          "title_it": "Resistenza dei cavi con ρ"
+        }
+      ],
+      "excludedSlides": "52–63: in der Datei weitgehend ohne auslesbaren Lehrtext; kein inhaltliches Hinzudichten",
+      "review": [
+        {
+          "slides": "20",
+          "issue_de": "Im Fließtext steht I=U×R. Richtig ist I=U/R.",
+          "issue_it": "Nel testo compare I=U×R: corretto I=U/R.",
+          "status": "korrigiert"
+        },
+        {
+          "slides": "23",
+          "issue_de": "Durchschlagfestigkeit nur grober Richtwert; nicht zum sicheren Abstand oder für Versuche verwenden.",
+          "issue_it": "Rigidità dielettrica: valori indicativi, non usabili come distanze sicure.",
+          "status": "mit Warnhinweis"
+        },
+        {
+          "slides": "39–43",
+          "issue_de": "Watt und Voltampere nicht grundsätzlich gleichsetzen: nur bei rein ohmschen Lasten bzw. Leistungsfaktor 1.",
+          "issue_it": "Watt e voltampere non sono generalmente intercambiabili: dipende dal fattore di potenza.",
+          "status": "präzisiert"
+        },
+        {
+          "slides": "48–49",
+          "issue_de": "Historische Zuschreibung zu Tesla und Generator-Drehzahl sind stark vereinfacht; 50 Hz bedeutet nicht allgemein 50 Rotorumdrehungen/s.",
+          "issue_it": "Storia e frequenza del generatore semplificate: 50 Hz non significa sempre 50 giri/s del rotore.",
+          "status": "präzisiert"
+        }
+      ]
+    }
+  ]
 }
