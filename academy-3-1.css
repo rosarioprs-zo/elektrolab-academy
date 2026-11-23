@@ -1,0 +1,76 @@
+/* ElektroLab Academy 3.1 — additive, non-destructive responsive UI */
+:root{--el31-accent:#5ce0cc;--el31-ink:#eef7ff;--el31-muted:#adc4d5;--el31-bg:#112438;--el31-stroke:#405f75}
+html{scroll-behavior:smooth;scroll-padding-top:20px}
+body{background:radial-gradient(ellipse at 18% 0,rgba(13,113,119,.21),transparent 38%),radial-gradient(circle at 85% 8%,rgba(63,89,149,.18),transparent 35%),#0b1422}
+button,input,select{touch-action:manipulation}
+button{transition:background-color .15s ease,border-color .15s ease,transform .15s ease}
+button:active{transform:scale(.99)}
+.hero{padding:29px 0 23px}.hero h1{max-width:900px;line-height:1.1;font-weight:850}.hero .muted{max-width:720px}
+#el31Dashboard{margin:0 0 20px}.el31-dashboard-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;align-items:center;margin-bottom:14px}.el31-dashboard-head h2{font-size:1.35rem;margin:0}
+.el31-dashboard-head small{color:var(--el31-muted)}
+.el31-dashboard{display:grid;grid-template-columns:1.18fr 1fr 1fr;gap:12px}
+.el31-card{border:1px solid #36566d;border-radius:17px;background:linear-gradient(155deg,#18384d,#13263b);text-align:left;padding:18px;display:flex;flex-direction:column;align-items:flex-start;gap:9px;color:#ecf7ff;min-height:140px}
+.el31-card:hover,.el31-card:focus-visible{border-color:#65e6d4;background:#1d4553}
+.el31-card strong{font-size:1.06rem}.el31-card p{font-size:.87rem;margin:0;color:#c4d8e5;line-height:1.5}
+.el31-card small{font-weight:800;letter-spacing:.06em;color:#7cf2da;text-transform:uppercase}
+.el31-card-main{background:linear-gradient(125deg,#125755,#154359,#182b45);border-color:#438c87}
+.el31-progress{height:7px;background:#254758;border-radius:20px;overflow:hidden;width:100%;margin-top:auto}
+.el31-progress span{display:block;height:100%;background:linear-gradient(90deg,#4ee3c8,#92efd6);width:0;transition:width .25s}
+.el31-section-search{width:100%;border:1px solid #486e7f;background:#102338;color:var(--el31-ink);padding:12px;border-radius:12px;margin-bottom:10px;font-size:16px}
+.el31-search-info{display:block;color:#b1ccda;margin:0 0 6px;font-size:.75rem}
+.sidebar{position:sticky;top:14px;max-height:calc(100vh - 28px)}
+#menu .item{transition:background-color .15s,border-color .15s}
+#menu .item[hidden]{display:none!important}
+#lesson .topic-card{border:1px solid #36566c;border-radius:15px;padding:16px;margin:16px 0;background:linear-gradient(135deg,#142e43,#102338)}
+#lesson .topic-heading{display:flex;align-items:center;gap:11px;min-width:0}
+#lesson .topic-heading h3{flex:1;margin:0;min-width:0;font-size:1.06rem;line-height:1.42}
+.el31-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:8px 12px;border-radius:9px;border:1px solid #477385;background:#163c4d;color:#c4f8eb;font-size:.83rem;font-weight:750;white-space:nowrap}
+.el31-toggle:focus-visible{outline:3px solid #8fffea;outline-offset:2px}
+.el31-topic-body{padding-top:13px;animation:el31-appear .15s ease}
+.el31-topic-body[hidden]{display:none!important}
+@keyframes el31-appear{from{opacity:.4;transform:translateY(-3px)}to{opacity:1;transform:translateY(0)}}
+.el31-learning-line{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:13px 14px;background:#113846;border:1px solid #316b70;border-radius:12px;margin:14px 0;font-size:.85rem;color:#daf4ed}
+.el31-learning-line strong{color:#93f8df}.el31-learning-line span{color:#c3d9e5}
+.el31-learning-line .el31-arrow{color:#76dacb}
+.el31-diagram{background:#f7fbfd;border:1px solid #c9dfed;border-radius:12px;padding:10px;overflow:auto}
+.el31-diagram svg{min-width:0;width:100%;height:auto;display:block;max-width:780px;margin:auto}
+.el31-diagram-caption{font-size:.77rem;color:#365369;margin:6px 0;text-align:center}
+.el31-original{border-top:1px solid #d5e6ec;padding-top:9px;margin:7px 0;color:#31536a}.el31-original summary{font-size:.75rem;cursor:pointer}
+.el31-original pre{font-size:12px;color:#1b3a4b;line-height:1.4;overflow:auto}
+#el31Studio{border:1px solid #46877f;border-radius:17px;background:linear-gradient(155deg,#102b3c,#0e2433);padding:20px;margin:14px 0 24px}
+.el31-studio-heading{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap}
+.el31-studio-heading h3{margin:0;font-size:1.28rem;color:#b3f9e9}.el31-studio-heading p{margin:4px 0 0;color:#c4dae7;font-size:.88rem}
+.el31-studio-modes{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.el31-mode{background:#1e3c53;color:#eaf8ff;border:1px solid #436d80;border-radius:10px;padding:10px 14px;font-weight:750}
+.el31-mode[aria-pressed="true"]{background:#237c75;border-color:#a3f4db;color:white}
+.el31-inputs{display:grid;grid-template-columns:repeat(auto-fit,minmax(125px,1fr));gap:12px;margin:16px 0}
+.el31-inputs label{display:block;margin:0;font-weight:700;color:#c2dce8}
+.el31-inputs input{font-size:16px;min-width:0;width:100%;background:#081e2d;border:1px solid #527a8d;border-radius:10px;padding:11px;color:white;margin-top:6px}
+.el31-inputs input:focus-visible{outline:3px solid #7feedd;outline-offset:2px}
+.el31-stepper{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.el31-stepper button{border:1px solid #4a7c80;border-radius:9px;background:#1b4955;color:white;padding:9px 13px}
+.el31-stage{background:#f7fbfd;border:1px solid #b8d8df;border-radius:12px;overflow:auto;padding:9px}
+.el31-stage svg{width:100%;min-width:0;max-width:780px;display:block;margin:auto}
+.el31-result-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:15px}
+.el31-kpi{background:#16384c;border:1px solid #3a6879;border-radius:12px;padding:12px 10px;min-width:0}
+.el31-kpi span{color:#c0d9e5;font-size:.72rem;display:block}.el31-kpi strong{font-size:1.12rem;display:block;overflow-wrap:anywhere;margin-top:5px}
+.el31-worked{border:1px solid #416e80;border-radius:13px;background:#0f2839;padding:16px;margin-top:14px}
+.el31-worked h4{color:#a5f7e2;font-size:1rem;margin:0 0 10px}
+.el31-worked ol{margin:0;padding-left:23px;line-height:1.75}.el31-worked li{margin:6px 0}
+.el31-table-wrap{overflow:auto;max-width:100%}.el31-table{width:100%;border-collapse:collapse;min-width:410px;margin-top:11px;font-size:.9rem}
+.el31-table th,.el31-table td{text-align:right;padding:9px 11px;border-bottom:1px solid #38586a;white-space:nowrap}
+.el31-table th:first-child,.el31-table td:first-child{text-align:left}.el31-table th{color:#a5ecdf}
+.el31-error{margin:10px 0;padding:13px;border:1px solid #dfa568;border-radius:11px;background:#453124;color:#ffdcaa}
+.el31-open-studio{margin:4px 0 20px;background:#204b52;border:1px solid #4d9893;color:#eafff7;border-radius:11px;padding:13px 16px;font-weight:800}
+.circuit-figure{position:relative}.circuit-figure svg{min-width:360px}
+.el31-svg-detail{margin:5px 0;color:#96d8ca;font-size:.78rem;cursor:pointer}
+.el31-illustration-dialog{background:#10273b;color:white;border:1px solid #5fa39d;border-radius:16px;padding:22px;max-width:min(98vw,1020px);max-height:90vh;overflow:auto}
+.el31-illustration-dialog::backdrop{background:#030b13d9}.el31-illustration-dialog svg{display:block;width:min(88vw,900px);height:auto;background:#f7fbfd;border-radius:12px}
+.el31-dialog-close{float:right;border-radius:9px;padding:7px 11px;background:#2f525b;border:1px solid #699da3;color:white}
+.el31-footer-note{color:#99c8c1;font-size:.78rem;text-align:center;margin:18px 0}
+@media(max-width:930px){.el31-dashboard{grid-template-columns:1fr 1fr}.el31-card-main{grid-column:span 2}.sidebar{position:static;max-height:unset}}
+@media(max-width:620px){.el31-dashboard{grid-template-columns:1fr 1fr;gap:9px}.el31-card{padding:13px;min-height:130px}.el31-card-main{grid-column:span 2;min-height:145px}.el31-card strong{font-size:.94rem}.el31-card p{font-size:.81rem}.hero{padding-top:23px}.hero h1{font-size:clamp(1.75rem,7vw,2.65rem)}#lesson .topic-card{padding:12px}.el31-toggle{padding:8px;font-size:.78rem}.el31-result-grid{grid-template-columns:1fr 1fr}.el31-studio-heading h3{font-size:1.12rem}#el31Studio{padding:12px}.el31-diagram{margin:4px -7px}.el31-learning-line{font-size:.78rem}.topic-toc ol{columns:1}.topic-toc li{break-inside:avoid}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}button,.el31-topic-body{transition:none!important;animation:none!important}}
+@media print{#el31Dashboard,#el31Studio,.el31-toggle,.el31-open-studio,#el31Search,.el31-search-info{display:none!important}.el31-topic-body[hidden]{display:block!important}.el31-diagram{background:white!important}}
+/* Never let a 3.0 diagram force horizontal scrolling of the whole page. */
+.circuit-figure{overflow-x:auto;max-width:100%}.circuit-figure svg{min-width:0;width:100%;height:auto}

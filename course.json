@@ -1,6 +1,6 @@
 {
-  "version": "3.0.0",
-  "updated": "2026-11-20",
+  "version": "3.1.0",
+  "updated": "2026-11-23",
   "siteTitle": "ElektroLab Academy — Corso originale IHK",
   "adminName": "Rosario Parisi",
   "modules": [
@@ -6077,11 +6077,596 @@
         }
       },
       "extraQuiz": []
+    },
+    {
+      "id": 26,
+      "title": {
+        "de": "Bauteiltoleranzen und Messunsicherheit",
+        "it": "Tolleranze dei componenti e incertezza di misura"
+      },
+      "subtitle": "± %, Grenzwerte, Genauigkeit / tolleranze e misure",
+      "explanation": {
+        "de": "Ein aufgedruckter Widerstandswert ist ein Nennwert. Fertigungstoleranz und Messunsicherheit sind unterschiedliche Dinge. Hier lernst du, zulässige Grenzen zu berechnen, mit Messwerten zu vergleichen und nachvollziehbar zu dokumentieren.",
+        "it": "Il valore scritto su una resistenza è nominale. Tolleranza di produzione e incertezza della misura non sono la stessa cosa. Impari a calcolare i limiti ammessi e confrontarli con i valori misurati."
+      },
+      "formula": "Rmin = Rn · (1 − t); Rmax = Rn · (1 + t)",
+      "example": {
+        "de": "Zulässiger Bereich: 4,465–4,935 kΩ.",
+        "it": "Intervallo ammesso: 4,465–4,935 kΩ."
+      },
+      "question": {
+        "de": "Ein 1-kΩ-Widerstand ±5 %: Ist 1080 Ω innerhalb der Toleranz?",
+        "it": "Una resistenza 1 kΩ ±5 %: 1080 Ω è nel campo ammesso?"
+      },
+      "options": {
+        "de": [
+          "Ja",
+          "Nein",
+          "Nur wenn der Widerstand warm ist"
+        ],
+        "it": [
+          "Sì",
+          "No",
+          "Solo se la resistenza è calda"
+        ]
+      },
+      "correct": 1,
+      "sections": [
+        {
+          "title": {
+            "de": "Was bedeutet ±5 %?",
+            "it": "Che cosa significa ±5 %?"
+          },
+          "body": {
+            "de": "Die Nennangabe 1000 Ω ist nicht zwangsläufig der exakte Istwert. Bei ±5 % darf das Bauteil im angegebenen Bereich liegen. Der relative Fehler ist die Abweichung bezogen auf den Nennwert.",
+            "it": "Il valore nominale 1000 Ω non è necessariamente identico al valore reale. Con ±5 % il componente può avere un valore in un intervallo. La deviazione relativa si calcola rispetto al nominale."
+          },
+          "formula": "ΔR = Rist − Rn; ΔR% = (Rist − Rn)/Rn · 100 %",
+          "diagram": "      950 Ω      1000 Ω       1050 Ω\n─────────┼───────────┼────────────┼───\n      −5 %        nominale       +5 %",
+          "steps": {
+            "de": [
+              "Nennwert und Prozenttoleranz notieren.",
+              "Prozent in Dezimalzahl umwandeln: 5 % = 0,05.",
+              "Unteren und oberen Grenzwert berechnen."
+            ],
+            "it": [
+              "Scrivi nominale e percentuale.",
+              "Converti 5 % in 0,05.",
+              "Calcola limite inferiore e superiore."
+            ]
+          },
+          "problem": {
+            "de": "100 Ω ±10 %: Welche Grenzen?",
+            "it": "100 Ω ±10 %: quali limiti?"
+          },
+          "solution": {
+            "de": "90–110 Ω.",
+            "it": "90–110 Ω."
+          },
+          "mistake": {
+            "de": "5 % nicht als 5 einsetzen.",
+            "it": "Non usare 5 al posto di 0,05."
+          }
+        },
+        {
+          "title": {
+            "de": "Toleranz ist nicht Messfehler",
+            "it": "La tolleranza non è un errore dello strumento"
+          },
+          "body": {
+            "de": "Die Bauteiltoleranz beschreibt die zulässige Streuung eines Bauteils. Die Messunsicherheit beschreibt dagegen, wie stark das Messergebnis durch Messgerät, Umgebung und Vorgehen schwanken kann.",
+            "it": "La tolleranza descrive lo scarto consentito del componente. L’incertezza di misura riguarda la possibile variazione del valore osservato a causa di strumento, ambiente e metodo."
+          },
+          "formula": "Messwert = Schätzwert ± Messunsicherheit (vereinfacht)",
+          "diagram": "[Bauteil] ── [Messleitungen] ── [Messgerät]\n   Toleranz                 Auflösung",
+          "steps": {
+            "de": [
+              "Passenden Messbereich und Messgerätespezifikation prüfen.",
+              "Bauteil spannungsfrei und gegebenenfalls vom übrigen Netzwerk getrennt messen.",
+              "Messwert, Gerät und Bedingungen dokumentieren."
+            ],
+            "it": [
+              "Controlla portata e caratteristiche del multimetro.",
+              "Misura a circuito disalimentato; se necessario isola il componente.",
+              "Documenta valore, strumento e condizioni."
+            ]
+          },
+          "problem": {
+            "de": "Darf der Bauteilgrenzwert direkt mit der Messunsicherheit gleichgesetzt werden?",
+            "it": "La tolleranza del componente coincide con l’incertezza della misura?"
+          },
+          "solution": {
+            "de": "Nein, das sind verschiedene Angaben.",
+            "it": "No, sono due proprietà differenti."
+          },
+          "mistake": {
+            "de": "Messgerät nicht als ideal annehmen.",
+            "it": "Non considerare lo strumento perfetto."
+          }
+        },
+        {
+          "title": {
+            "de": "Messwerte fachgerecht bewerten",
+            "it": "Valutare le misure correttamente"
+          },
+          "body": {
+            "de": "Ein Widerstand von 1000 Ω ±5 % hat einen zulässigen Bereich von 950 bis 1050 Ω. 970 Ω liegt darin; 1080 Ω außerhalb. Liegt der Messwert nahe am Grenzwert, muss die Messunsicherheit berücksichtigt werden.",
+            "it": "Una resistenza 1000 Ω ±5 % è ammessa tra 950 e 1050 Ω. 970 Ω è all’interno; 1080 Ω all’esterno. Vicino al limite bisogna valutare l’incertezza dello strumento."
+          },
+          "formula": "Bewertung = Messwert ∈ [Rmin, Rmax]? (ohne Unsicherheitsregel)",
+          "diagram": "[950 Ω] ─── [970 Ω ✓] ─── [1050 Ω]   [1080 Ω ✗]",
+          "steps": {
+            "de": [
+              "Grenzen rechnen.",
+              "Messwert vergleichen.",
+              "Bei Grenzfällen Messunsicherheit und Prüfregel klären."
+            ],
+            "it": [
+              "Calcola i limiti.",
+              "Confronta il valore misurato.",
+              "Per i casi limite verifica incertezza e regola di accettazione."
+            ]
+          },
+          "problem": {
+            "de": "Nennwert 220 Ω ±5 %, Messwert 230 Ω: innerhalb?",
+            "it": "220 Ω ±5 %, misuri 230 Ω: rientra?"
+          },
+          "solution": {
+            "de": "Grenzen 209–231 Ω; 230 Ω liegt im Bereich (ohne Berücksichtigung der Messunsicherheit).",
+            "it": "Intervallo 209–231 Ω; 230 Ω rientra (senza considerare l’incertezza)."
+          },
+          "mistake": {
+            "de": "Grenzwertentscheidung nicht ohne Messbedingungen dokumentieren.",
+            "it": "Non prendere decisioni al limite senza considerare le condizioni."
+          }
+        }
+      ],
+      "worked": {
+        "question": {
+          "de": "Ein 4,7-kΩ-Widerstand hat ±5 %. Welche Grenzwerte sind zulässig?",
+          "it": "Una resistenza da 4,7 kΩ ha ±5 %. Quali sono i valori limite?"
+        },
+        "given": "Rn = 4,7 kΩ = 4700 Ω; t = 5 %",
+        "sought": "Rmin; Rmax",
+        "steps": {
+          "de": [
+            "5 % = 0,05.",
+            "Rmin = 4700 Ω · (1 − 0,05) = 4465 Ω.",
+            "Rmax = 4700 Ω · (1 + 0,05) = 4935 Ω.",
+            "Zulässiger Bereich: 4,465–4,935 kΩ."
+          ],
+          "it": [
+            "5 % = 0,05.",
+            "Rmin = 4700 Ω · (1 − 0,05) = 4465 Ω.",
+            "Rmax = 4700 Ω · (1 + 0,05) = 4935 Ω.",
+            "Intervallo ammesso: 4,465–4,935 kΩ."
+          ]
+        },
+        "answer": {
+          "de": "4,465–4,935 kΩ",
+          "it": "4,465–4,935 kΩ"
+        }
+      },
+      "extraQuiz": [
+        {
+          "question": {
+            "de": "Wie viel ist 2 % als Dezimalzahl?",
+            "it": "Quanto vale 2 % come numero decimale?"
+          },
+          "options": {
+            "de": [
+              "0,2",
+              "0,02",
+              "2,0"
+            ],
+            "it": [
+              "0,2",
+              "0,02",
+              "2,0"
+            ]
+          },
+          "correct": 1,
+          "explanation": {
+            "de": "2 / 100 = 0,02.",
+            "it": "2 / 100 = 0,02."
+          }
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "title": {
+        "de": "Systematische Fehlersuche an Baugruppen",
+        "it": "Ricerca guasti sistematica sulle schede"
+      },
+      "subtitle": "AOI, Prüfprotokoll, Messstrategie / diagnostica su PCB",
+      "explanation": {
+        "de": "Fehlersuche beginnt nicht mit dem wahllosen Austausch von Teilen. Zuerst kommen Sichtprüfung, Stromlaufplan, sichere Messvorbereitung und ein Prüfprotokoll. Mit jeder Messung wird eine mögliche Fehlerursache bestätigt oder ausgeschlossen.",
+        "it": "La diagnosi non inizia cambiando componenti a caso. Prima si controllano la scheda, lo schema, le condizioni di sicurezza e si prepara un verbale. Ogni misura serve a confermare o escludere una causa."
+      },
+      "formula": "Hypothese → geeignete Messung → Soll/Ist-Vergleich → dokumentierter Befund",
+      "example": {
+        "de": "Fließt kein Strom, mehrere Ursachen prüfen: Versorgung, Kontakt, Polung, Widerstand und LED.",
+        "it": "Con corrente nulla controlla alimentazione, contatti, polarità, resistenza e LED."
+      },
+      "question": {
+        "de": "Was ist bei einer Durchgangsmessung zwingend wichtig?",
+        "it": "Cosa è necessario prima di misurare la continuità?"
+      },
+      "options": {
+        "de": [
+          "Unter Spannung messen",
+          "Baugruppe spannungsfrei und sicher vorbereiten",
+          "Messgerät immer auf 10 A stellen"
+        ],
+        "it": [
+          "Misurare sotto tensione",
+          "Disalimentare e preparare la scheda in sicurezza",
+          "Impostare sempre 10 A"
+        ]
+      },
+      "correct": 1,
+      "sections": [
+        {
+          "title": {
+            "de": "Fehlersuche in fünf Schritten",
+            "it": "Ricerca guasti in cinque passi"
+          },
+          "body": {
+            "de": "Fehlerbild aufnehmen, Versorgung prüfen, Sichtprüfung durchführen, Messpunkte festlegen und Ergebnis protokollieren. Unter Spannung nur nach den betrieblichen Sicherheitsregeln und durch befugtes Fachpersonal arbeiten.",
+            "it": "Descrivi il difetto, controlla l’alimentazione, osserva la scheda, pianifica le misure e registra il risultato. Lavori sotto tensione solo se autorizzati e nel rispetto delle procedure di sicurezza."
+          },
+          "formula": "Fehler → Hypothese → Messung → Vergleich → Schlussfolgerung",
+          "diagram": "[Fehlerbild] → [Hypothese] → [Messung]\n                             ↓\n          [Protokoll] ← [Soll/Ist]",
+          "steps": {
+            "de": [
+              "Symptom exakt beschreiben.",
+              "Schaltplan und bekannte Sollwerte prüfen.",
+              "Messung risikoarm planen und Ergebnis dokumentieren."
+            ],
+            "it": [
+              "Descrivi esattamente il sintomo.",
+              "Controlla schema e valori previsti.",
+              "Pianifica misure sicure e annota risultati."
+            ]
+          },
+          "problem": {
+            "de": "Eine LED bleibt dunkel: Beweist das einen defekten LED-Chip?",
+            "it": "Il LED è spento: dimostra che il LED è guasto?"
+          },
+          "solution": {
+            "de": "Nein, es kommen auch fehlende Spannung, offene Leiterbahn, falsche Polarität und andere Ursachen infrage.",
+            "it": "No, potrebbero mancare alimentazione o continuità oppure la polarità può essere errata."
+          },
+          "mistake": {
+            "de": "Nie aus nur einem Symptom auf genau ein defektes Bauteil schließen.",
+            "it": "Non dedurre un singolo componente guasto da un solo sintomo."
+          }
+        },
+        {
+          "title": {
+            "de": "Sichtprüfung und AOI",
+            "it": "Controllo visivo e AOI"
+          },
+          "body": {
+            "de": "Sichtprüfung und AOI können Auffälligkeiten wie verdrehte Bauteile, Lötbrücken, fehlende Komponenten oder ungenügende Benetzung aufzeigen. Ob ein Fund ein Fehler ist, muss anhand der gültigen Akzeptanzkriterien und des Produkttyps beurteilt werden.",
+            "it": "Il controllo visivo e l’AOI possono mostrare componenti ruotati, ponti di saldatura, parti mancanti o problemi di bagnatura. La valutazione richiede criteri di accettazione validi per il prodotto."
+          },
+          "formula": "Prüfbefund = beobachtet + lokalisiert + nach Regel bewertet",
+          "diagram": "[Bauteil R12]   [Lötstelle J3]\n       ↓               ↓\n[Orientierung]    [Benetzung]",
+          "steps": {
+            "de": [
+              "Referenzfoto/Baugruppenzeichnung heranziehen.",
+              "Bauteil- und Positionsbezeichnung notieren.",
+              "Fehlermeldung und Bilder nachvollziehbar archivieren."
+            ],
+            "it": [
+              "Usa fotografie di riferimento e disegno PCB.",
+              "Annota riferimento e posizione del componente.",
+              "Archivia immagini e risultato della verifica."
+            ]
+          },
+          "problem": {
+            "de": "Ist jedes AOI-Alarmsignal automatisch ein bestätigter Fehler?",
+            "it": "Ogni allarme AOI significa difetto confermato?"
+          },
+          "solution": {
+            "de": "Nein. Ein AOI-Befund muss nach dem Prüfprozess verifiziert und klassifiziert werden.",
+            "it": "No. Ogni indicazione AOI deve essere verificata e classificata."
+          },
+          "mistake": {
+            "de": "AOI-Alarm nicht mit bestätigtem Produktfehler gleichsetzen.",
+            "it": "Non confondere allarme AOI e difetto reale."
+          }
+        },
+        {
+          "title": {
+            "de": "Sichere Messstrategie",
+            "it": "Strategia di misura sicura"
+          },
+          "body": {
+            "de": "Spannungen werden parallel zum Messpunkt gemessen; Ströme über geeignete Messverfahren in Reihe. Widerstands- und Durchgangsmessungen werden nur an spannungsfreien, sicher vorbereiteten Baugruppen durchgeführt.",
+            "it": "Le tensioni si misurano in parallelo, le correnti con metodi appropriati in serie. Resistenza e continuità si misurano solo con scheda disalimentata e preparata in sicurezza."
+          },
+          "formula": "U: Messgerät parallel; I: Messgerät in Reihe; R: spannungsfrei",
+          "diagram": "U:   ┌──(V)──┐\n  ────┤  R1   ├────\n      └───────┘",
+          "steps": {
+            "de": [
+              "Messgerät und Kategorie für Messaufgabe auswählen.",
+              "Einstellung und Buchsen vor Messung prüfen.",
+              "Messwerte mit Bezugspunkt, Einheit und Sollbereich festhalten."
+            ],
+            "it": [
+              "Scegli uno strumento adatto alla misura.",
+              "Controlla funzione e connettori prima di misurare.",
+              "Annota i risultati con unità, riferimento e range previsto."
+            ]
+          },
+          "problem": {
+            "de": "Widerstandsmessung an eingeschalteter Schaltung?",
+            "it": "Misurare resistenza su circuito alimentato?"
+          },
+          "solution": {
+            "de": "Nein. Baugruppe fachgerecht spannungsfrei schalten und Restenergien beachten.",
+            "it": "No. Disalimentare correttamente e considerare l’energia residua."
+          },
+          "mistake": {
+            "de": "Widerstandsmodus nie als Spannungsprüfer verwenden.",
+            "it": "Non usare ohmmetro per verificare la tensione."
+          }
+        }
+      ],
+      "worked": {
+        "question": {
+          "de": "Eine LED-Schaltung an 12 V besitzt 1 kΩ und eine LED mit ca. 2 V Durchlassspannung. Welcher Strom ist ungefähr zu erwarten?",
+          "it": "Un circuito con LED usa 12 V, 1 kΩ e una LED con circa 2 V di caduta. Quale corrente ci aspettiamo?"
+        },
+        "given": "Uq = 12 V; ULED ≈ 2 V; RV = 1000 Ω",
+        "sought": "I",
+        "steps": {
+          "de": [
+            "Spannung am Vorwiderstand: UR = 12 V − 2 V = 10 V.",
+            "Ohmsches Gesetz: I = UR / R.",
+            "I = 10 V / 1000 Ω = 0,01 A = 10 mA.",
+            "Fließt kein Strom, mehrere Ursachen prüfen: Versorgung, Kontakt, Polung, Widerstand und LED."
+          ],
+          "it": [
+            "Tensione sulla resistenza: UR = 12 V − 2 V = 10 V.",
+            "Legge di Ohm: I = UR / R.",
+            "I = 10 V / 1000 Ω = 0,01 A = 10 mA.",
+            "Con corrente nulla controlla alimentazione, contatti, polarità, resistenza e LED."
+          ]
+        },
+        "answer": {
+          "de": "I ≈ 10 mA",
+          "it": "I ≈ 10 mA"
+        }
+      },
+      "extraQuiz": [
+        {
+          "question": {
+            "de": "Was bedeutet ein AOI-Alarm?",
+            "it": "Cosa significa un allarme AOI?"
+          },
+          "options": {
+            "de": [
+              "Hinweis auf mögliche Abweichung",
+              "Zwingend defekter Chip",
+              "Immer ein Lötfehler"
+            ],
+            "it": [
+              "Possibile anomalia da verificare",
+              "Chip sicuramente difettoso",
+              "Sempre difetto di saldatura"
+            ]
+          },
+          "correct": 0,
+          "explanation": {
+            "de": "Ein Alarm ist zunächst ein Prüfhinweis.",
+            "it": "Un allarme è un’indicazione da verificare."
+          }
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "title": {
+        "de": "Sensoren, Spannungsteiler und ADC",
+        "it": "Sensori, partitori di tensione e ADC"
+      },
+      "subtitle": "NTC, 0–5 V, ADC, Signalkette / sensori analogici",
+      "explanation": {
+        "de": "Analoge Sensoren verändern eine elektrische Größe, zum Beispiel einen Widerstand. Ein Spannungsteiler macht daraus eine messbare Spannung. Ein Analog-Digital-Wandler (ADC) liefert anschließend einen Zahlenwert.",
+        "it": "Un sensore analogico cambia una grandezza elettrica, per esempio la resistenza. Un partitore crea una tensione misurabile; un convertitore analogico-digitale (ADC) la trasforma in un numero."
+      },
+      "formula": "Uaus = Uein · R2/(R1+R2); ADC ≈ Uaus/Uref · (2^N − 1)",
+      "example": {
+        "de": "ADC ≈ (2,5 / 5) · 1023 = 511,5 ≈ 512.",
+        "it": "ADC ≈ (2,5 / 5) · 1023 = 511,5 ≈ 512."
+      },
+      "question": {
+        "de": "Wie viele digitale Codes besitzt ein 10-Bit-ADC?",
+        "it": "Quanti codici digitali ha un ADC a 10 bit?"
+      },
+      "options": {
+        "de": [
+          "10",
+          "1024",
+          "1000"
+        ],
+        "it": [
+          "10",
+          "1024",
+          "1000"
+        ]
+      },
+      "correct": 1,
+      "sections": [
+        {
+          "title": {
+            "de": "Sensor und Signalkette",
+            "it": "Sensore e catena del segnale"
+          },
+          "body": {
+            "de": "Ein NTC-Widerstand wird bei steigender Temperatur kleiner. Im Spannungsteiler verändert sich dadurch die Ausgangsspannung. Ob diese steigt oder fällt, hängt davon ab, an welcher Position der NTC sitzt.",
+            "it": "La resistenza di un NTC diminuisce quando la temperatura aumenta. Nel partitore cambia la tensione in uscita. Questa può salire o scendere secondo la posizione dell’NTC."
+          },
+          "formula": "Temperatur → RNTC → Uaus → ADC-Zahl",
+          "diagram": "[Temperatur]→[NTC]→[Spannungsteiler]→[ADC]→[Anzeige]",
+          "steps": {
+            "de": [
+              "Sensortyp und Kennlinie bestimmen.",
+              "Schaltung und Lage des Abgriffs prüfen.",
+              "Ausgangsspannung und ADC-Zahl berechnen."
+            ],
+            "it": [
+              "Individua tipo di sensore e caratteristica.",
+              "Verifica circuito e nodo di uscita.",
+              "Calcola tensione e codice ADC."
+            ]
+          },
+          "problem": {
+            "de": "Wird ein NTC bei Wärme hochohmiger?",
+            "it": "Il valore di un NTC aumenta con il calore?"
+          },
+          "solution": {
+            "de": "Nein, ein NTC wird bei steigender Temperatur niederohmiger.",
+            "it": "No, un NTC riduce la resistenza quando la temperatura sale."
+          },
+          "mistake": {
+            "de": "Nicht NTC mit PTC verwechseln.",
+            "it": "Non confondere NTC e PTC."
+          }
+        },
+        {
+          "title": {
+            "de": "Spannungsteiler sauber rechnen",
+            "it": "Calcolare il partitore di tensione"
+          },
+          "body": {
+            "de": "Bei unbelastetem Teiler fließt durch R1 und R2 derselbe Strom. Liegt R1 oben an +U und R2 unten an 0 V, ist die Spannung am mittleren Knoten Uaus = Uein·R2/(R1+R2).",
+            "it": "In un partitore senza carico passa la stessa corrente in R1 e R2. Con R1 in alto verso +U e R2 in basso verso 0 V, la tensione al centro è Uuscita = Uingresso·R2/(R1+R2)."
+          },
+          "formula": "Uaus = Uein · R2/(R1+R2)",
+          "diagram": "+5 V\n  │\n [R1 10 kΩ]\n  ├──── Uaus\n [R2 10 kΩ]\n  │\n 0 V",
+          "steps": {
+            "de": [
+              "Zuerst klarstellen, wo Uaus abgegriffen wird.",
+              "R1+R2 zum Gesamtwiderstand zusammenfassen.",
+              "Uaus mit Verhältnis berechnen."
+            ],
+            "it": [
+              "Segna il nodo da cui misuri Uuscita.",
+              "Somma R1+R2.",
+              "Calcola Uuscita con il rapporto."
+            ]
+          },
+          "problem": {
+            "de": "Uein=12 V; R1=2 kΩ; R2=1 kΩ: Uaus?",
+            "it": "Uingresso=12 V; R1=2 kΩ; R2=1 kΩ: Uuscita?"
+          },
+          "solution": {
+            "de": "12·1/(2+1) = 4 V.",
+            "it": "12·1/(2+1) = 4 V."
+          },
+          "mistake": {
+            "de": "Belasteten und unbelasteten Teiler nicht verwechseln.",
+            "it": "Non confondere partitore caricato e senza carico."
+          }
+        },
+        {
+          "title": {
+            "de": "ADC-Auflösung und Grenzen",
+            "it": "Risoluzione e limiti dell’ADC"
+          },
+          "body": {
+            "de": "Ein idealer 10-Bit-ADC besitzt 1024 Codes. Die Schrittweite ist näherungsweise Uref/1024; die Zuordnung 0…1023 verwendet häufig die Formel U/Uref·1023. Exakte Rundung, Endpunkte und Fehler hängen vom konkreten ADC ab.",
+            "it": "Un ADC ideale a 10 bit ha 1024 codici. Il passo è circa Uref/1024; una conversione comune usa U/Uref·1023 per ottenere codici 0…1023. Arrotondamento ed errori reali dipendono dall’ADC."
+          },
+          "formula": "Anzahl Codes=2^N; LSB≈Uref/2^N",
+          "diagram": "0 V  |__|__|__|__|__|__|  Uref\n     quantisierte Stufen",
+          "steps": {
+            "de": [
+              "Bitanzahl N bestimmen.",
+              "Codes 2^N berechnen.",
+              "Schrittweite und Rundungsregel des Geräts beachten."
+            ],
+            "it": [
+              "Leggi il numero di bit N.",
+              "Calcola 2^N codici.",
+              "Controlla passo e arrotondamento del convertitore reale."
+            ]
+          },
+          "problem": {
+            "de": "Wie viele Codes hat ein 8-Bit-ADC?",
+            "it": "Quanti codici ha un ADC a 8 bit?"
+          },
+          "solution": {
+            "de": "2^8 = 256 Codes von 0 bis 255.",
+            "it": "2^8 = 256 codici da 0 a 255."
+          },
+          "mistake": {
+            "de": "Auflösung (Bit) nicht mit Messgenauigkeit gleichsetzen.",
+            "it": "Non confondere risoluzione con accuratezza."
+          }
+        }
+      ],
+      "worked": {
+        "question": {
+          "de": "Ein Spannungsteiler mit zwei 10-kΩ-Widerständen liegt an 5 V. Welche Ausgangsspannung und welcher ADC-Wert (10 Bit, Uref=5 V) ergeben sich?",
+          "it": "Un partitore con due resistenze da 10 kΩ è alimentato a 5 V. Quali tensione e codice ADC (10 bit, Uref=5 V) otteniamo?"
+        },
+        "given": "Uein=5 V; R1=R2=10 kΩ; N=10; Uref=5 V",
+        "sought": "Uaus, ADC",
+        "steps": {
+          "de": [
+            "Uaus = 5 V · 10 kΩ / (10 kΩ + 10 kΩ).",
+            "Uaus = 2,5 V.",
+            "10 Bit: 2¹⁰ = 1024 mögliche Codes von 0 bis 1023.",
+            "ADC ≈ (2,5 / 5) · 1023 = 511,5 ≈ 512."
+          ],
+          "it": [
+            "Uuscita = 5 V · 10 kΩ / (10 kΩ + 10 kΩ).",
+            "Uuscita = 2,5 V.",
+            "10 bit: 2¹⁰ = 1024 codici da 0 a 1023.",
+            "ADC ≈ (2,5 / 5) · 1023 = 511,5 ≈ 512."
+          ]
+        },
+        "answer": {
+          "de": "Uaus=2,5 V; ADC≈512",
+          "it": "Uuscita=2,5 V; ADC≈512"
+        }
+      },
+      "extraQuiz": [
+        {
+          "question": {
+            "de": "Uein=10 V, R1=R2: Uaus unbelastet?",
+            "it": "Uingresso=10 V, R1=R2: tensione senza carico?"
+          },
+          "options": {
+            "de": [
+              "2 V",
+              "5 V",
+              "10 V"
+            ],
+            "it": [
+              "2 V",
+              "5 V",
+              "10 V"
+            ]
+          },
+          "correct": 1,
+          "explanation": {
+            "de": "Gleiche Widerstände teilen die Spannung zur Hälfte.",
+            "it": "Resistenze uguali dividono la tensione a metà."
+          }
+        }
+      ]
     }
   ],
   "releaseNotes": {
-    "it": "Nuovo corso originale: matematica, campi, condensatori, magnetismo, AC, filtri, alimentatori, laboratorio e preparazione IHK. Esercizi guidati aggiuntivi in due lingue.",
-    "de": "Eigenständiger Lernkurs: Mathematik, Felder, Kondensatoren, Magnetismus, Wechselstrom, Filter, Netzteile, Gerätewerkstatt und IHK-Training mit zweisprachigen Rechenübungen."
+    "de": "ElektroLab 3.1: neue Startseite, Suche, ausklappbare Lektionen, SVG-Schemata, interaktive Widerstandswerkstatt und drei neue Praxismodule.",
+    "it": "ElektroLab 3.1: nuova home, ricerca, lezioni espandibili, schemi SVG, laboratorio di resistenze e tre moduli pratici."
   },
   "sources": [
     {
@@ -7530,5 +8115,5 @@
     "it": "Materiale didattico autonomo. Nessuna riproduzione di pagine, tavole, esercizi o grafica dello script Eckert. Non affiliato all’IHK. Gli interventi su impianti reali richiedono personale qualificato e norme applicabili.",
     "de": "Eigenständige Lernunterlagen; keine übernommenen Seiten, Aufgaben oder Grafiken der Eckert-Unterlagen. Keine IHK-Affiliation. Arbeiten an realen Anlagen nur durch Fachkräfte nach geltenden Regeln."
   },
-  "sectionCount": 137
+  "sectionCount": 146
 }
